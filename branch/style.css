@@ -1,193 +1,211 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
 }
 
-.navbar{
-    display: flex;
-    align-items: center;
-    padding: 30px;
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 30px;
 }
-nav{
-    flex: 1;
-    text-align: right;
+nav {
+  flex: 1;
+  text-align: right;
 }
-nav ul{
-    display: inline-block;
-    list-style-type: none;
+nav ul {
+  display: inline-block;
+  list-style-type: none;
 }
-nav ul li{
-    display: inline-block;
-    margin-left: 20px;
-}
-
-a{
-    text-decoration: none;
-    color: #555;
-}
-p{
-    color: #555;
-}
-.container{
-    max-width: 1300px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-.row{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.col-2{
-    flex-basis: 50%;
-    min-width: 300px;
-}
-.col-2 img{
-    max-width: 100%;
-    padding: 50px 0:
-}
-.col-2 h1{
-    font-size: 50px;
-    line-height: 60px;
-    margin: 25px 0;
-}
-.btn{
-    display: inline-block;
-    background: #ff523b;
-    color: #fff;
-    padding:8px 30px;
-    margin: 30px 0;
-    border-radius: 30px;
-    transition: background 0.5s;
-}
-.btn:hover{
-    background: #563434;
-}
-.header{
-    background: radial-gradient(#fff,rgb(247, 196, 196));
-}
-.header .row{
-    margin-top: 70px;
-
-}
-.categories{
-    margin: 70px 0;
-}
-.col-3{
-    flex-basis:30%;
-    min-width: 250px;
-    margin-bottom: 30px;
-}
-.col-3 img{
-    width: 100%;
-}
-.small-container{
-    max-width: 1080px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-.col-4{
-    flex-basis: 25%;
-    padding: 10px;
-    min-width: 200px;
-    margin-bottom: 50px;
-}
-.col-4 img{
-    width: 100%;
-}
-.title{
-    text-align: center;
-    margin: 0 auto 80px;
-    position: relative;
-    line-height: 60px;
-    color: rgb(54, 53, 53);
-}
-.title::after{
-    content: '';
-    width: #ff523b;
-    width: 80px;
-    height:5px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transition: tra;
-
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
 }
 
-footer{
-    width:100%;
-    bottom: 0;
-    background: linear-gradient(to right, #00093c, #2d0b00);
-    color: #fff;
-    padding: 2px;
-    font-size: 13px;
-    line-height: 20px;
+a {
+  text-decoration: none;
+  color: #555;
+}
+p {
+  color: #555;
+}
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-2 {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+.col-2 img {
+  max-width: 100%;
+  padding: 50px 0px;
+}
+.col-2 h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+.btn {
+  display: inline-block;
+  background: #ff523b;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s;
+}
+.btn:hover {
+  background: #563434;
+}
+.header {
+  background: radial-gradient(#fff, rgb(247, 196, 196));
+}
+.header .row {
+  margin-top: 70px;
+}
+.categories {
+  margin: 70px 0;
+}
+.col-3 {
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+.col-3 img {
+  width: 100%;
+}
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.col-4 {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+}
+.col-4 img {
+  width: 100%;
+}
+.title {
+  text-align: center;
+  margin: 0 auto 80px;
+  position: relative;
+  line-height: 60px;
+  color: rgb(54, 53, 53);
+}
+.title::after {
+  content: "";
+  width: #ff523b;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transition: tra;
+}
 
+footer {
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(to right, #00093c, #2d0b00);
+  color: #fff;
+  padding: 2px;
+  font-size: 13px;
+  line-height: 20px;
 }
-.row{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 }
-.col{
-    flex-basis: 25px;
-    padding: 10px;
+.col {
+  flex-basis: 25px;
+  padding: 10px;
 }
-.logo{
-    width: 80px;
-    margin-bottom: 30px;
+.logo {
+  width: 80px;
+  margin-bottom: 30px;
 }
-.col h3{
-    width: fit-content;
-    margin-bottom: 40px;
-    position: relative;
+.col h3 {
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
 }
-.email-id{
-    width: fit-content;
-    border-bottom: 1px solid #ccc;
-    margin: 20px 0 ;
+.email-id {
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
 }
-ul li{
-    list-style: none;
-    margin-bottom: 12px;
+ul li {
+  list-style: none;
+  margin-bottom: 12px;
 }
-ul li a{
-    text-decoration: none;
-    color: rgb(87, 81, 81);
+ul li a {
+  text-decoration: none;
+  color: rgb(87, 81, 81);
 }
-form{
-    padding-bottom:10%;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 100px;
+form {
+  padding-bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 100px;
 }
-form .far{
-    font-size: 18px;
-    margin-right:;
+form .far {
+  font-size: 18px;
 }
-form input{
-    width:;
-    background: transparent;
-    color: #ccc;
-    border: 0;
-    outline: none;
+form input {
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
 
+.toggle-mode {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.toggle-mode > img {
+  width: 35px;
+  height: 35px;
+}
 
+.sun {
+  display: none;
+}
 
+/*? dark mode */
 
+.dark-mode {
+  background: #2c3333;
+  color: #f5f5f5;
+}
 
-
-
+.header-dark-mode {
+  background: #1c2020;
+  color: #f5f5f5;
+}
