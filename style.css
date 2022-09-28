@@ -27,6 +27,12 @@ nav ul li {
   font-size: 17px;
   padding: 10px;
 }
+.col-2 p{
+  text-align: left;
+}
+.para{
+  max-width: 500px;
+}
 a {
   text-decoration: none;
   color: rgb(64, 64, 64);
@@ -70,10 +76,12 @@ p {
   transition: 0.5s;
 }
 .col-2 .btn{
-  margin-top: 170px;
+  margin-top: 110px;
 }
 .btn:hover {
   background: #29a423;
+  transform: scaleX(1.1);
+  transform: scaley(1.1);
 }
 .header {
   background: radial-gradient(#fff, rgb(247, 196, 196));
