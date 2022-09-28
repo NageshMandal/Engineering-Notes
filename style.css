@@ -143,10 +143,6 @@ footer {
   flex-basis: 25px;
   padding: 10px;
 }
-.logo {
-  width: 80px;
-  margin-bottom: 30px;
-}
 .col h3 {
   width: fit-content;
   margin-bottom: 40px;
@@ -185,6 +181,7 @@ form input {
 col .p {
   font-size: 10px;
 }
+
 .toggle-mode {
   position: absolute;
   top: 10px;
