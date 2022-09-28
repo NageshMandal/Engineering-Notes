@@ -24,11 +24,12 @@ nav ul {
 nav ul li {
   display: inline-block;
   margin-right: 20px;
+  font-size: 17px;
+  padding: 10px;
 }
-
 a {
   text-decoration: none;
-  color: #555;
+  color: rgb(64, 64, 64);
 }
 p {
   color: #555;
@@ -67,6 +68,9 @@ p {
   margin-top: 20px;
   border-radius: 30px;
   transition: 0.5s;
+}
+.col-2 .btn{
+  margin-top: 170px;
 }
 .btn:hover {
   background: #29a423;
