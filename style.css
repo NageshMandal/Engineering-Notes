@@ -70,7 +70,7 @@ p {
   background: #ff523b;
   color: #fff;
   padding: 8px 30px;
-  margin-left: 100px;
+  margin-left: 20%px;
   margin-top: 20px;
   border-radius: 30px;
   transition: 0.5s;
@@ -93,6 +93,7 @@ p {
   margin: 70px 0;
 }
 .col-3 {
+  text-align:center;
   flex-basis: 30%;
   min-width: width 250px;
   margin-bottom: 30px;
@@ -213,6 +214,13 @@ col .p {
 .sun {
   display: none;
 }
+.dis{
+  text-align:left;
+  font-size: 13px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+}
 
 /*? dark mode */
 
@@ -228,6 +236,9 @@ col .p {
 @media screen and (max-width: 580px){
   .btn{
     margin-left: 28px;
+  }
+  .dis{
+    font-size: 8px;
   }
 }
 @media screen and (max-width: 360px){
