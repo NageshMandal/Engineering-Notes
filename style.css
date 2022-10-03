@@ -76,15 +76,16 @@ p {
   transition: 0.5s;
 }
 .col-2 .btn{
-  margin-top: 110px;
+  margin-top: 70px;
 }
 .btn:hover {
   background: #29a423;
-  transform: scaleX(1.1);
+  transform: scaleX(2);
   transform: scaley(1.1);
+  box-shadow: 2px 2px 20px rgb(49, 49, 49);
 }
 .header {
-  background: radial-gradient(#fff, rgb(247, 196, 196));
+  background: radial-gradient(#fff, rgb(255, 191, 191));
 }
 .header .row {
   margin-top: 70px;
@@ -123,6 +124,8 @@ p {
   margin: 0 auto 80px;
   position: relative;
   line-height: 60px;
+  padding-top: 20px;
+  font-size: 25px;
   color: rgb(54, 53, 53);
 }
 .title::after {
@@ -221,6 +224,47 @@ col .p {
   padding-bottom: 30px;
   
 }
+.dev {
+  text-align: center;
+}
+.contact{
+  background-color: rgb(255, 255, 255);
+  border-radius: 40px;
+  margin-top: 10px;
+}
+.contact a h4{
+  font-size: 13px;
+  text-align: center;
+  color: black;
+}
+.contact:hover{
+  background-color: #00b017;
+}
+.branchimg{
+  box-shadow: 8px 8px 8px#1c2020;
+}
+.students{
+  filter: drop-shadow(10px 10px 10px rgb(60, 60, 60));
+}
+.far{
+  margin-right: 10px;
+}
+.emailid{
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 4px;
+  margin-right: 5px;
+}
+.fa-brands{
+  font-size: 25px;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+.fa-brands:hover{
+  color: rgb(0, 162, 255);
+}
+.insta:hover{
+  color: rgb(255, 0, 43);
+}
 
 /*? dark mode */
 
@@ -240,9 +284,20 @@ col .p {
   .dis{
     font-size: 8px;
   }
+  nav ul li{
+    font-size: 13px;
+    font-weight:bolder;
+  }
+  .para{
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 360px){
   .btn{
     margin-left:5px;
+  }
+  nav ul li{
+    font-size: 15px;
+    font-weight: bolder;
   }
 }
