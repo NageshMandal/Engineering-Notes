@@ -17,9 +17,9 @@
 <body>
     <div class="header">
         <div class="container">
-            <div class="nevbar">
+            <div class="navbar">
                 <div class="logo">
-                    <a href="/index.html"> <img src="images/logo1.png" width="200px"></a>
+                    <a href="#"> <img src="images/logo1.png" width="200px"></a>
                 </div>
                 <nav>
                     <ul>
@@ -31,6 +31,7 @@
                         <li><a class="nav-link" href="https://www.chaibasaengg.edu.in/Contact/admission_cell">Contact</a></li>
                         <a href="#"><i class="mic fa-solid fa-microphone"></i></a>
                         <img src="./images/GS20.gif" alt="google" class="google">
+    
                     </ul>
                 </nav>
             </div>
@@ -121,9 +122,9 @@
 </div>      
         <footer>
             <div class="row">
-                <div class="col">
+                <div class="col" id="pic" >
                     <img src="images/nagesh.png" width="80px">
-                    <p><h5>Nagesh_Mandal</h5></p>
+                    <h5>Nagesh_Mandal</h5>
                     <p class="dev">Full Stack Web Developer</p>
                     <div class="contact">
                         <a href="https://www.instagram.com/nagesh_mandal7_5_/"><h4>Contact</h4></a>
@@ -136,7 +137,7 @@
                     <p class="email-id">cordinatortigjh@gmail.com</p>
                     <h4>+91 - 9062941530</h4>
                 </div>
-                <div class="col">
+                <div class="col" id="link">
                     <h3>Links</h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -148,9 +149,9 @@
                 </div>
                 <div class="col">
                     <h3>Newsletter</h3>
-                    <form>
-                         <i class="far fa-envelope"></i>
-                        <input class="emailid" type="email" placeholder="--enter your email id-- " required>
+                    <form class="form-news">
+                        <i class="far fa-envelope"></i>
+                        <input class="emailid" type="email" placeholder="Enter your email" required>
                         <button type="submit"><i class="fas fa-arrow-right"></i></button>
                     </form>
                     <div class="social-media">
@@ -162,16 +163,15 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="texts">
-                </div>
+
+
+            <div class="toggle-mode">
+                <img class="moon" data-set="sun" src="images/moon.png" alt="dark-mode">
+                <img class="sun"  data-set="moon" src="images/sun.png"  alt="light-mode">
             </div>
+            
         </footer>
 
-        <div class="toggle-mode">
-            <img class="moon" data-set="sun" src="images/moon.png" alt="dark-mode">
-            <img class="sun"  data-set="moon" src="images/sun.png"  alt="light-mode">
-        </div>
 
     <script src="script.js"></script>
     <script src="app.js"></script>

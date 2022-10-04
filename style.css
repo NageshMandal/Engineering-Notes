@@ -204,25 +204,45 @@ ul li a:hover {
   color: #ff523b;
 }
 form {
-  padding-bottom: 10%;
+  padding-bottom: 5%;
+  padding-left: 10px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 form .far {
-  font-size: 18px;
+  font-size: 38px;
+
 }
+
+
+.col ul>li{
+  width: 200px;
+}
+
+button  .submit{
+  border-radius: 15px;
+}
+form button>i{
+  padding: 8px;
+  border-radius: 10px;
+}
+
 form input {
   background: transparent;
   color: #ccc;
+  width: 200px;
+  padding: 8px;
   border: 0;
   outline: none;
 }
-col .p {
+.col .p {
   font-size: 10px;
 }
+
+
 
 .toggle-mode {
   position: absolute;
@@ -241,7 +261,7 @@ col .p {
 }
 
 .sun {
-  display: none;
+  display: hidden;
 }
 .dis{
   text-align:left;
@@ -250,8 +270,25 @@ col .p {
   padding-bottom: 30px;
   
 }
-.dev {
+#pic{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
+  max-width: 200px;
+}
+#pic>.dev{
+  padding: 10px 0;
+}
+
+.contact{
+  width: 100%;
+  padding: 5px;
+}
+
+.dev {
+  width: 200px;
 }
 .contact{
   background-color: rgb(255, 255, 255);
