@@ -315,3 +315,25 @@ col .p {
     font-weight: bolder;
     }
 }
+.mic{
+  color: black;
+  text-align: right;
+  padding-right:8px;
+  padding-left: 8px;
+  padding-top: 5px;
+  padding-bottom:5px;
+  border-radius: 50px;
+  margin-right: 10px;
+  font-size: 20px;
+  background-color: rgb(0, 213, 255);
+}
+.mic:hover {
+  background: #17d00e;
+  box-shadow: 2px 2px 20px rgb(49, 49, 49);
+}
+.google{
+  margin-right: 10px;
+  width: 45px;
+}
+
+
