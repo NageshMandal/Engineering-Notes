@@ -7,20 +7,6 @@ const paragraph = document.querySelector("p");
 const links = document.querySelectorAll(".nav-link");
 const title = document.querySelectorAll("h2");
 
-if (localStorage.getItem("dark-mode") == "true") {
-  body.classList.add("dark-mode");
-  header.classList.add("header-dark-mode");
-  paragraph.classList.add("header-dark-mode");
-  links.forEach(function (e) {
-    e.classList.add("header-dark-mode");
-  });
-  document.querySelector(`.sun`).style.display = "inline-block";
-  document.querySelector(`.moon`).style.display = "none";
-  title.forEach(function (e) {
-    e.classList.add("dark-mode");
-  });
-}
-
 toggle.addEventListener("click", function (e) {
   const nextIcon = e.target.getAttribute("data-set");
   e.target.style.display = "none";
@@ -37,7 +23,6 @@ toggle.addEventListener("click", function (e) {
     title.forEach(function (e) {
       e.classList.add("dark-mode");
     });
-    localStorage.setItem("dark-mode", true);
   } else {
     body.classList.remove("dark-mode");
     header.classList.remove("header-dark-mode");
@@ -49,6 +34,5 @@ toggle.addEventListener("click", function (e) {
     title.forEach(function (e) {
       e.classList.remove("dark-mode");
     });
-    localStorage.setItem("dark-mode", false);
   }
 });
