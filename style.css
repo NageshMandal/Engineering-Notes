@@ -292,7 +292,7 @@ col .p {
     font-size: 15px;
   }
 }
-@media screen and (max-width: 360px){
+@media screen and (max-width: 340px){
   .btn{
     margin-left:5px;
   }
