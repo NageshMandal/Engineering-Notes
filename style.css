@@ -8,6 +8,29 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/*Gradient scroll bar  */
+body::-webkit-scrollbar {
+  width: 11px;
+}
+.card:hover {
+  background-color: rgb(132, 94, 144);
+  transform: scale(1.1);
+}
+
+body::-webkit-scrollbar-track {
+  background:  linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgb(0, 35, 211) 70%);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: transparent;
+  box-shadow: 0px 0px 0px 100000vh rgb(45, 42, 42);
+    border-radius: 8px;
+}
+.box {
+  box-shadow: 0px 0px 4px ??? black;
+}
+
+
 .navbar {
   display: flex;
   align-items: center;
@@ -176,6 +199,9 @@ ul li {
 ul li a {
   text-decoration: none;
   color: rgb(87, 81, 81);
+}
+ul li a:hover {
+  color: #ff523b;
 }
 form {
   padding-bottom: 10%;
