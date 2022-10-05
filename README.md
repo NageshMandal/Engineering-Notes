@@ -9,6 +9,7 @@ can contribute.
 1. Star the repository⭐
 2. Fork the repository 🍴
 3. Clone your forked copy of the project🌀
+
 `Git clone https://github.com/your_username/Engineering-Notes-Website.git`
 
 4. Navigate to the project directory.
@@ -30,5 +31,5 @@ can contribute.
 9. Create a ` PR`
 ## Help
 
-If you have any issu, please reach out to me at evergreennageshmandal@gmail.com
+If you have any issue, please reach out to me at evergreennageshmandal@gmail.com
 
