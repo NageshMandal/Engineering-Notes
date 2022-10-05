@@ -1,3 +1,5 @@
+//! voice assistent
+
 const texts = document.querySelector(".texts");
 
 window.SpeechRecognition =  window.SpeechRecognition || window.webkitSpeechRecognition;
