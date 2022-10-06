@@ -186,7 +186,7 @@ footer {
 }
 
 .col1 h5{
-  color: #F2BB7B;
+  color: #ff523b;
   font-size: 20px;
   font-weight: bolder;
 }
@@ -204,11 +204,11 @@ footer {
   margin: 20px 0;
 }
 .col2 h4{
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 100;
 }
 .col p{
   font-size: 16px;
-  font-weight: bold;
 }
 .col2{
   width: 40%;
@@ -227,7 +227,6 @@ footer {
 .col3 ul li a{
   font-size: 20px;
   color:  white;
-  font-weight: bold;
 }
 .col3 ul li a:hover{
   color: black;
@@ -354,7 +353,7 @@ form input {
 }
 
 .contact{
-  background-color: black;
+  background-color: #ff523b;
   border-radius: 20px;
   margin-top: 10px;
 }
