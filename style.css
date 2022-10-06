@@ -465,6 +465,14 @@ form input {
     padding-right:5px;
   }
 }
+
+@media screen and (max-width: 450px){
+  .mic{
+    display: block;
+    margin-left: 230px;
+  }
+}
+
 .myname{
   width: 180px;
   
