@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CEC </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https//stackpath.bootsstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+    <script src="https://kit.fontawesome.com/739255457e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="header">
     <div class="container">
-        <div class="nevbar">
+        <div class="navbar">
             <div class="logo">
                 <a href="https://nageshmandal.github.io/Engineering-Notes-Website/"> <img src="branches/logo1.png" width="200px"></a>
             </div>
@@ -52,41 +54,60 @@
 
     <footer>
         <div class="row">
-            <div class="col">
-                <img src="" class="">
-                <p>
-                   fdahdadhadh 
-                </p>
+            <div class="col col1" id="pic" >
+                <img src="/images/nagesh.png" width="80px">
+                <div class="myname">
+                    <h5>Nagesh Mandal</h5>
+                </div>
+                <p class="dev">Full Stack Web Developer</p>
+                <div class="contact">
+                    <a href="https://www.instagram.com/nagesh_mandal7_5_/"><h4>Contact</h4></a>
+                </div>
             </div>
-            <div class="col">
+            <div class="col col2">
                 <h3>Chaibasa Engineering College</h3>
-                <p>Jamshedpur Keonjhar Highway</p>
+                <p>Jamshedpur Keonjhar Highway</p> 
                 <p>Chaibasa Jharkhand PIN 833215, India</p>
                 <p class="email-id">cordinatortigjh@gmail.com</p>
                 <h4>+91 - 9062941530</h4>
             </div>
-            <div class="col">
+            <div class="col col3" id="link">
                 <h3>Links</h3>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">About us</a></li>
-                    <li><a href="">Features</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://www.chaibasaengg.edu.in">Services</a></li>
+                    <li><a href="https://www.chaibasaengg.edu.in/About/about">About us</a></li>
+                    <li><a href="https://www.chaibasaengg.edu.in/Research/projects">Features</a></li>
+                    <li><a href="https://www.chaibasaengg.edu.in/Contact/admission_cell">Contact</a></li>
                 </ul>
             </div>
-            <div class="col">
-                <h3>Newsletter</h3>
-                <form>
-                     <i class="far fa-envelope"></i>
-                    <input type="email" placeholder="enter your email id " required>
+            <div class="col col4">
+                <h3>News<span>letter</span></h3>
+                <form class="form-news">
+                    <i class="far fa-envelope"></i>
+                    <input class="emailid" type="email" placeholder="Enter your email" required>
                     <button type="submit"><i class="fas fa-arrow-right"></i></button>
                 </form>
+                <div class="social-media">
+                    <i class="tweet fa-brands fa-twitter"></i>
+                    <i class="insta fa-brands fa-instagram"></i>
+                    <i class="git fa-brands fab fa-github"></i>
+                    <i class="in fa-brands fa-linkedin"></i>
+                    <i class="tele fa-brands fa-telegram"></i>
+                </div>
             </div>
         </div>
-    </footer>
-
+        <!--Voice Assistent-->
+        <div class="containers">
+            <div class="texts">
+            </div>
         </div>
+        <!--Voice assistent end-->
+        <div class="toggle-mode">
+            <img class="moon" data-set="sun" src="images/moon.png" alt="dark-mode">
+            <img class="sun"  data-set="moon" src="images/sun.png"  alt="light-mode">
+        </div>
+        
     </footer>
 
     <div class="toggle-mode">
