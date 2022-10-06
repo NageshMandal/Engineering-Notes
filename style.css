@@ -61,7 +61,7 @@ a {
   color: rgb(64, 64, 64);
 }
 p {
-  color: #555;
+  color: white;
 }
 .container {
   max-width: 1300px;
@@ -165,8 +165,8 @@ p {
 footer {
   width: 100%;
   bottom: 0;
-  /* background: linear-gradient(to right, #00093c, #2d0b00); */
-  background-image: linear-gradient(to right, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000);
+  background:  #192734;
+  /* background-image: linear-gradient(to right, #DECBA4, #3E5151); */
   color: #fff;
   padding: 8px;
   font-size: 13px;
@@ -186,7 +186,7 @@ footer {
 }
 
 .col1 h5{
-  color: black;
+  color: #F2BB7B;
   font-size: 20px;
   font-weight: bolder;
 }
@@ -204,7 +204,6 @@ footer {
   margin: 20px 0;
 }
 .col2 h4{
-  color: black;
   font-size: 20px;
 }
 .col p{
@@ -216,7 +215,7 @@ footer {
   margin-left: -80px;
 }
 .col h3{
-  color: #000000;
+  color: #ff523b;
   font-size: 20px;
   font-weight: 900;
   text-align: justify center;
@@ -227,11 +226,11 @@ footer {
 }
 .col3 ul li a{
   font-size: 20px;
-  color:  #4C4E52;
+  color:  white;
   font-weight: bold;
 }
 .col3 ul li a:hover{
-  color: white;
+  color: black;
   font-size: 25px;
 }
 .col4{
@@ -268,7 +267,6 @@ form .far {
   font-size: 38px;
 
 }
-
 
 .col ul>li{
   width: 120px;
