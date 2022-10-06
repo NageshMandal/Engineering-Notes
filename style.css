@@ -469,6 +469,9 @@ form input {
   width: 180px;
   
 }
+.container{
+  display: none;
+}
 .mic{
   color: black;
   text-align: right;
