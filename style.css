@@ -27,7 +27,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 8px;
 }
 .box {
-  box-shadow: 0px 0px 4px ??? black;
+  box-shadow: 0px 0px 4px black;
 }
 
 
@@ -432,8 +432,9 @@ form input {
   nav ul li {
     display: none;
   }
-  .fa-solid{
-    display: none;
+  .mic{
+    display: block;
+    margin-left: 230px;
   }
   .google{
     display: none;
@@ -465,6 +466,7 @@ form input {
     padding-right:5px;
   }
 }
+
 .myname{
   width: 180px;
   
