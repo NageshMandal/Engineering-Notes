@@ -165,7 +165,8 @@ p {
 footer {
   width: 100%;
   bottom: 0;
-  background: linear-gradient(to right, #00093c, #2d0b00);
+  /* background: linear-gradient(to right, #00093c, #2d0b00); */
+  background-image: linear-gradient(to right, #ffffff, #b9b9b9, #777777, #3b3b3b, #000000);
   color: #fff;
   padding: 8px;
   font-size: 13px;
@@ -181,6 +182,17 @@ footer {
 .col {
   flex-basis: 25px;
   padding: 10px;
+  margin: 30px;
+}
+
+.col1 h5{
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.dev{
+  font-size: 16px;
+  font-weight: bold;
 }
 .col h3 {
   width: fit-content;
@@ -189,8 +201,48 @@ footer {
 }
 .email-id {
   width: fit-content;
-  border-bottom: 1px solid #ccc;
   margin: 20px 0;
+}
+.col2 h4{
+  color: black;
+  font-size: 20px;
+}
+.col p{
+  font-size: 16px;
+  font-weight: bold;
+}
+.col2{
+  width: 40%;
+  margin-left: -80px;
+}
+.col h3{
+  color: #000000;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: justify center;
+  margin-bottom: 20px;
+}
+.col3{
+  margin-left: -120px;
+}
+.col3 ul li a{
+  font-size: 20px;
+  color:  #4C4E52;
+  font-weight: bold;
+}
+.col3 ul li a:hover{
+  color: white;
+  font-size: 25px;
+}
+.col4{
+  margin-left: -50px;
+  margin-right: 100px;
+  margin-top: 60px;
+}
+.col4 h3{
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
 }
 ul li {
   list-style: none;
@@ -219,7 +271,7 @@ form .far {
 
 
 .col ul>li{
-  width: 200px;
+  width: 120px;
 }
 
 button  .submit{
@@ -238,11 +290,27 @@ form input {
   border: 0;
   outline: none;
 }
-.col .p {
-  font-size: 10px;
+
+.form-news{
+  margin-bottom: 30px;
 }
-
-
+.social-media{
+  text-align: center;
+}
+.social-media i{
+  border: 1px solid gray;
+  width: 45px;
+  height: 38px;
+  padding-top: 7px;
+  margin-right: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #d3d3d3;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
 
 .toggle-mode {
   position: absolute;
@@ -283,26 +351,24 @@ form input {
 }
 
 .contact{
-  width: 100%;
+  width: 70%;
   padding: 5px;
 }
 
-.dev {
-  width: 200px;
-}
 .contact{
-  background-color: rgb(255, 255, 255);
-  border-radius: 40px;
+  background-color: black;
+  border-radius: 20px;
   margin-top: 10px;
 }
 .contact a h4{
-  font-size: 13px;
+  font-size: 16px;
   text-align: center;
-  color: black;
+  color: white;
 }
-.contact:hover{
-  background-color: #00b017;
+.contact a h4:hover{
+  font-size: 18px;
 }
+
 .branchimg{
   box-shadow: 8px 8px 8px#1c2020;
 }
@@ -322,13 +388,22 @@ form input {
   padding-right: 8px;
   padding-left: 8px;
 }
-.fa-brands:hover{
-  color: rgb(0, 162, 255);
+.tweet:hover{
+  color: #00B6F1;;
 }
 .insta:hover{
-  color: rgb(255, 0, 43);
+  color:  rgb(255, 0, 43);
 }
+.git:hover{
+  color: #040204;
+}
+.in:hover{
+ color: #04669A;
+}
+.tele:hover{
+  color:  #0088cc;
 
+}
 /*? dark mode */
 
 .dark-mode {
