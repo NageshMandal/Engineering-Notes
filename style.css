@@ -55,7 +55,9 @@ nav ul li {
 }
 .para{
   max-width: 500px;
+  font-family:"Poppins", sans-serif;
 }
+
 a {
   text-decoration: none;
   color: rgb(64, 64, 64);
@@ -326,7 +328,7 @@ form input {
 }
 
 .sun {
-  display: hidden;
+  display: none;
 }
 .dis{
   text-align:left;
@@ -353,6 +355,7 @@ form input {
 }
 
 .contact{
+  padding-right:5px;
   background-color: #ff523b;
   border-radius: 20px;
   margin-top: 10px;
@@ -422,7 +425,49 @@ form input {
   nav ul li{
     font-size: 13px;
     font-weight: bolder;
-    }
+  }
+  .logo{
+    width: 50px;
+  }
+  nav ul li {
+    display: none;
+  }
+  .mic{
+    display: none;
+  }
+  .google{
+    display: none;
+  }
+  .para{
+    text-align: center;
+    padding-left: 20px;
+    font-size: 13px;
+  }
+  .explore{
+    margin-left:25%;
+  }
+  .students{
+    margin-bottom:none;
+  }
+  .col-2 h1{
+    text-align: center;
+  }
+  #pic p{
+    text-align: left;
+  }
+  #pic h5{
+    margin-right: 20px;
+  }
+  .col{
+    margin-left:5%;
+  }
+  .contact{
+    padding-right:5px;
+  }
+}
+.myname{
+  width: 180px;
+  
 }
 .mic{
   color: black;

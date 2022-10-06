@@ -6,6 +6,7 @@ const body = document.querySelector("body");
 const paragraph = document.querySelector("p");
 const links = document.querySelectorAll(".nav-link");
 const title = document.querySelectorAll("h2");
+const para = document.querySelectorAll(".para");
 
 if (localStorage.getItem("dark-mode") == "true") {
   body.classList.add("dark-mode");
