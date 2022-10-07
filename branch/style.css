@@ -8,33 +8,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/*Gradient scroll bar  */
-body::-webkit-scrollbar {
-  width: 11px;
-}
-.card:hover {
-  background-color: rgb(132, 94, 144);
-  transform: scale(1.1);
-}
-
-body::-webkit-scrollbar-track {
-  background:  linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgb(0, 35, 211) 70%);
-}
-
-body::-webkit-scrollbar-thumb {
-  background: transparent;
-  box-shadow: 0px 0px 0px 100000vh rgb(45, 42, 42);
-    border-radius: 8px;
-}
-.box {
-  box-shadow: 0px 0px 4px black;
-}
-
-
 .navbar {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 30px;
 }
 nav {
   flex: 1;
@@ -46,24 +23,17 @@ nav ul {
 }
 nav ul li {
   display: inline-block;
-  margin-right: 20px;
-  font-size: 17px;
-  padding: 10px;
+  margin-left: 20px;
 }
-.col-2 p{
-  text-align: left;
+ul li a:hover {
+  color: #ff523b;
 }
-.para{
-  max-width: 500px;
-  font-family:"Poppins", sans-serif;
-}
-
 a {
   text-decoration: none;
-  color: rgb(64, 64, 64);
+  color: #555;
 }
 p {
-  color: white;
+  color: #555;
 }
 .container {
   max-width: 1300px;
@@ -95,22 +65,15 @@ p {
   background: #ff523b;
   color: #fff;
   padding: 8px 30px;
-  margin-left: 20%px;
-  margin-top: 20px;
+  margin: 30px 0;
   border-radius: 30px;
-  transition: 0.5s;
-}
-.col-2 .btn{
-  margin-top: 70px;
+  transition: background 0.5s;
 }
 .btn:hover {
-  background: #29a423;
-  transform: scaleX(2);
-  transform: scaley(1.1);
-  box-shadow: 2px 2px 20px rgb(49, 49, 49);
+  background: #563434;
 }
 .header {
-  background: radial-gradient(#fff, rgb(255, 191, 191));
+  background: radial-gradient(#fff, rgb(247, 196, 196));
 }
 .header .row {
   margin-top: 70px;
@@ -119,12 +82,9 @@ p {
   margin: 70px 0;
 }
 .col-3 {
-  text-align:center;
   flex-basis: 30%;
-  min-width: width 250px;
+  min-width: 250px;
   margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .col-3 img {
   width: 100%;
@@ -149,8 +109,6 @@ p {
   margin: 0 auto 80px;
   position: relative;
   line-height: 60px;
-  padding-top: 20px;
-  font-size: 25px;
   color: rgb(54, 53, 53);
 }
 .title::after {
@@ -164,13 +122,13 @@ p {
   left: 50%;
   transition: tra;
 }
+
 footer {
   width: 100%;
   bottom: 0;
-  background:  #192734;
-  /* background-image: linear-gradient(to right, #DECBA4, #3E5151); */
+  background: linear-gradient(to right, #00093c, #2d0b00);
   color: #fff;
-  padding: 8px;
+  padding: 2px;
   font-size: 13px;
   line-height: 20px;
 }
@@ -184,17 +142,10 @@ footer {
 .col {
   flex-basis: 25px;
   padding: 10px;
-  margin: 30px;
 }
-
-.col1 h5{
-  color: #ff523b;
-  font-size: 20px;
-  font-weight: bolder;
-}
-.dev{
-  font-size: 16px;
-  font-weight: bold;
+.logo {
+  width: 80px;
+  margin-bottom: 30px;
 }
 .col h3 {
   width: fit-content;
@@ -203,46 +154,8 @@ footer {
 }
 .email-id {
   width: fit-content;
+  border-bottom: 1px solid #ccc;
   margin: 20px 0;
-}
-.col2 h4{
-  font-size: 16px;
-  font-weight: 100;
-}
-.col p{
-  font-size: 16px;
-}
-.col2{
-  width: 40%;
-  margin-left: -80px;
-}
-.col h3{
-  color: #ff523b;
-  font-size: 20px;
-  font-weight: 900;
-  text-align: justify center;
-  margin-bottom: 20px;
-}
-.col3{
-  margin-left: -120px;
-}
-.col3 ul li a{
-  font-size: 20px;
-  color:  white;
-}
-.col3 ul li a:hover{
-  color: black;
-  font-size: 25px;
-}
-.col4{
-  margin-left: -50px;
-  margin-right: 100px;
-  margin-top: 60px;
-}
-.col4 h3{
-  margin-bottom: 20px;
-  font-size: 30px;
-  font-weight: bold;
 }
 ul li {
   list-style: none;
@@ -252,63 +165,22 @@ ul li a {
   text-decoration: none;
   color: rgb(87, 81, 81);
 }
-ul li a:hover {
-  color: #ff523b;
-}
 form {
-  padding-bottom: 5%;
-  padding-left: 10px;
+  padding-bottom: 10%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 70px;
+  margin-bottom: 100px;
 }
 form .far {
-  font-size: 38px;
-
+  font-size: 18px;
 }
-
-.col ul>li{
-  width: 120px;
-}
-
-button  .submit{
-  border-radius: 15px;
-}
-form button>i{
-  padding: 8px;
-  border-radius: 10px;
-}
-
 form input {
   background: transparent;
   color: #ccc;
-  width: 200px;
-  padding: 8px;
   border: 0;
   outline: none;
-}
-
-.form-news{
-  margin-bottom: 30px;
-}
-.social-media{
-  text-align: center;
-}
-.social-media i{
-  border: 1px solid gray;
-  width: 45px;
-  height: 38px;
-  padding-top: 7px;
-  margin-right: 5px;
-  text-align: center;
-  display: inline-block;
-  font-size: 1.5em;
-  text-decoration: none;
-  color: #d3d3d3;
-  border-radius: 5px;
-  transition: all 0.3s;
 }
 
 .toggle-mode {
@@ -318,10 +190,7 @@ form input {
   width: 35px;
   height: 35px;
   cursor: pointer;
-  /* border: 1px solid red; */
-  /* cursor: pointer; */
 }
-
 .toggle-mode > img {
   width: 35px;
   height: 35px;
@@ -330,80 +199,7 @@ form input {
 .sun {
   display: none;
 }
-.dis{
-  text-align:left;
-  font-size: 13px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  
-}
-#pic{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  max-width: 200px;
-}
-#pic>.dev{
-  padding: 10px 0;
-}
 
-.contact{
-  width: 70%;
-  padding: 5px;
-}
-
-.contact{
-  padding-right:5px;
-  background-color: #ff523b;
-  border-radius: 20px;
-  margin-top: 10px;
-}
-.contact a h4{
-  font-size: 16px;
-  text-align: center;
-  color: white;
-}
-.contact a h4:hover{
-  font-size: 18px;
-}
-
-.branchimg{
-  box-shadow: 8px 8px 8px#1c2020;
-}
-.students{
-  filter: drop-shadow(10px 10px 10px rgb(60, 60, 60));
-}
-.far{
-  margin-right: 10px;
-}
-.emailid{
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 4px;
-  margin-right: 5px;
-}
-.fa-brands{
-  font-size: 25px;
-  padding-right: 8px;
-  padding-left: 8px;
-}
-.tweet:hover{
-  color: #00B6F1;;
-}
-.insta:hover{
-  color:  rgb(255, 0, 43);
-}
-.git:hover{
-  color: #040204;
-}
-.in:hover{
- color: #04669A;
-}
-.tele:hover{
-  color:  #0088cc;
-
-}
 /*? dark mode */
 
 .dark-mode {
@@ -415,84 +211,3 @@ form input {
   background: #1c2020;
   color: #f5f5f5;
 }
-@media screen and (max-width: 640px){
-  .row{
-    display: inline;
-  }
-  nav{
-    text-align: center;
-  }
-  nav ul li{
-    font-size: 13px;
-    font-weight: bolder;
-  }
-  .logo{
-    width: 50px;
-  }
-  nav ul li {
-    display: none;
-  }
-  .mic{
-    display: block;
-    margin-left: 230px;
-  }
-  .google{
-    display: none;
-  }
-  .para{
-    text-align: center;
-    padding-left: 20px;
-    font-size: 13px;
-  }
-  .explore{
-    margin-left:25%;
-  }
-  .students{
-    margin-bottom:none;
-  }
-  .col-2 h1{
-    text-align: center;
-  }
-  #pic p{
-    text-align: left;
-  }
-  #pic h5{
-    margin-right: 20px;
-  }
-  .col{
-    margin-left:5%;
-  }
-  .contact{
-    padding-right:5px;
-  }
-}
-
-.myname{
-  width: 180px;
-  
-}
-.containers{
-  display: none;
-}
-.mic{
-  color: black;
-  text-align: right;
-  padding-right:8px;
-  padding-left: 8px;
-  padding-top: 5px;
-  padding-bottom:5px;
-  border-radius: 50px;
-  margin-right: 10px;
-  font-size: 20px;
-  background-color: rgb(0, 213, 255);
-}
-.mic:hover {
-  background: #17d00e;
-  box-shadow: 2px 2px 20px rgb(49, 49, 49);
-}
-.google{
-  margin-right: 10px;
-  width: 45px;
-}
-
-
