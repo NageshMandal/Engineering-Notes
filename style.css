@@ -495,4 +495,9 @@ form input {
   width: 45px;
 }
 
+.title{
+  border-style: solid;
+  border: #ff523b;
+  background-color: #d7fed5;
+}
 
