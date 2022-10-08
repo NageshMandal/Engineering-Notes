@@ -496,7 +496,7 @@ form input {
 }
 #sub-m{
   font-size:30px;
-  margin-left: 22%;
+  margin-left: 35%;
   background-color:#ff523b;
   color: #ffffff;
   padding-left: 30px;
@@ -508,7 +508,7 @@ form input {
 }
 #sub-c{
   font-size:30px;
-  margin-left: 27%;
+  margin-left: 37.7%;
   background-color:#ff523b;
   color: #ffffff;
   padding-left: 30px;
@@ -520,7 +520,7 @@ form input {
 }
 #sub-p{
   font-size:30px;
-  margin-left: 32%;
+  margin-left: 40%;
   background-color:#ff523b;
   color: #ffffff;
   padding-left: 30px;
@@ -546,10 +546,16 @@ form input {
   border-radius: 30px;
 }
 .list ul li a:hover{
-  background-color: rgb(0, 59, 137);
+  
+  color: #000000;
+  background-color: rgb(30, 181, 0);
+  box-shadow: 2px 2px 20px rgb(49, 49, 49);
+  font-weight: bold;
+  transform: scaleX(2);
+  transform: scaley(1.1);
 }
 .list ul{
-  margin-left: 35%;
+  margin-left: 41%;
 }
 .download{
   margin-top: 40px;
