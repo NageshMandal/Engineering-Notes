@@ -546,7 +546,7 @@ form input {
 .list ul li a:hover{
   
   color: #000000;
-  background-color: rgb(30, 181, 0);
+  background-color: rgb(38, 230, 0);
   box-shadow: 2px 2px 20px rgb(49, 49, 49);
   font-weight: bold;
   transform: scaleX(2);
