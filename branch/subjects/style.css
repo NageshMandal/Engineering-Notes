@@ -491,9 +491,9 @@ form input {
   margin-right: 10px;
   width: 45px;
 }
-.col--2 .headline{
-  color:#ff523b;
+.col--2 h1{
   font-size: 50px;
+  padding-top: 30px;
 }
 #sub-m{
   font-size:30px;
@@ -529,7 +529,7 @@ form input {
   
 }
 .sub-m{
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 20px;
 
 }
@@ -553,7 +553,8 @@ form input {
   transform: scaley(1.1);
 }
 .list ul{
-  margin-left: 20px;
+  margin-left: 50px;
+  margin-bottom: 50px;
 }
 .download{
   margin-top: 40px;
