@@ -492,11 +492,11 @@ form input {
   width: 45px;
 }
 .col--2 .headline{
+  color:#ff523b;
   font-size: 50px;
 }
 #sub-m{
   font-size:30px;
-  margin-left: 35%;
   background-color:#ff523b;
   color: #ffffff;
   padding-left: 30px;
@@ -508,11 +508,10 @@ form input {
 }
 #sub-c{
   font-size:30px;
-  margin-left: 37.7%;
   background-color:#ff523b;
   color: #ffffff;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 40px;
@@ -520,11 +519,10 @@ form input {
 }
 #sub-p{
   font-size:30px;
-  margin-left: 40%;
   background-color:#ff523b;
   color: #ffffff;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 70px;
+  padding-right: 70px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 40px;
@@ -555,7 +553,7 @@ form input {
   transform: scaley(1.1);
 }
 .list ul{
-  margin-left: 41%;
+  margin-left: 20px;
 }
 .download{
   margin-top: 40px;
