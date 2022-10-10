@@ -496,3 +496,35 @@ form input {
 }
 
 
+.contributer p{
+  color: #000;
+}
+
+.contributer{
+  margin-bottom: 5%;
+}
+
+.contributer .card{
+  background-color: #fff;
+  box-shadow: 2px 2px 20px rgb(49, 49, 49);
+  overflow: hidden;
+}
+
+.contributer .card:hover{
+  background-color: #fff;
+  transform: scale(1);
+}
+
+.contributer .card-body{
+  padding: 5%;
+  overflow: hidden;
+}
+
+.contributer img{
+  height: 250px;
+}
+
+.contributor-outside{
+  /* margin: 5%; */
+  width: 100%;
+}
