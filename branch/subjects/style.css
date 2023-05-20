@@ -74,7 +74,7 @@ p {
 .row {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-around;
 }
 .col-2 {
@@ -531,6 +531,16 @@ form input {
 .sub-m{
   margin-top: 50px;
   margin-bottom: 20px;
+  margin-right: 16px;
+  /* width: ; */
+  
+  
+}
+.sub{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
 }
 .list ul li a{
@@ -553,7 +563,7 @@ form input {
   transform: scaley(1.1);
 }
 .list ul{
-  margin-left: 50px;
+  /* margin-left: 50px; */
   margin-bottom: 50px;
 }
 .download{
