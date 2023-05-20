@@ -252,8 +252,9 @@ footer {
   color:  white;
 }
 .col3 ul li a:hover{
-  color: black;
+  color: #ff523b;
   font-size: 25px;
+  transition-duration: 0.5s;
 }
 .col4{
   margin-left: -50px;
