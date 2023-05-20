@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -82,8 +83,8 @@ p {
   min-width: 300px;
 }
 .col-2 img {
-  max-width: 100%;
-  padding: 50px 0px;
+  max-width: 90%;
+  padding: 50px 20px;
 }
 .col-2 h1 {
   font-size: 50px;
@@ -102,6 +103,7 @@ p {
 }
 .col-2 .btn{
   margin-top: 70px;
+  margin-bottom: 1rem;
 }
 .btn:hover {
   background: #29a423;
@@ -181,6 +183,7 @@ footer {
   align-items: flex-start;
   justify-content: space-between;
 }
+
 .col {
   flex-basis: 25px;
   padding: 10px;
@@ -191,6 +194,7 @@ footer {
   color: #ff523b;
   font-size: 20px;
   font-weight: bolder;
+  margin-top: 1rem;
 }
 .dev{
   font-size: 16px;
@@ -200,6 +204,7 @@ footer {
   width: fit-content;
   margin-bottom: 40px;
   position: relative;
+  line-height: 2rem;
 }
 .email-id {
   width: fit-content;
@@ -214,7 +219,8 @@ footer {
 }
 .col2{
   width: 40%;
-  margin-left: -80px;
+  /* margin-left: -80px; */
+  min-width: 240px;
 }
 .col h3{
   color: #ff523b;
@@ -224,15 +230,15 @@ footer {
   margin-bottom: 20px;
 }
 .col3{
-  margin-left: -120px;
+  /* margin-left: -120px; */
+  min-width: 12rem;
 }
 .col3 ul li a{
   font-size: 20px;
   color:  white;
 }
 .col3 ul li a:hover{
-  color: black;
-  font-size: 25px;
+  color: #ff523b;
 }
 .col4{
   margin-left: -50px;
@@ -343,7 +349,8 @@ form input {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  max-width: 200px;
+  min-width: 210px;
+  margin-right: 1rem;
 }
 #pic>.dev{
   padding: 10px 0;
@@ -421,9 +428,42 @@ form input {
   background: #1c2020;
   color: #f5f5f5;
 }
+
+@media screen and (max-width: 1166px){
+  .col4{
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 820px){
+  .col4{
+   /* margin-left: 9rem; */
+   margin-top: 2rem;
+  }
+  .col-2 img {
+    max-width: 70%;
+    padding: 45px 14px;
+}
+}
 @media screen and (max-width: 640px){
   .row{
     display: inline;
+  }
+  .col3{
+   margin: 1rem auto;
+    max-width: 40%;
+    padding-left: 0rem;
+  }
+
+ 
+  .col2{
+    /* min-width: 21rem; */
+    margin: 1rem auto;
+  }
+  .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
   }
   nav{
     text-align: center;
@@ -457,6 +497,7 @@ form input {
     margin-bottom:none;
   }
   .col-2 h1{
+    font-size: 1.5rem;
     text-align: center;
   }
   #pic p{
@@ -465,12 +506,13 @@ form input {
   #pic h5{
     margin-right: 20px;
   }
-  .col{
+  /* .col{
     margin-left:5%;
-  }
+  } */
   .contact{
     padding-right:5px;
   }
+ 
 }
 
 .myname{
@@ -500,5 +542,3 @@ form input {
   margin-right: 10px;
   width: 45px;
 }
-
-

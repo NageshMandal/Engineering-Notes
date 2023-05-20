@@ -102,6 +102,7 @@ p {
 }
 .col-2 .btn{
   margin-top: 70px;
+  margin-bottom: 2rem;
 }
 .btn:hover {
   background: #29a423;
