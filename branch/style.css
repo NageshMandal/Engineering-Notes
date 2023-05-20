@@ -453,8 +453,6 @@ form input {
     max-width: 40%;
     padding-left: 0rem;
   }
-
- 
   .col2{
     /* min-width: 21rem; */
     margin: 1rem auto;
@@ -506,9 +504,6 @@ form input {
   #pic h5{
     margin-right: 20px;
   }
-  /* .col{
-    margin-left:5%;
-  } */
   .contact{
     padding-right:5px;
   }
