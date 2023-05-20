@@ -28,6 +28,48 @@ recognition.addEventListener('result',(e)=>{
     if(text.includes("open civil")){
         window.location.replace('branch/CE.html');
     }
+    if(text.includes("Explore Now")){
+        window.location.replace('https://www.chaibasaengg.edu.in/');
+    }
+    if(text.includes("Open Computer Science Sem one 1")){
+        window.location.replace('https://code-engineering.netlify.app/branch/subjects/1st/cse.html');
+    }
+    if(text.includes("Open Computer Science Sem two 2")){
+        window.location.replace('https://code-engineering.netlify.app/branch/subjects/2nd/cse.html');
+    }
+    if(text.includes("Open Computer Science Sem three 3")){
+        window.location.replace('https://code-engineering.netlify.app/branch/subjects/3rd/cse.html');
+    }
+    if(text.includes("Open Computer Science Sem four 4")){
+        window.location.replace('https://code-engineering.netlify.app/branch/subjects/4th/cse.html');
+    }
+    if(text.includes("Open Computer Science Sem five 5")){
+        window.location.replace('https://code-engineering.netlify.app/branch/subjects/5th/cse.html');
+    }
+    if(text.includes("Open Computer Science Sem six 6")){
+        window.location.replace('https://code-engineering.netlify.app/branch/subjects/6th/cse.html');
+    }
+    if(text.includes("Open Computer Science Sem seven 7")){
+        window.location.replace('https://code-engineering.netlify.app/branch/subjects/7th/cse.html');
+    }
+    if(text.includes("Open Computer Science Sem eight 8")){
+        window.location.replace('https://code-engineering.netlify.app/branch/subjects/8th/cse.html');
+    }
+    if(text.includes("About College")){
+        window.location.replace('https://www.chaibasaengg.edu.in/About/about');
+    }
+    if(text.includes("Open gallery")){
+        window.location.replace('https://www.chaibasaengg.edu.in/Gallery/gallery');
+    }
+    if(text.includes("Show Projects ")){
+        window.location.replace('https://www.chaibasaengg.edu.in/Research/projects');
+    }
+    if(text.includes("Library")){
+        window.location.replace('https://www.chaibasaengg.edu.in/Academic/library');
+    }
+    if(text.includes("Contact")){
+        window.location.replace('https://www.chaibasaengg.edu.in/Contact/admission_cell');
+    }
 })
 
 
