@@ -122,7 +122,8 @@ p {
   transition: 0.5s;
 }
 .col-2 .btn{
-  margin-top: 70px;
+  margin-top: 32px;
+  margin-bottom: 33px;
 }
 .btn:hover {
   background: #29a423;
