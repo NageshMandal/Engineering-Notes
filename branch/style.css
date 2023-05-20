@@ -457,12 +457,6 @@ form input {
     /* min-width: 21rem; */
     margin: 1rem auto;
   }
-  .footer-link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-  }
   nav{
     text-align: center;
   }

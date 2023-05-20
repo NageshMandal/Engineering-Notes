@@ -318,7 +318,11 @@ form input {
   margin-bottom: 30px;
 }
 .social-media{
+  display: flex;
   text-align: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
 }
 .social-media i{
   border: 1px solid gray;
@@ -467,12 +471,6 @@ form input {
    .col2{
      /* min-width: 21rem; */
      margin: 1rem auto;
-   }
-   .footer-link{
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     margin: 0 auto;
    }
   nav{
     text-align: center;
