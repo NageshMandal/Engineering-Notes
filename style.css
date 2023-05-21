@@ -73,10 +73,13 @@ nav ul li {
 }
 .col-2 p{
   text-align: left;
+  line-height: 1.7;
+  color: black;
 }
 .para{
   max-width: 500px;
   font-family:"Poppins", sans-serif;
+
 }
 
 a {
@@ -89,6 +92,7 @@ p {
 .container {
   max-width: 1300px;
   margin: auto;
+  padding-bottom: 50px;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -101,6 +105,7 @@ p {
 .col-2 {
   flex-basis: 50%;
   min-width: 300px;
+  padding: 0 40px;
 }
 .col-2 img {
   max-width: 100%;
@@ -120,9 +125,12 @@ p {
   margin-top: 20px;
   border-radius: 30px;
   transition: 0.5s;
+  margin-bottom: 1rem;
 }
 .col-2 .btn{
-  margin-top: 70px;
+  margin-top: 30px;
+  margin-top: 32px;
+  margin-bottom: 33px;
 }
 .btn:hover {
   background: #29a423;
@@ -134,7 +142,7 @@ p {
   background: radial-gradient(#fff, rgb(255, 191, 191));
 }
 .header .row {
-  margin-top: 70px;
+  margin-top: 20px;
 }
 .categories {
   margin: 70px 0;
@@ -212,6 +220,7 @@ footer {
   color: #ff523b;
   font-size: 20px;
   font-weight: bolder;
+  margin-top: 1rem;
 }
 .dev{
   font-size: 16px;
@@ -221,6 +230,7 @@ footer {
   width: fit-content;
   margin-bottom: 40px;
   position: relative;
+  line-height: 2rem;
 }
 .email-id {
   width: fit-content;
@@ -238,20 +248,19 @@ footer {
   font-weight: 100;
   color: #ff523b;
 }
-
-.col2 h4:hover{
+col2 h4:hover{
   font-size: 16px;
   font-weight: 100;
   color: white;
   transition-duration: 0.7s;
 }
-
 .col p{
   font-size: 16px;
 }
 .col2{
   width: 40%;
-  margin-left: -80px;
+  /* margin-left: -80px; */
+  min-width: 240px;
 }
 .col h3{
   color: #ff523b;
@@ -261,7 +270,7 @@ footer {
   margin-bottom: 20px;
 }
 .col3{
-  margin-left: -120px;
+  min-width: 12rem;
 }
 .col3 ul li a{
   font-size: 20px;
@@ -332,7 +341,10 @@ form input {
   margin-bottom: 30px;
 }
 .social-media{
+  display: flex;
   text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .social-media i{
   border: 1px solid gray;
@@ -373,7 +385,7 @@ form input {
   font-size: 13px;
   padding-top: 30px;
   padding-bottom: 30px;
-  
+
 }
 #pic{
   display: flex;
@@ -381,7 +393,8 @@ form input {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  max-width: 200px;
+  min-width: 210px;
+  margin-right: 1rem;
 }
 #pic>.dev{
   padding: 10px 0;
@@ -442,21 +455,70 @@ form input {
   color:  #0088cc;
 
 }
+.youtube:hover{
+  color:rgb(255, 0, 0);
+}
 /*? dark mode */
 
 .dark-mode {
   background: #2c3333;
-  color: #f5f5f5;
+  color: white;
 }
 
-.header-dark-mode {
-  background: #1c2020;
-  color: #f5f5f5;
+.dark-mode .title{
+  background: #2c3333;
+  color:#bf7474
 }
+.header-dark-mode {
+
+  background: #1c2020;
+  color: #bf7474;
+}
+
+.header-dark-mode p{
+  background: #1c2020;
+  color: white;
+}
+
+@media screen and (max-width: 800px){
+  .col-2{
+    flex-basis: 100%;
+  }
+  .col-2 h1{
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .para{
+    text-align: center;
+    padding-left: 20px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 1166px){
+  .col4{
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 820px){
+  .col4{
+   /* margin-left: 9rem; */
+   margin-top: 2rem;
+  }
+}
+
 @media screen and (max-width: 640px){
   .row{
     display: inline;
   }
+  .col3{
+    margin: 1rem auto;
+     max-width: 40%;
+     padding-left: 0rem;
+   }
+   .col2{
+     /* min-width: 21rem; */
+     margin: 1rem auto;
+   }
   nav{
     text-align: center;
   }
@@ -477,19 +539,11 @@ form input {
   .google{
     display: none;
   }
-  .para{
-    text-align: center;
-    padding-left: 20px;
-    font-size: 13px;
-  }
   .explore{
     margin-left:25%;
   }
   .students{
     margin-bottom:none;
-  }
-  .col-2 h1{
-    text-align: center;
   }
   #pic p{
     text-align: left;
@@ -507,7 +561,7 @@ form input {
 
 .myname{
   width: 180px;
-  
+
 }
 .containers{
   display: none;
@@ -532,6 +586,3 @@ form input {
   margin-right: 10px;
   width: 45px;
 }
-
-
-

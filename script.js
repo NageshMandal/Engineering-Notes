@@ -31,7 +31,7 @@ const paragraph = document.querySelector("p");
 const links = document.querySelectorAll(".nav-link");
 const title = document.querySelectorAll("h2");
 const para = document.querySelectorAll(".para");
-
+const pcol = document.querySelector(".col-2 p");
 if (localStorage.getItem("dark-mode") == "true") {
   body.classList.add("dark-mode");
   header.classList.add("header-dark-mode");
@@ -55,6 +55,7 @@ toggle.addEventListener("click", function (e) {
     body.classList.add("dark-mode");
     header.classList.add("header-dark-mode");
     paragraph.classList.add("header-dark-mode");
+    pcol.style.color="white";
     links.forEach(function (e) {
       e.classList.add("header-dark-mode");
     });
@@ -67,6 +68,7 @@ toggle.addEventListener("click", function (e) {
     body.classList.remove("dark-mode");
     header.classList.remove("header-dark-mode");
     paragraph.classList.remove("header-dark-mode");
+    pcol.style.color="black";
     links.forEach(function (e) {
       e.classList.remove("header-dark-mode");
     });
