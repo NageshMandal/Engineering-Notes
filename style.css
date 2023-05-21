@@ -72,11 +72,13 @@ nav ul li {
   padding: 10px;
 }
 .col-2 p{
-  text-align: left;
+  text-align: justify;
   color: black;
   line-height: 1.7;
 }
 .para{
+  line-height: 1.7;
+  text-align: justify;
   max-width: 500px;
   font-family:"Poppins", sans-serif;
 }
@@ -560,6 +562,3 @@ form input {
   margin-right: 10px;
   width: 45px;
 }
-
-
-
