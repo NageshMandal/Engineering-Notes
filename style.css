@@ -233,7 +233,6 @@ footer {
   line-height: 2rem;
 }
 .email-id {
-  width: fit-content;
   margin: 20px 0;
 }
 .col2 h4{
@@ -242,6 +241,7 @@ footer {
 }
 .col p{
   font-size: 16px;
+  
 }
 .col2{
   width: 40%;
