@@ -77,3 +77,7 @@ toggle.addEventListener("click", function (e) {
     localStorage.setItem("dark-mode", false);
   }
 });
+function newsletterSubmit(e){
+  event.preventDefault();
+  console.log("Email Submitted for newsletter");
+}
