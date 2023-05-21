@@ -120,11 +120,9 @@ p {
   margin-top: 20px;
   border-radius: 30px;
   transition: 0.5s;
-  margin-bottom: 1rem;
 }
 .col-2 .btn{
-  margin-top: 32px;
-  margin-bottom: 33px;
+  margin-top: 70px;
 }
 .btn:hover {
   background: #29a423;
@@ -214,7 +212,6 @@ footer {
   color: #ff523b;
   font-size: 20px;
   font-weight: bolder;
-  margin-top: 1rem;
 }
 .dev{
   font-size: 16px;
@@ -224,7 +221,6 @@ footer {
   width: fit-content;
   margin-bottom: 40px;
   position: relative;
-  line-height: 2rem;
 }
 .email-id {
   width: fit-content;
@@ -255,8 +251,7 @@ footer {
 }
 .col2{
   width: 40%;
-  /* margin-left: -80px; */
-  min-width: 240px;
+  margin-left: -80px;
 }
 .col h3{
   color: #ff523b;
@@ -266,7 +261,7 @@ footer {
   margin-bottom: 20px;
 }
 .col3{
-  min-width: 12rem;
+  margin-left: -120px;
 }
 .col3 ul li a{
   font-size: 20px;
@@ -337,11 +332,7 @@ form input {
   margin-bottom: 30px;
 }
 .social-media{
-  display: flex;
   text-align: center;
-  justify-content: center;
-
-  flex-wrap: wrap;
 }
 .social-media i{
   border: 1px solid gray;
@@ -390,8 +381,7 @@ form input {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  min-width: 210px;
-  margin-right: 1rem;
+  max-width: 200px;
 }
 #pic>.dev{
   padding: 10px 0;
@@ -463,34 +453,10 @@ form input {
   background: #1c2020;
   color: #f5f5f5;
 }
-@media screen and (max-width: 1166px){
-  .col4{
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 820px){
-  .col4{
-   /* margin-left: 9rem; */
-   margin-top: 2rem;
-  }
-  .col-2 img {
-    max-width: 70%;
-    padding: 45px 14px;
-}
-}
 @media screen and (max-width: 640px){
   .row{
     display: inline;
   }
-  .col3{
-    margin: 1rem auto;
-     max-width: 40%;
-     padding-left: 0rem;
-   }
-   .col2{
-     /* min-width: 21rem; */
-     margin: 1rem auto;
-   }
   nav{
     text-align: center;
   }
