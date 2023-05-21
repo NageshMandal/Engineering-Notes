@@ -1,4 +1,4 @@
-* {
+*, module-list::part(modules__ul) {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -74,8 +74,21 @@ p {
 .row {
   display: flex;
   align-items: center;
-  /* flex-wrap: wrap; */
   justify-content: space-around;
+}
+.row-modules {
+  display: flex;
+  align-items: stretch !important;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 30px;
+  padding: 3% 0 5%;
+}
+module-list::part(modules-content) {
+  background-color: white;
+  overflow: hidden;
+  transition: max-height 0.25s ease-out;
+  margin: 0 5px;
 }
 .col-2 {
   flex-basis: 50%;
@@ -247,13 +260,16 @@ footer {
   font-size: 30px;
   font-weight: bold;
 }
-ul li {
+ul li, module-list::part(module__li) {
   list-style: none;
   margin-bottom: 12px;
 }
-ul li a {
+ul li a, module-list::part(module__li__a) {
   text-decoration: none;
   color: rgb(87, 81, 81);
+}
+module-list::part(module__li) {
+  margin-top: 40px;
 }
 ul li a:hover {
   color: #ff523b;
@@ -537,16 +553,13 @@ form input {
   border-radius: 40px;
   
 }
-#sub-c{
+#sub-c, module-list::part(modules-title) {
   font-size:30px;
   background-color:#ff523b;
   color: #ffffff;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 40px;
-  
+  padding: 10px 50px;
+  border-radius: 8px;
+  cursor: pointer;
 }
 #sub-p{
   font-size:30px;
@@ -563,29 +576,20 @@ form input {
   margin-top: 50px;
   margin-bottom: 20px;
   margin-right: 16px;
-  /* width: ; */
-  
-  
 }
-.sub{
+.sub, module-list::part(modules) {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-direction: column;
-
 }
-.list ul li a{
+.list ul li a, module-list::part(module__li__a) {
   font-size: 13px;
-  background-color:dodgerblue;
-  color: rgb(255, 255, 255);
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top:5px;
-  padding-bottom:5px;
-  border-radius: 30px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  display: block;
 }
-.list ul li a:hover{
-  
+.list ul li a:hover, module-list::part(module__li__a):hover {
   color: #000000;
   background-color: rgb(38, 230, 0);
   box-shadow: 2px 2px 20px rgb(49, 49, 49);
@@ -593,11 +597,10 @@ form input {
   transform: scaleX(2);
   transform: scaley(1.1);
 }
-.list ul{
-  /* margin-left: 50px; */
+.list ul, module-list::part(modules__ul) {
   margin-bottom: 50px;
 }
-.download{
+.download, module-list::part(module) {
   margin-top: 40px;
 }
 
