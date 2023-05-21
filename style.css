@@ -73,6 +73,8 @@ nav ul li {
 }
 .col-2 p{
   text-align: left;
+  color: black;
+  line-height: 1.7;
 }
 .para{
   max-width: 500px;
@@ -89,6 +91,7 @@ p {
 .container {
   max-width: 1300px;
   margin: auto;
+  padding-bottom: 50px;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -101,6 +104,7 @@ p {
 .col-2 {
   flex-basis: 50%;
   min-width: 300px;
+  padding: 0 40px;
 }
 .col-2 img {
   max-width: 100%;
@@ -123,6 +127,7 @@ p {
   margin-bottom: 1rem;
 }
 .col-2 .btn{
+  margin-top: 30px;
   margin-top: 32px;
   margin-bottom: 33px;
 }
@@ -136,7 +141,7 @@ p {
   background: radial-gradient(#fff, rgb(255, 191, 191));
 }
 .header .row {
-  margin-top: 70px;
+  margin-top: 20px;
 }
 .categories {
   margin: 70px 0;
@@ -258,6 +263,8 @@ footer {
 }
 .col3 ul li a:hover{
   color: #ff523b;
+  font-size: 25px;
+  transition-duration: 0.5s;
 }
 .col4{
   margin-left: -50px;
@@ -447,6 +454,20 @@ form input {
   background: #1c2020;
   color: #f5f5f5;
 }
+@media screen and (max-width: 800px){
+  .col-2{
+    flex-basis: 100%;
+  }
+  .col-2 h1{
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .para{
+    text-align: center;
+    padding-left: 20px;
+    font-size: 13px;
+  }
+}
 @media screen and (max-width: 1166px){
   .col4{
     margin: 0 auto;
@@ -457,11 +478,8 @@ form input {
    /* margin-left: 9rem; */
    margin-top: 2rem;
   }
-  .col-2 img {
-    max-width: 70%;
-    padding: 45px 14px;
 }
-}
+
 @media screen and (max-width: 640px){
   .row{
     display: inline;
@@ -495,19 +513,11 @@ form input {
   .google{
     display: none;
   }
-  .para{
-    text-align: center;
-    padding-left: 20px;
-    font-size: 13px;
-  }
   .explore{
     margin-left:25%;
   }
   .students{
     margin-bottom:none;
-  }
-  .col-2 h1{
-    text-align: center;
   }
   #pic p{
     text-align: left;
