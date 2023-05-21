@@ -73,12 +73,13 @@ nav ul li {
 }
 .col-2 p{
   text-align: left;
-  color: black;
   line-height: 1.7;
+  color: black;
 }
 .para{
   max-width: 500px;
   font-family:"Poppins", sans-serif;
+
 }
 
 a {
@@ -370,7 +371,7 @@ form input {
   font-size: 13px;
   padding-top: 30px;
   padding-bottom: 30px;
-  
+
 }
 #pic{
   display: flex;
@@ -535,7 +536,7 @@ form input {
 
 .myname{
   width: 180px;
-  
+
 }
 .containers{
   display: none;
@@ -560,6 +561,3 @@ form input {
   margin-right: 10px;
   width: 45px;
 }
-
-
-
