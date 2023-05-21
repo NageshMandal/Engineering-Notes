@@ -322,7 +322,6 @@ form input {
   display: flex;
   text-align: center;
   justify-content: center;
-
   flex-wrap: wrap;
 }
 .social-media i{
@@ -433,6 +432,9 @@ form input {
 .tele:hover{
   color:  #0088cc;
 
+}
+.youtube:hover{
+  color:rgb(255, 0, 0);
 }
 /*? dark mode */
 
