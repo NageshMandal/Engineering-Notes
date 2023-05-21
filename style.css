@@ -379,6 +379,7 @@ form input {
   padding: 10px 0;
 }
 
+/* -----------------footer-------------------- */
 .contact{
   width: 70%;
   padding: 5px;
@@ -397,6 +398,22 @@ form input {
 }
 .contact a h4:hover{
   font-size: 18px;
+}
+.contact-map iframe{
+  width: 280px;
+  aspect-ratio: auto 250 / 160;
+  height: 180px;
+  margin-top: 10px;
+}
+.contact-box{
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #ff523b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
 }
 
 .branchimg{
