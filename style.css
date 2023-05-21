@@ -52,28 +52,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-.navbar {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-}
-nav {
-  flex: 1;
-  text-align: right;
-}
-nav ul {
-  display: inline-block;
-  list-style-type: none;
-}
-nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-  font-size: 17px;
-  padding: 10px;
-}
 .col-2 p{
   text-align: left;
-  color: black;
+  color: inherit;
   line-height: 1.7;
 }
 .para{
@@ -258,11 +239,11 @@ footer {
   min-width: 12rem;
 }
 .col3 ul li a{
-  font-size: 20px;
-  color:  white;
+  font-size: 20px!important;
+  color:  white!important;
 }
 .col3 ul li a:hover{
-  color: #ff523b;
+  color: #ff523b!important;
   font-size: 25px;
   transition-duration: 0.5s;
 }
@@ -278,14 +259,14 @@ footer {
 }
 ul li {
   list-style: none;
-  margin-bottom: 12px;
+  /* margin-bottom: 12px; */
 }
 ul li a {
   text-decoration: none;
-  color: rgb(87, 81, 81);
+  color: rgb(87, 81, 81)!important;
 }
 ul li a:hover {
-  color: #ff523b;
+  color: #ff523b!important;
 }
 form {
   padding-bottom: 5%;
@@ -348,12 +329,10 @@ form input {
 }
 
 .toggle-mode {
-  position: absolute;
-  top: 10px;
-  right: 20px;
   width: 35px;
   height: 35px;
   cursor: pointer;
+  z-index: 3;
   /* border: 1px solid red; */
   /* cursor: pointer; */
 }
@@ -478,58 +457,6 @@ form input {
   }
 }
 
-@media screen and (max-width: 640px){
-  .row{
-    display: inline;
-  }
-  .col3{
-    margin: 1rem auto;
-     max-width: 40%;
-     padding-left: 0rem;
-   }
-   .col2{
-     /* min-width: 21rem; */
-     margin: 1rem auto;
-   }
-  nav{
-    text-align: center;
-  }
-  nav ul li{
-    font-size: 13px;
-    font-weight: bolder;
-  }
-  .logo{
-    width: 50px;
-  }
-  nav ul li {
-    display: none;
-  }
-  .mic{
-    display: block;
-    margin-left: 230px;
-  }
-  .google{
-    display: none;
-  }
-  .explore{
-    margin-left:25%;
-  }
-  .students{
-    margin-bottom:none;
-  }
-  #pic p{
-    text-align: left;
-  }
-  #pic h5{
-    margin-right: 20px;
-  }
-  .col{
-    margin-left:5%;
-  }
-  .contact{
-    padding-right:5px;
-  }
-}
 
 .myname{
   width: 180px;
@@ -558,6 +485,83 @@ form input {
   margin-right: 10px;
   width: 45px;
 }
+
+
+/*  */
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+
+/* Navbar css */
+
+.customNav{
+    height: 80px;
+    font-size: 20px; 
+    background-color: #ee936c;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+}
+
+.slidingMenu{
+    background-color: rgb(73, 41, 9);
+    position: fixed;
+    height: 100vh;
+    width: 250px;
+    right: -250px;
+    top: 0px;
+    transition: 0.5s all ease-out 0s ;
+    z-index: 4;
+}
+
+
+/* .hoverNavbar:hover {
+    background-color: #ff9090e3;
+    transition: 0.5s all ease-in-out;
+}
+
+.hoverNavbar {
+    border-radius: 2px;
+    padding: 0px 10px;
+}
+
+.hoverNavbar a{
+    color: white;
+}
+
+.hoverNavbar a:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    color: white;
+} */
+
+.boxShadow {
+    box-shadow: 0px 0px 20px 0px black;
+    border-radius: 10px;
+}
+
+/* Animations */
+
+@keyframes hide{
+    from {
+        transform: translateY(calc(100vh - 100px));
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes show{
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(calc(100vh - 100px));
+    }
+}
+
 
 
 
