@@ -234,10 +234,24 @@ footer {
 .email-id {
   width: fit-content;
   margin: 20px 0;
+  color: #ff523b;
+}
+.email-id:hover{
+  font-size: 16px;
+  font-weight: 100;
+  color: white;
+  transition-duration: 0.7s;
 }
 .col2 h4{
   font-size: 16px;
   font-weight: 100;
+  color: #ff523b;
+}
+col2 h4:hover{
+  font-size: 16px;
+  font-weight: 100;
+  color: white;
+  transition-duration: 0.7s;
 }
 .col p{
   font-size: 16px;
