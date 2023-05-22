@@ -133,7 +133,7 @@ p {
   margin-bottom: 33px;
 }
 .btn:hover {
-  background: #29a423;
+  background: cyan;
   transform: scaleX(2);
   transform: scaley(1.1);
   box-shadow: 2px 2px 20px rgb(49, 49, 49);
@@ -422,6 +422,13 @@ form input {
 
 .branchimg{
   box-shadow: 8px 8px 8px#1c2020;
+  transition: 0.5s;
+}
+
+.branchimg:hover{
+  transform: scaleX(2);
+  transform: scaley(1.1);
+  
 }
 .students{
   filter: drop-shadow(10px 10px 10px rgb(60, 60, 60));
