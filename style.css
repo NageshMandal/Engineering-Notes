@@ -572,3 +572,137 @@ form input {
   margin-right: 10px;
   width: 45px;
 }
+
+
+/* new branches css  */
+
+.braches{
+  
+  background-color: #f3eeeeea;
+}
+
+.cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 2rem;
+  
+}
+.branchesHeading{
+  text-align: center;
+  /* padding: 1rem; */
+  font-size: 2rem;
+  margin: 2rem;
+  /* color:rgb(255, 0, 43); */
+}
+
+.card {
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 320px; */
+  padding:  1.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  margin: 1rem;
+  /* padding-top: 0px; */
+  width: 25%;
+  /* border: 1px solid black; */
+  /* background-color: #1c2020; */
+  /* color: white; */
+  /* height: 40rem; */
+  /* background: radial-gradient(#fff, rgb(255, 191, 191)); */
+  /* background: none;*/
+  /* background: #e0e0e0; */
+}
+.card img{
+  width: 100%;
+  /* height: 10rem; */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 20px; */
+  /* color: #e8e8e8; */
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.content .courseTitle{
+  
+  text-align: center;
+  color: black;
+  margin: 1rem;
+  background: transparent;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.content .para {
+  line-height: 1;
+  text-align: justify;
+  color: black;
+
+}
+
+.content .btn {
+  color: #e8e8e8;
+  text-decoration: none;
+  padding: 10px;
+  width: 4rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0px;
+  background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+  z-index: -1;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover::before {
+  height: 100%;
+}
+
+.card:hover {
+  color: white;
+  box-shadow: none;
+}
+
+.card:hover .courseTitle{
+  color: white;
+}
+.card:hover .para{
+  color: white;
+}
+
+.card:hover .btn {
+  color: #212121;
+  background: #e8e8e8;
+}
+
+.content .btn:hover {
+  outline: 2px solid #e8e8e8;
+  background: transparent;
+  color: #e8e8e8;
+}
+
+.content .btn:active {
+  box-shadow: none;
+}
