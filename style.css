@@ -274,12 +274,11 @@ footer {
   min-width: 12rem;
 }
 .col3 ul li a{
-  font-size: 20px;
+  font-size: 16px;
   color:  white;
 }
 .col3 ul li a:hover{
   color: #ff523b;
-  font-size: 25px;
   transition-duration: 0.5s;
 }
 .col4{
