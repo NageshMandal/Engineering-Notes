@@ -80,7 +80,7 @@ nav ul li {
 }
 
 .col-2 p {
-  text-align: left;
+  text-align: justify;
   line-height: 1.7;
   color: black;
 }
@@ -581,10 +581,6 @@ form input {
     margin: 1rem auto;
   }
 
-  nav {
-    text-align: center;
-  }
-
   nav ul li {
     font-size: 13px;
     font-weight: bolder;
@@ -696,5 +692,20 @@ form input {
 
   .logo img {
     width: 194px;
+  }
+}
+
+@media (max-width: 365px) {
+  body {
+    width: 115%;
+  }
+
+  .toggle-mode {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
   }
 }
