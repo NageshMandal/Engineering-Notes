@@ -535,6 +535,7 @@ form input {
   color: white;
 }
 
+
 @media screen and (max-width: 800px) {
   .col-2 {
     flex-basis: 100%;
@@ -604,7 +605,7 @@ form input {
   }
 
   .explore {
-    margin-left: 25%;
+    margin: 0 20px;
   }
 
   .students {
@@ -692,6 +693,9 @@ form input {
 
   .logo img {
     width: 194px;
+  }
+  .explore {
+    margin: 0 20px;
   }
 }
 
