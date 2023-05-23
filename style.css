@@ -243,12 +243,12 @@ footer {
   color: white;
   transition-duration: 0.7s;
 }
-.col2 h4{
+.col2 a{
   font-size: 16px;
   font-weight: 100;
   color: #ff523b;
 }
-.col2 h4:hover{
+.col2 a:hover{
   font-size: 16px;
   font-weight: 100;
   color: white;
