@@ -23,7 +23,7 @@ window.addEventListener('scroll', toggleReturnToTopButton);
 returnToTopButton.addEventListener('click', scrollToTop);
 
 //! dark mode
-
+const navbar = document.querySelector(".navbar");
 const header = document.querySelector(".header");
 const toggle = document.querySelector(".toggle-mode");
 const body = document.querySelector("body");
@@ -34,6 +34,7 @@ const para = document.querySelectorAll(".para");
 
 if (localStorage.getItem("dark-mode") == "true") {
   body.classList.add("dark-mode");
+  
   header.classList.add("header-dark-mode");
   paragraph.classList.add("header-dark-mode");
   links.forEach(function (e) {
@@ -77,3 +78,5 @@ toggle.addEventListener("click", function (e) {
     localStorage.setItem("dark-mode", false);
   }
 });
+
+
