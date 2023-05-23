@@ -232,23 +232,32 @@ footer {
   position: relative;
   line-height: 2rem;
 }
-.email-id {
+.email-id{
   width: fit-content;
   margin: 20px 0;
+}
+
+.email-id{
   color: #ff523b;
 }
-.email-id:hover{
+
+.email-id a:hover{
   font-size: 16px;
   font-weight: 100;
   color: white;
   transition-duration: 0.7s;
 }
+
 .col2 h4{
   font-size: 16px;
   font-weight: 100;
+}
+
+.col2 a{
   color: #ff523b;
 }
-.col2 h4:hover{
+
+.col2 h4 a:hover{
   font-size: 16px;
   font-weight: 100;
   color: white;
