@@ -27,6 +27,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #D2E9E9;
 }
 
 /*Gradient scroll bar  */
@@ -138,7 +139,7 @@ p {
   box-shadow: 2px 2px 20px rgb(49, 49, 49);
 }
 .header {
-  background: radial-gradient(#fff, rgb(255, 191, 191));
+  background: radial-gradient(#fff, #AEE2FF);
 }
 .header .row {
   margin-top: 20px;
