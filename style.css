@@ -269,15 +269,30 @@ footer {
 .email-id {
   width: fit-content;
   margin: 20px 0;
+  color: #ff523b;
+}
+.email-id:hover{
+  font-size: 16px;
+  font-weight: 100;
+  color: white;
+  transition-duration: 0.7s;
 }
 
 .col2 h4 {
   font-size: 16px;
   font-weight: 100;
+  color: #ff523b;
+}
+.col2 h4:hover{
+  font-size: 16px;
+  font-weight: 100;
+  color: white;
+  transition-duration: 0.7s;
 }
 
 .col p {
   font-size: 16px;
+  
 }
 
 .col2 {
@@ -297,15 +312,8 @@ footer {
 .col3 {
   min-width: 12rem;
 }
-
-.col3 ul li a {
-  font-size: 20px;
-  color: white;
-}
-
 .col3 ul li a:hover {
   color: #ff523b;
-  font-size: 25px;
   transition-duration: 0.5s;
 }
 
