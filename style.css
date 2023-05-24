@@ -89,6 +89,8 @@ a {
 p {
   color: white;
 }
+
+
 .container {
   max-width: 1300px;
   margin: auto;
@@ -139,7 +141,7 @@ p {
   box-shadow: 2px 2px 20px rgb(49, 49, 49);
 }
 .header {
-  background: radial-gradient(#fff, rgb(255, 191, 191));
+  background: radial-gradient(#fff);
 }
 .header .row {
   margin-top: 20px;
@@ -181,6 +183,7 @@ p {
   padding-top: 20px;
   font-size: 25px;
   color: rgb(54, 53, 53);
+  
 }
 .title::after {
   content: "";
@@ -198,7 +201,7 @@ footer {
   bottom: 0;
   background:  #192734;
   /* background-image: linear-gradient(to right, #DECBA4, #3E5151); */
-  color: #fff;
+  color:#fff;
   padding: 8px;
   font-size: 13px;
   line-height: 20px;
