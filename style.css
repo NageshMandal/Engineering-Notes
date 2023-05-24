@@ -55,7 +55,11 @@ body::-webkit-scrollbar-thumb {
 .navbar {
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding-left: 75px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 75px;
+  background: rgba(29, 226, 160, 0.952)
 }
 nav {
   flex: 1;
@@ -71,6 +75,9 @@ nav ul li {
   font-size: 17px;
   padding: 10px;
 }
+.pad{
+  padding-left: 52.5px;
+}
 .col-2 p{
   text-align: left;
   line-height: 1.7;
@@ -84,17 +91,14 @@ nav ul li {
 
 a {
   text-decoration: none;
-  color: rgb(64, 64, 64);
+  color: white;
 }
 p {
   color: white;
 }
 .container {
-  max-width: 1300px;
   margin: auto;
   padding-bottom: 50px;
-  padding-left: 25px;
-  padding-right: 25px;
 }
 .row {
   display: flex;
@@ -121,7 +125,7 @@ p {
   background: #ff523b;
   color: #fff;
   padding: 8px 30px;
-  margin-left: 20%px;
+  margin-left: 50px;
   margin-top: 20px;
   border-radius: 30px;
   transition: 0.5s;
@@ -139,7 +143,7 @@ p {
   box-shadow: 2px 2px 20px rgb(49, 49, 49);
 }
 .header {
-  background: radial-gradient(#fff, rgb(255, 191, 191));
+  background:violet
 }
 .header .row {
   margin-top: 20px;
@@ -297,7 +301,7 @@ ul li {
 }
 ul li a {
   text-decoration: none;
-  color: rgb(87, 81, 81);
+  color: white;
 }
 ul li a:hover {
   color: #ff523b;
@@ -419,7 +423,9 @@ form input {
 .contact a h4:hover{
   font-size: 18px;
 }
-
+.contributer{
+  background-color: #9d33db;
+}
 .branchimg{
   box-shadow: 8px 8px 8px#1c2020;
 }
@@ -519,6 +525,7 @@ form input {
      /* min-width: 21rem; */
      margin: 1rem auto;
    }
+
   nav{
     text-align: center;
   }
@@ -527,6 +534,8 @@ form input {
     font-weight: bolder;
   }
   .logo{
+    margin-left: 25px;
+    padding-left: 25px;
     width: 50px;
   }
   nav ul li {
@@ -540,7 +549,7 @@ form input {
     display: none;
   }
   .explore{
-    margin-left:25%;
+    padding-left: 50px;
   }
   .students{
     margin-bottom:none;
