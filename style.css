@@ -692,3 +692,45 @@ body.dark-mode .project-card{
   font-size: 1.25rem;
   padding-left: 0px;
 }
+
+.contributors-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #131c2b;
+  padding-bottom: 2.75rem;
+  border-bottom: 1px solid gray;
+}
+
+.contributors-container h1 {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2.5rem 0;
+}
+
+.contributors {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 8%;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 4rem;
+}
+
+.contributors {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contributors-container {
+  padding-top: 20px;
+}
