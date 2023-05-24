@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Form</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    body
+    {
+        background: linear-gradient(to left, #333, #eee 100%, #333 75%);
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+    }
+    .form-group label {
+      font-weight: bold;
+    }
+    .btn-primary {
+      width: 100%;
+    }
+    .container > h2
+    {
+        font-size: 3rem;
+        border: 5px solid midnightblue;
+        box-shadow: 10px 10px 10px midnightblue;
+        padding: 20px 20px;
+        font-weight: 600;
+        margin-bottom: 50px;
+        border-radius: 30px;
+        color: rgb(0, 0, 0);
+        font-family: 'Proza Libre', sans-serif;
+    }
+
+    .footer {
+      text-align: center;
+      color: white;
+      padding: 30px;
+      background-color: #13191f;
+      border: 1px solid #ccc;
+      margin-top: 60px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>CONTACT FORM</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 Chaibasa Engineering College.</p> <p>All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
