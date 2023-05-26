@@ -734,3 +734,37 @@ body.dark-mode .project-card{
 .contributors-container {
   padding-top: 20px;
 }
+
+.branchimg{
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.branchimg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+.branchimg:hover::before {
+  left: 0;
+  opacity: 1;
+}
+
+.branchimg{
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.branchimg:hover{
+  transform: scale(1.08);
+}
