@@ -24,9 +24,6 @@ can contribute.
 [![Repo Size](https://img.shields.io/github/repo-size/NageshMandal/Engineering-Notes-Website?color=yellow)](https://github.com/NageshMandal/Engineering-Notes-Website)
 [![stars](https://img.shields.io/github/stars/NageshMandal/Engineering-Notes-Website?style=social)](https://github.com/NageshMandal/Engineering-Notes-Website/stargazers)
 
-    
-   
-
 </div>
 
 <div align= "center">
@@ -52,6 +49,8 @@ can contribute.
 
 
 ## Demo
+
+
 
 
 <br><hr>
