@@ -11,7 +11,7 @@ body {
 
 /*Gradient scroll bar  */
 body::-webkit-scrollbar {
-  width: 11px;
+  width: 8px;
 }
 .card:hover {
   background-color: rgb(132, 94, 144);
@@ -80,6 +80,7 @@ nav ul li {
 }
 .col-2 p{
   text-align: left;
+  line-height: 0;
 }
 .para{
   max-width: 500px;
@@ -110,27 +111,67 @@ p {
   min-width: 300px;
 }
 .col-2 img {
-  max-width: 90%;
-  padding: 50px 20px;
+  max-width: 80%;
+  padding: 20px 20px;
+  margin-left: 90px;
+  margin-top: 0;
 }
 .col-2 h1 {
   font-size: 50px;
   line-height: 60px;
-  margin: 25px 0;
+  margin-top:50px;
 }
 .btn {
   display: inline-block;
-  background: #ff523b;
+  background: #ff5419;
   color: #fff;
   padding: 8px 30px;
   margin-left: 20%px;
-  margin-top: 20px;
+  margin-top: 0px;
   border-radius: 30px;
   transition: 0.5s;
 }
 .col-2 .btn{
-  margin-top: 70px;
-  margin-bottom: 1rem;
+  margin-top: 20px;
+  margin-bottom: 0.5rem;
+}
+
+#contributed 
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin-top: 20px;
+}
+
+.card {
+  flex-basis: calc(50% - 10px);
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px 150px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: #ff5419;
+}
+
+.card-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 .btn:hover {
   background: #29a423;
@@ -139,10 +180,7 @@ p {
   box-shadow: 2px 2px 20px rgb(49, 49, 49);
 }
 .header {
-  background: radial-gradient(#fff, rgb(255, 191, 191));
-}
-.header .row {
-  margin-top: 70px;
+  background-color: #ffea9e;
 }
 .categories {
   margin: 70px 0;
