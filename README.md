@@ -41,7 +41,7 @@ can contribute.
 
 ## Table of Contents
 
-- [Demo](https://code-engineering.netlify.app/)
+- [ScreenShots](https://code-engineering.netlify.app/)
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
 - [License](#license)
@@ -51,7 +51,7 @@ can contribute.
 
 
 
-## Demo
+## Screen Shots
 
 
 
