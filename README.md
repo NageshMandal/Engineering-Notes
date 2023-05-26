@@ -1,12 +1,4 @@
-<div align="center">
 
-[![Issues](https://img.shields.io/github/issues/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/pulls)
-[![Forks](https://img.shields.io/github/forks/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/network/members)
-[![Stars](https://img.shields.io/github/stars/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/stargazers)
-[![Repo Size](https://img.shields.io/github/repo-size/NageshMandal/Engineering-Notes-Website?color=yellow)](https://github.com/NageshMandal/Engineering-Notes-Website)
-
-</div>
 
 # ENGINEERING-NOTES-WEBSITE
 
@@ -23,28 +15,42 @@ can contribute.
     </a>
 </div>
 
+<br>
+<div align="center">
+
+[![Issues](https://img.shields.io/github/issues/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/Issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/Pulls)
+[![Forks](https://img.shields.io/github/forks/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/network/members)
+[![Stars](https://img.shields.io/github/stars/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/stargazers)
+[![Repo Size](https://img.shields.io/github/repo-size/NageshMandal/Engineering-Notes-Website?color=yellow)](https://github.com/NageshMandal/Engineering-Notes-Website)
+
+</div>
+
+<div align= "center">
+<img  src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white"/>
+<img  src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"/>
+<img  src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+<img  src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white"/>
+</div>
+<br><hr>
+
+
 ## Table of Contents
 
 - [Demo](https://code-engineering.netlify.app/)
-- [Technologies](HTML CSS JS BOOTSTRAP API)
-- [Getting Started](Clone your forked copy of the project🌀)
+- [Getting Started](https://github.com/Thrillseekr/Engineering-Notes-Website/blob/main/README.md#html-css-js-bootstrap-api)
 - [Contributing](#contributing)
 - [License](#license)
 
 <hr>
 
+
+
+
 ## Demo
 
 
-
-<hr>
-
-## HTML, CSS, JS, BOOTSTRAP, API
-
-List the technologies and programming languages used in your project.
-
-<hr>
-
+<br><hr>
 ## Getting Started
 
 Include instructions on how to get started with your project. This may include:
