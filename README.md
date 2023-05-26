@@ -22,7 +22,7 @@ can contribute.
 [![Pull Requests](https://img.shields.io/github/issues-pr/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/Pulls)
 [![Forks](https://img.shields.io/github/forks/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/network/members)
 [![Repo Size](https://img.shields.io/github/repo-size/NageshMandal/Engineering-Notes-Website?color=yellow)](https://github.com/NageshMandal/Engineering-Notes-Website)
-<img src="https://img.shields.io/github/stars/NageshMandal/Engineering-Notes-Website?style=social"/>
+[![stars](https://img.shields.io/github/stars/NageshMandal/Engineering-Notes-Website?style=social)](https://github.com/NageshMandal/Engineering-Notes-Website/stargazers)
 
     
    
