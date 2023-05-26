@@ -26,8 +26,8 @@ can contribute.
 ## Table of Contents
 
 - [Demo](https://code-engineering.netlify.app/)
-- [Technologies](HTML CSS JS BOOTSTRAP API)
-- [Getting Started](Clone your forked copy of the project🌀)
+- [Technologies](#html-css-js-bootstrap-api)
+- [Getting Started](#getting-started)
 - [Contributing](#contributing)
 - [License](#license)
 
