@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Doubts Submission</title>
+  <style>
+    .form-container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .form-container h2 {
+      text-align: center;
+    }
+    .form-container input[type="text"],
+    .form-container input[type="file"],
+    .form-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .form-container button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      float: right;
+    }
+    .form-container button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Doubts Submission</h2>
+    <form enctype="multipart/form-data" method="post" action="submit_doubt.php">
+      <label for="student_name">Your Name:</label>
+      <input type="text" id="student_name" name="student_name" required>
+
+      <label for="doubt_description">Doubt Description:</label>
+      <textarea id="doubt_description" name="doubt_description" rows="4" required></textarea>
+
+      <label for="question_image">Question Image (optional):</label>
+      <input type="file" id="question_image" name="question_image">
+
+      <button type="submit">Submit Doubt</button>
+    </form>
+  </div>
+</body>
+</html>

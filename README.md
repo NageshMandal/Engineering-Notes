@@ -105,3 +105,6 @@ Include the license information for your project. For example, you can use the M
 
 This project is licensed under the terms of the [MIT License](LICENSE).
 Feel free to contribute to this repo.
+
+## my contribution
+"Added doubt section where students allow to submit their doubts ,including question image"
