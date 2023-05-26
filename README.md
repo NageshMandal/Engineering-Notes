@@ -42,7 +42,7 @@ can contribute.
 ## Table of Contents
 
 - [Demo](https://code-engineering.netlify.app/)
-- [Getting Started](https://github.com/Thrillseekr/Engineering-Notes-Website/blob/main/README.md#html-css-js-bootstrap-api)
+- [Getting Started](https://github.com/NageshMandal/Engineering-Notes-Website#getting-started)
 - [Contributing](#contributing)
 - [License](#license)
 
