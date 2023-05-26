@@ -1,0 +1,29 @@
+section#content {
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  .filter {
+    margin-bottom: 20px;
+  }
+  
+  #bookList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px; 
+  }
+  
+  #bookList div {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  #bookList div img {
+    width: 183px;
+    height: 276px;
+  }
