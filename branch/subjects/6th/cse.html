@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https//stackpath.bootsstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
     <script src="https://kit.fontawesome.com/739255457e.js" crossorigin="anonymous"></script>
+    <script src="../scripts/module-list.js"></script>
 </head>
 <body>
     <div class="header">
@@ -22,89 +23,28 @@
                     <ul>
                         <li><a class="nav-link" href="https://www.chaibasaengg.edu.in/About/about">About</a></li>
                         <li><a class="nav-link" href="https://www.chaibasaengg.edu.in/Gallery/gallery">Gallery</a></li>
-                        <li><a class="nav-link" href="https://www.chaibasaengg.edu.in/Research/projects">projects</a></li>
+                        <li><a class="nav-link" href="https://www.chaibasaengg.edu.in/Research/projects">Projects</a></li>
                         <li><a class="nav-link" href="https://www.chaibasaengg.edu.in/Academic/library">Library</a></li>
                         <li><a class="nav-link" href="https://www.chaibasaengg.edu.in/Contact/admission_cell">Contact</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="row">
+            <center>
                 <div class="col--2">
-                    <a class="headline">COMPUTER SCIENCE AND ENGINEERING</a>
-                    <div class="sub">
-                        <div class="sub-m">
-                            <a id="sub-m">Mathematics</a>
-                        </div>
-                        <div class="list">
-                            <ul>
-                                <div class="download">
-                                    <li><a  href="#">Download Module 1</a></li>
-                                </div>
-                                <div class="download">
-                                    <li><a  href="#">Download Module 2</a></li>
-                                </div>
-                                <div class="download">
-                                    <li><a  href="#">Download Module 3</a></li>
-                                </div>
-                                <div class="download">
-                                    <li><a  href="#">Download Module 4</a></li>
-                                </div>
-                                <div class="download">
-                                    <li><a  href="#">Download Module 5</a></li>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="sub-p">
-                        <div class="sub-m">
-                            <a id="sub-p">Physics</a>
-                        </div>
-                        <div class="list">
-                            <ul>
-                                <div class="download">
-                                    <li><a  href="#">Download Module 1</a></li>
-                                </div>
-                                <div class="download">
-                                    <li><a  href="#">Download Module 2</a></li>
-                                </div>
-                                <div class="download">
-                                    <li><a  href="#">Download Module 3</a></li>
-                                </div>
-                                <div class="download">
-                                    <li><a  href="#">Download Module 4</a></li>
-                                </div>
-                                <div class="download">
-                                    <li><a  href="#">Download Module 5</a></li>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="sub">
-                        <div class="sub-m">
-                            <a id="sub-c">Chemistry</a>
-                        </div>
-                        <div class="list">
-                            <ul>
-                                <div class="download">
-                                    <li><a  href="#">Download Module 1</a></li>
-                                </div>
-                                <div class="download">
-                                    <li><a  href="#">Download Module 2</a></li>
-                                </div>
-                                <div class="download">
-                                    <li><a  href="#">Download Module 3</a></li>
-                                </div>
-                                <div class="download">
-                                    <li><a  href="#">Download Module 4</a></li>
-                                </div>
-                                <div class="download">
-                                    <li><a  href="#">Download Module 5</a></li>
-                                </div>
-                            </ul>
-                        </div>
-                    </div>
+                    <h1>COMPUTER SCIENCE AND ENGINEERING</h1>
                 </div>
-            </div>   
+            </center>
+            <div class="row-modules">
+                <module-list data-list='["#"]'>
+                    <span slot="section-name">Mathematics</span>
+                </module-list>
+                <module-list data-list='["#"]'>
+                    <span slot="section-name">Physics</span>
+                </module-list>
+                <module-list data-list='["#"]'>
+                    <span slot="section-name">Chemistry</span>
+                </module-list>
+            </div>    
         </div>
 <div class="small-container">
 
