@@ -1,20 +1,35 @@
+
+# Engineering-Notes-Website 📘
+
+
+
+
 <div align="center">
-
-[![Issues](https://img.shields.io/github/issues/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/pulls)
-[![Forks](https://img.shields.io/github/forks/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/network/members)
-[![Stars](https://img.shields.io/github/stars/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/stargazers)
-[![Repo Size](https://img.shields.io/github/repo-size/NageshMandal/Engineering-Notes-Website?color=yellow)](https://github.com/NageshMandal/Engineering-Notes-Website)
-
+  <br>
+  <img src="https://img.shields.io/github/repo-size/NageshMandal/Engineering-Notes-Website?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues/NageshMandal/Engineering-Notes-Website?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-closed-raw/NageshMandal/Engineering-Notes-Website?style=for-the-badge" />
+  <br>
+  <img src="https://img.shields.io/github/forks/NageshMandal/Engineering-Notes-Website?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-pr/NageshMandal/Engineering-Notes-Website?style=for-the-badge" />
+  <img src="https://img.shields.io/github/issues-pr-closed-raw/NageshMandal/Engineering-Notes-Website?style=for-the-badge" />
+  <br>
+  <img src="https://img.shields.io/github/stars/NageshMandal/Engineering-Notes-Website?style=for-the-badge" />
+  <img src="https://img.shields.io/github/last-commit/NageshMandal/Engineering-Notes-Website?style=for-the-badge" />
+  <img src="https://img.shields.io/github/commit-activity/y/NageshMandal/Engineering-Notes-Website?style=for-the-badge" />
+ 
 </div>
 
-# ENGINEERING-NOTES-WEBSITE
 
-Engineering notes is a website where we provide hand writen notes
-to students free of cost. it is a an open source project where you 
-can contribute.
 
+
+
+Engineering-Notes-Website is an open-source project dedicated to providing free hand-written notes to students. 🎓✨ It serves as a collaborative platform where contributors from the community can join forces to create a valuable resource for students pursuing engineering studies. 💡
+
+
+The main objective of this project is to enhance accessibility and convenience in learning by offering high-quality notes covering various engineering subjects. Whether you're a student or an educator, you are encouraged to contribute to this initiative and help build a comprehensive collection of notes that can benefit the engineering community.
 ### This project is a part of the following Open Source Program
+
 
 <div align="center">
     <a href="https://gssoc.girlscript.tech/">
@@ -39,11 +54,18 @@ can contribute.
 
 <hr>
 
-## HTML, CSS, JS, BOOTSTRAP, API
+## Tech Stack 🛠️
 
-List the technologies and programming languages used in your project.
+Listed below are the technologies and programming languages used in the Engineering-Notes-Website project:
+
+- HTML
+- CSS
+- JavaScript
+- Bootstrap
+- API
 
 <hr>
+
 
 ## Getting Started
 
@@ -91,13 +113,18 @@ We welcome contributions from everyone. Here are some guidelines to get started:
                         </b></sub></a><br></td> </a></td>
 </table>
 
-<h1 align=center> Contributors </h1>
 
-Thanks go to these **Wonderful People**: **Contributions** of any kind are welcome!
+<h2 align="center">Contributors ✨</h2>
 
-> Mention the people who successfully contributed to your project as contributors.
+<div align="center">
+  <a href="https://github.com/NageshMandal/Engineering-Notes-Website/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=NageshMandal/Engineering-Notes-Website" alt="Contributors" />
+  </a>
+</div>
 
-<hr>
+ 
+Thanks go to these **Wonderful People**: **Contributions** of any kind are welcome!👏
+
 
 ## License
 
