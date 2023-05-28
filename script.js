@@ -1,3 +1,28 @@
+// Get the "return to top" button element
+var returnToTopButton = document.getElementById('returnToTop');
+
+// Function to scroll to the top of the page
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+
+// Function to toggle the visibility of the "return to top" button
+function toggleReturnToTopButton() {
+  if (window.scrollY > 200) {
+    returnToTopButton.classList.add('active');
+  } else {
+    returnToTopButton.classList.remove('active');
+  }
+}
+
+// Add event listeners
+window.addEventListener('scroll', toggleReturnToTopButton);
+returnToTopButton.addEventListener('click', scrollToTop);
+
 //! dark mode
 
 const header = document.querySelector(".header");
@@ -7,7 +32,7 @@ const paragraph = document.querySelector("p");
 const links = document.querySelectorAll(".nav-link");
 const title = document.querySelectorAll("h2");
 const para = document.querySelectorAll(".para");
-
+const pcol = document.querySelector(".col-2 p");
 if (localStorage.getItem("dark-mode") == "true") {
   body.classList.add("dark-mode");
   header.classList.add("header-dark-mode");
@@ -31,6 +56,7 @@ toggle.addEventListener("click", function (e) {
     body.classList.add("dark-mode");
     header.classList.add("header-dark-mode");
     paragraph.classList.add("header-dark-mode");
+    pcol.style.color="white";
     links.forEach(function (e) {
       e.classList.add("header-dark-mode");
     });
@@ -43,6 +69,7 @@ toggle.addEventListener("click", function (e) {
     body.classList.remove("dark-mode");
     header.classList.remove("header-dark-mode");
     paragraph.classList.remove("header-dark-mode");
+    pcol.style.color="black";
     links.forEach(function (e) {
       e.classList.remove("header-dark-mode");
     });
@@ -53,3 +80,72 @@ toggle.addEventListener("click", function (e) {
     localStorage.setItem("dark-mode", false);
   }
 });
+
+
+// Script for to get Github contributors list
+const contributors = document.getElementById("contributors");
+const repo = "Engineering-Notes-Website";
+const owner = "NageshMandal";
+const apiURL = `https://api.github.com/repos/${owner}/${repo}/contributors`;
+
+
+function displayContributors(contributorsList) {
+  contributorsList.forEach((contributor) => {
+    // create anchor tag and set relevant attributes
+    const link = document.createElement("a");
+    link.setAttribute("href", contributor.html_url);
+    link.setAttribute("target", "_blank");
+
+    // create image element and set relevant attributes
+    const avatar = document.createElement("img");
+    avatar.setAttribute("class", "avatar");
+    avatar.setAttribute("src", contributor.avatar_url);
+    avatar.setAttribute("title", contributor.login);
+    avatar.setAttribute("alt", contributor.login);
+
+    link.appendChild(avatar);
+    contributors.appendChild(link);
+  });
+}
+
+// get contributors list  from github API
+async function getContributorsList() {
+  try {
+    const response = await fetch(apiURL);
+    const contributors = await response.json();
+    displayContributors(contributors);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+
+getContributorsList();
+
+// Search bar functionality
+const searchForm = document.getElementById("search-form");
+const searchInput = document.getElementById("search-input");
+
+searchForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+  const searchTerm = searchInput.value.toLowerCase();
+  searchContributors(searchTerm);
+});
+
+function searchContributors(searchTerm) {
+  const contributorLinks = contributors.getElementsByTagName("a");
+  for (const link of contributorLinks) {
+    const username = link.getAttribute("title").toLowerCase();
+    if (username.includes(searchTerm)) {
+      link.style.display = "inline-block";
+    } else {
+      link.style.display = "none";
+    }
+  }
+}
+
+
+
+
+
+
