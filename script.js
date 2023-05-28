@@ -33,6 +33,9 @@ const links = document.querySelectorAll(".nav-link");
 const title = document.querySelectorAll("h2");
 const para = document.querySelectorAll(".para");
 const pcol = document.querySelector(".col-2 p");
+const ham1 = document.querySelector(".ham1");
+const ham2 = document.querySelector(".ham2");
+
 if (localStorage.getItem("dark-mode") == "true") {
   body.classList.add("dark-mode");
   header.classList.add("header-dark-mode");
@@ -57,6 +60,8 @@ toggle.addEventListener("click", function (e) {
     header.classList.add("header-dark-mode");
     paragraph.classList.add("header-dark-mode");
     pcol.style.color="white";
+    ham2.classList.remove("ham");
+    ham1.classList.add("ham");
     links.forEach(function (e) {
       e.classList.add("header-dark-mode");
     });
@@ -70,6 +75,8 @@ toggle.addEventListener("click", function (e) {
     header.classList.remove("header-dark-mode");
     paragraph.classList.remove("header-dark-mode");
     pcol.style.color="black";
+    ham1.classList.remove("ham");
+    ham2.classList.add("ham");
     links.forEach(function (e) {
       e.classList.remove("header-dark-mode");
     });
@@ -149,3 +156,23 @@ function searchContributors(searchTerm) {
 
 
 
+const openMenu = () => {
+  document.querySelector("aside").className = "active";
+};
+
+const closeMenu = () => {
+  document.querySelector("aside").className = "";
+};
+
+document.getElementById("menuBtn").onclick = (e) => {
+  e.preventDefault();
+  openMenu();
+};
+
+document.querySelector("button.close").onclick = (e) => {
+  closeMenu();
+};
+
+document.querySelector(".backdrop").onclick = (e) => {
+  closeMenu();
+};
