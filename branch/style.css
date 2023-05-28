@@ -411,6 +411,7 @@ form input {
 
 .branchimg{
   box-shadow: 8px 8px 8px#1c2020;
+  height:100px;
 }
 .students{
   filter: drop-shadow(10px 10px 10px rgb(60, 60, 60));
