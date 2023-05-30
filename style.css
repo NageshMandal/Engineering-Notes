@@ -89,6 +89,8 @@ a {
 p {
   color: white;
 }
+
+
 .container {
   max-width: 1300px;
   margin: auto;
@@ -181,6 +183,7 @@ p {
   padding-top: 20px;
   font-size: 25px;
   color: rgb(54, 53, 53);
+  
 }
 .title::after {
   content: "";
@@ -198,7 +201,7 @@ footer {
   bottom: 0;
   background:  #192734;
   /* background-image: linear-gradient(to right, #DECBA4, #3E5151); */
-  color: #fff;
+  color:#fff;
   padding: 8px;
   font-size: 13px;
   line-height: 20px;
@@ -386,6 +389,8 @@ form input {
   padding-top: 30px;
   padding-bottom: 30px;
 
+
+
 }
 #pic{
   display: flex;
@@ -425,9 +430,33 @@ form input {
 }
 .students{
   filter: drop-shadow(10px 10px 10px rgb(60, 60, 60));
+ 
+}
+.students{
+  
+
+
+}
+.swiper{
+  width:80%;
+  height:fit-content;
+
+}
+.swiper-slide img{
+  width:100%;
+
+
+}
+.swiper .swiper-button-prev,.swiper .swiper-button-next{
+  color:white;
+  
+}
+.swiper .swiper-pagination-bullet-active{
+  background:white;
 }
 .far{
   margin-right: 10px;
+
 }
 .emailid{
   border: 2px solid rgb(255, 255, 255);
@@ -487,6 +516,7 @@ form input {
   .col-2 h1{
     text-align: center;
     font-size: 2.5rem;
+    color:white;
   }
   .para{
     text-align: center;
@@ -542,9 +572,9 @@ form input {
   .explore{
     margin-left:25%;
   }
-  .students{
+/*  .students{
     margin-bottom:none;
-  }
+  }*/
   #pic p{
     text-align: left;
   }
