@@ -6,8 +6,60 @@ body {
   font-family: sans-serif;
 }
 
+
+
 h1 {
-  color: coral;
+  color: rgb(30, 66, 212);
+  
+}
+
+h1 a{
+  color: rgb(30, 66, 212);
+  text-decoration: none;
+  
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background:  linear-gradient(0deg, rgb(18, 18, 18) 0%, rgb(159, 159, 161) 70%);
+  width: 90%;
+}
+nav {
+  flex: 3;
+  text-align: right;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+  text-decoration: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 17px;
+  padding: 5px;
+  
+
+}
+
+nav ul li a{
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 17px;
+  padding: 10px;
+  color:rgb(235, 237, 246);
+  text-decoration: none;
+  text-shadow: turquoise;
+
+}
+
+
+
+.google{
+  margin-right: 10px;
+  width: 45px;
 }
 
 .grid-container {
@@ -45,3 +97,4 @@ h1 {
   text-align: center;
   font-style: italic;
 }
+

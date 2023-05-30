@@ -133,7 +133,7 @@ p {
   margin-bottom: 33px;
 }
 .btn:hover {
-  background: #29a423;
+  background: #262826;
   transform: scaleX(2);
   transform: scaley(1.1);
   box-shadow: 2px 2px 20px rgb(49, 49, 49);
@@ -316,7 +316,7 @@ form .far {
 
 }
 
-.col ul>li{
+.col ul li{
   width: 120px;
 }
 
