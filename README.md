@@ -1,5 +1,4 @@
 
-
 # ENGINEERING-NOTES-WEBSITE
 
 Engineering notes is a website where we provide hand writen notes
@@ -19,9 +18,13 @@ can contribute.
 <div align="center">
 
 [![Issues](https://img.shields.io/github/issues/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/Issues)
+
 [![Pull Requests](https://img.shields.io/github/issues-pr/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/Pulls)
+
 [![Forks](https://img.shields.io/github/forks/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/network/members)
+
 [![Repo Size](https://img.shields.io/github/repo-size/NageshMandal/Engineering-Notes-Website?color=yellow)](https://github.com/NageshMandal/Engineering-Notes-Website)
+
 [![stars](https://img.shields.io/github/stars/NageshMandal/Engineering-Notes-Website?style=social)](https://github.com/NageshMandal/Engineering-Notes-Website/stargazers)
 
 </div>
@@ -33,8 +36,6 @@ can contribute.
 <img  src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"/>
 
 </div>
-
-
 
 <br><hr>
 
@@ -52,6 +53,10 @@ can contribute.
 
 
 ## Screen Shots
+![Screenshot-1](images\ss-1.PNG)
+![Screenshot-2](images\college1.png)
+![Screenshot-3](images\ss-2.PNG)
+
 
 
 
