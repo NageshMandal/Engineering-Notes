@@ -52,16 +52,22 @@ can contribute.
 
 
 
-## Screen Shots
-![Screenshot-1](images\ss-1.PNG)
-![Screenshot-2](images\college1.png)
-![Screenshot-3](images\ss-2.PNG)
+## Screenshots
+<br>
+<div align = "center">
 
+<img src="images\ss-1.PNG" width="200" height="200">
+&nbsp
+<img src="images\college1.png" width="200" height="200">
+&nbsp
+<img src="images\ss-2.PNG" width="200" height="200">
+&nbsp
 
-
-
+</div>
 
 <br><hr>
+
+
 ## Getting Started
 
 Include instructions on how to get started with your project. This may include:
@@ -104,7 +110,7 @@ We welcome contributions from everyone. Here are some guidelines to get started:
 <table>
         <tr>
             <td align="center"><a href="https://github.com/NageshMandal"><img alt=""
-                        src="https://avatars.githubusercontent.com/u/106006006?v=4" width="100px;"><br><sub><b> Nagesh Mandal
+                        src="https://avatars.githubusercontent.com/u/106006006?v=4" width="200px;"><br><sub><b> Nagesh Mandal
                         </b></sub></a><br></td> </a></td>
 </table>
 
