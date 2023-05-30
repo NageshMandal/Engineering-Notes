@@ -18,13 +18,9 @@ can contribute.
 <div align="center">
 
 [![Issues](https://img.shields.io/github/issues/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/Issues)
-
 [![Pull Requests](https://img.shields.io/github/issues-pr/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/Pulls)
-
 [![Forks](https://img.shields.io/github/forks/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/network/members)
-
 [![Repo Size](https://img.shields.io/github/repo-size/NageshMandal/Engineering-Notes-Website?color=yellow)](https://github.com/NageshMandal/Engineering-Notes-Website)
-
 [![stars](https://img.shields.io/github/stars/NageshMandal/Engineering-Notes-Website?style=social)](https://github.com/NageshMandal/Engineering-Notes-Website/stargazers)
 
 </div>
@@ -42,7 +38,7 @@ can contribute.
 
 ## Table of Contents
 
-- [ScreenShots](https://code-engineering.netlify.app/)
+- [Screenshots](#screenshots)
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
 - [License](#license)
