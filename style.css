@@ -304,13 +304,13 @@ ul li a:hover {
   color: #ff523b;
 }
 form {
-  padding-bottom: 5%;
-  padding-left: 10px;
-  display: flex;
+  /* padding-bottom: 5%;
+  padding-left: 10px; */
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 70px;
+  /* margin-bottom: 70px; */
 }
 form .far {
   font-size: 38px;
@@ -742,4 +742,34 @@ body.dark-mode .project-card{
 
 .contributors-container {
   padding-top: 20px;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5%;
+  width: fit-content;
+  margin: 25px;
+  background-color: #bf7474;
+  color: white;
+}
+.contact-form-input{
+  border: none;
+  display: block;
+  margin: auto;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+}
+.contact-form-label{
+  margin: auto;
+}
+.contact-btn{
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: none;
+}
+.contact-btn:hover{
+  background-color: #192734;
+  color: white;
 }
