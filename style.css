@@ -149,6 +149,7 @@ p {
   margin: 70px 0;
 }
 .col-3 {
+  position: relative;
   text-align:center;
   flex-basis: 30%;
   min-width: width 250px;
@@ -382,11 +383,18 @@ form input {
   display: none;
 }
 .dis{
-  text-align:left;
+  position: absolute;
+  bottom: 20%;
+  text-align:center;
   font-size: 13px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-
+  padding: 1rem 1rem;
+  transition: .5s ease;
+  background-color: #a6b6bb;
+  opacity: 0;
+  overflow: hidden;;
+}
+.col-3:hover .dis{
+  opacity: 1;
 }
 #pic{
   display: flex;
@@ -423,6 +431,7 @@ form input {
 
 .branchimg{
   box-shadow: 8px 8px 8px#1c2020;
+  border-radius: 1rem;
 }
 .students{
   filter: drop-shadow(10px 10px 10px rgb(60, 60, 60));
