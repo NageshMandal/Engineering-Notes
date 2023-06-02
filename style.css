@@ -160,10 +160,15 @@ p {
   width: 100%;
 }
 .small-container {
-  max-width: 1080px;
+  max-width: 1200px;
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
+}
+.map{
+  margin-top:20px;
+  width: 100%;
+  align-items: center;
 }
 .col-4 {
   flex-basis: 25%;
@@ -621,6 +626,7 @@ form input {
 .project-form .form-input {
   margin: 0.5rem 0 1rem 0;
   width: 100%;
+  color:black;
   font-size: 0.95rem;
   border-radius: 0.25rem;
   outline-style: solid;
