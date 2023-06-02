@@ -10,6 +10,10 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,300">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400&family=Finger+Paint&display=swap">
+      
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https//stackpath.bootsstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
@@ -198,10 +202,24 @@
                 <img class="moon" data-set="sun" src="images/moon.png" alt="dark-mode">
                 <img class="sun"  data-set="moon" src="images/sun.png"  alt="light-mode">
             </div>
-            
+            <div class="card">
+                <div id="header">
+                  <h1>Chat box!</h1>
+                </div>
+                <div id="message-section">
+                  <div class="message" id="bot"><span id="bot-response">Hello.. I'm listening! Go on..</span></div>
+                </div>
+                <div id="input-section">
+                  <input id="input" type="text" placeholder="Type a message" autocomplete="off" autofocus="autofocus"/>
+                  <button class="send" onclick="sendMessage()">
+                    <div class="circle"><i class="zmdi zmdi-mail-send"></i></div>
+                  </button>
+                </div>
+              </div>
+
         </footer>
 
-
+<script src="chatbot.js"></script>
     <script src="script.js"></script>
     <script src="app.js"></script>
 </body>
