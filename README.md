@@ -82,20 +82,29 @@ We welcome contributions from everyone. Here are some guidelines to get started:
 
 <hr>
 
-<h1 align=center> Project Admins </h1>
-<p align="center">
+<h2>Project Admin⚡</h2>
 <table>
-        <tr>
-            <td align="center"><a href="https://github.com/NageshMandal"><img alt=""
-                        src="https://avatars.githubusercontent.com/u/106006006?v=4" width="100px;"><br><sub><b> Nagesh Mandal
-                        </b></sub></a><br></td> </a></td>
+<tr>
+<td align="center">
+<a href="https://github.com/NageshMandal"><img src="https://avatars.githubusercontent.com/u/106006006?v=4" height="150px" width="150px" alt="Nagesh Mandal"></a><br><sub><b>Nagesh Mandal</b></sub>
+</td>
+</tr>
 </table>
 
-<h1 align=center> Contributors </h1>
+<hr>
 
-Thanks go to these **Wonderful People**: **Contributions** of any kind are welcome!
+<h2> Contributors </h2>
 
-> Mention the people who successfully contributed to your project as contributors.
+Thanks to these **Wonderful People**!
+<br><br>
+
+<a href="https://github.com/NageshMandal/Engineering-Notes-Website/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=NageshMandal/Engineering-Notes-Website" />
+</a>
+
+ 
+
+<h3> <b>Contributions</b> of any kind are welcome!
 
 <hr>
 
