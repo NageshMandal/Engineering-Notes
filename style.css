@@ -449,23 +449,29 @@ form input {
   padding-left: 8px;
 }
 .tweet:hover{
-  color: #00B6F1;;
+  color: white;
+  background: rgb(0, 140, 255);
+
 }
 .insta:hover{
-  color:  rgb(255, 0, 43);
+  color:  white;
+  background: red;
 }
 .git:hover{
-  color: #040204;
+  color: white;
+  background: black;
 }
 .in:hover{
  color: #04669A;
+ background: white;
 }
 .tele:hover{
   color:  #0088cc;
 
 }
 .youtube:hover{
-  color:rgb(255, 0, 0);
+  color:red;
+  background: white;
 }
 /*? dark mode */
 
