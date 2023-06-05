@@ -30,16 +30,50 @@ body::-webkit-scrollbar-thumb {
 nav {
   flex: 1;
   text-align: right;
-  & ul {
-    display: inline-block;
-    list-style-type: none;
-    & li {
-      display: inline-block;
-      margin-right: 20px;
-      font-size: 17px;
-      padding: 10px;
-    }
-  }
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 17px;
+  padding: 10px;
+}
+
+.nav-link {
+  display: inline-block;
+  position: relative;
+  color: 
+  rgb(87, 81, 81);
+}
+
+.nav-link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: 
+  rgb(87, 81, 81);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  
+}
+.col-2 p{
+  text-align: left;
+}
+.para{
+  max-width: 500px;
+  font-family:"Poppins", sans-serif;
 }
 a {
   text-decoration: none;
@@ -180,22 +214,31 @@ form {
   align-items: center;
   border-bottom: 1px solid #ccc;
   margin-bottom: 70px;
-  & .far {
-    font-size: 38px;
-    margin-right: 10px;
-  }
-  & button > i{
-    padding: 8px;
-    border-radius: 10px;
-  }
-  & input {
-    background: transparent;
-    color: #ccc;
-    width: 200px;
-    padding: 8px;
-    border: 0;
-    outline: none;
-  }
+}
+form .far {
+  font-size: 38px;
+
+}
+
+.col ul>li{
+  width: 120px;
+}
+
+button  .submit{
+  border-radius: 15px;
+}
+form button>i{
+  padding: 8px;
+  border-radius: 10px;
+}
+
+form input {
+  background: transparent;
+  color: #ccc;
+  width: 200px;
+  padding: 8px;
+  border: 0;
+  outline: none;
 }
 
 .form-news{
@@ -203,20 +246,20 @@ form {
 }
 .social-media{
   text-align: center;
-  & i {
-    border: 1px solid gray;
-    width: 45px;
-    height: 38px;
-    padding-top: 7px;
-    margin-right: 5px;
-    text-align: center;
-    display: inline-block;
-    font-size: 1.5em;
-    text-decoration: none;
-    color: #d3d3d3;
-    border-radius: 5px;
-    transition: all 0.3s;
-  }
+}
+.social-media i{
+  border: 1px solid gray;
+  width: 45px;
+  height: 38px;
+  padding-top: 7px;
+  margin-right: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #d3d3d3;
+  border-radius: 5px;
+  transition: all 0.3s;
 }
 .toggle-mode {
   position: absolute;
@@ -225,10 +268,11 @@ form {
   width: 35px;
   height: 35px;
   cursor: pointer;
-  & > img {
-    width: 35px;
-    height: 35px;
-  }
+}
+
+.toggle-mode > img {
+  width: 35px;
+  height: 35px;
 }
 
 .sun {
@@ -250,17 +294,31 @@ form {
 .contact{
   width: 70%;
   padding: 5px;
+}
+
+.contact{
+  padding-right:5px;
   background-color: #ff523b;
   border-radius: 20px;
   margin-top: 10px;
-  & a h4 {
-    font-size: 16px;
-    text-align: center;
-    color: white;
-    &:hover {
-      font-size: 18px;
-    }
-  }
+}
+.contact a h4{
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+.contact a h4:hover{
+  font-size: 18px;
+}
+
+.branchimg{
+  box-shadow: 8px 8px 8px#1c2020;
+}
+.students{
+  filter: drop-shadow(10px 10px 10px rgb(60, 60, 60));
+}
+.far{
+  margin-right: 10px;
 }
 .emailid{
   border: 2px solid rgb(255, 255, 255);
