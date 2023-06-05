@@ -131,6 +131,7 @@ p {
   margin-top: 30px;
   margin-top: 32px;
   margin-bottom: 33px;
+  font-size: 1.3rem;
 }
 .btn:hover {
   background: #29a423;
@@ -148,6 +149,7 @@ p {
   margin: 70px 0;
 }
 .col-3 {
+  position: relative;
   text-align:center;
   flex-basis: 30%;
   min-width: width 250px;
@@ -159,10 +161,15 @@ p {
   width: 100%;
 }
 .small-container {
-  max-width: 1080px;
+  max-width: 1200px;
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
+}
+.map{
+  margin-top:20px;
+  width: 100%;
+  align-items: center;
 }
 .col-4 {
   flex-basis: 25%;
@@ -381,11 +388,18 @@ form input {
   display: none;
 }
 .dis{
-  text-align:left;
+  position: absolute;
+  bottom: 20%;
+  text-align:center;
   font-size: 13px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-
+  padding: 1rem 1rem;
+  transition: .5s ease;
+  background-color: #a6b6bb;
+  opacity: 0;
+  overflow: hidden;;
+}
+.col-3:hover .dis{
+  opacity: 1;
 }
 #pic{
   display: flex;
@@ -422,6 +436,7 @@ form input {
 
 .branchimg{
   box-shadow: 8px 8px 8px#1c2020;
+  border-radius: 1rem;
 }
 .students{
   filter: drop-shadow(10px 10px 10px rgb(60, 60, 60));
@@ -440,23 +455,29 @@ form input {
   padding-left: 8px;
 }
 .tweet:hover{
-  color: #00B6F1;;
+  color: white;
+  background: rgb(0, 140, 255);
+
 }
 .insta:hover{
-  color:  rgb(255, 0, 43);
+  color:  white;
+  background: red;
 }
 .git:hover{
-  color: #040204;
+  color: white;
+  background: black;
 }
 .in:hover{
  color: #04669A;
+ background: white;
 }
 .tele:hover{
   color:  #0088cc;
 
 }
 .youtube:hover{
-  color:rgb(255, 0, 0);
+  color:red;
+  background: white;
 }
 /*? dark mode */
 
@@ -585,4 +606,153 @@ form input {
 .google{
   margin-right: 10px;
   width: 45px;
+}
+
+/* CSS for projects page */
+
+.project-container .title {
+  width: 100%;
+  padding: 0;
+  margin-top: 2rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.project-form-container {
+  max-width: 30rem;
+  margin: auto;
+}
+
+.project-form {
+  border-bottom: none;
+  padding: 1.25rem 1rem;
+  display: block;
+  border-width: 1px;
+}
+
+.project-form .form-input {
+  margin: 0.5rem 0 1rem 0;
+  width: 100%;
+  color:black;
+  font-size: 0.95rem;
+  border-radius: 0.25rem;
+  outline-style: solid;
+  outline-width: 1px
+}
+
+.project-form label {
+  word-wrap: none;
+}
+
+label[for="project-link"] i {
+  font-size: 1rem;
+}
+
+.form-input-group {
+  margin: 1rem;
+}
+
+.project-form .btn {
+  display: block;
+  margin: auto;
+  border-style: none;
+  box-shadow: 0px 0px 10px 0px hsla(0, 0%, 0%, 0.2);
+}
+
+.project-section-title {
+  margin-bottom: 1rem;
+}
+
+.project-card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.project-card {
+  padding: 1rem 1.25rem;
+  box-shadow: 0px 0px 10px 0px hsla(0, 0%, 0%, 0.2);
+  max-width: 20rem;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+body.dark-mode .project-card{
+  box-shadow: 0px 0px 10px 0px hsla(0, 0%, 100%, 0.2);
+}
+
+.project-card-title {
+  font-size: 20px;
+  margin-bottom: 5px;
+  display: block;
+  width: 100%;
+  flex-basis: 100%;
+}
+
+.project-card-author {
+  width: 100%;
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.project-card-description {
+  margin-bottom: 10px;
+}
+
+.project-card-link a {
+  display: flex;
+  align-items: center;
+}
+
+.project-card-link a{
+  color:#04669A
+}
+
+.project-card-link i{
+  font-size: 1.25rem;
+  padding-left: 0px;
+}
+
+.contributors-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #131c2b;
+  padding-bottom: 2.75rem;
+  border-bottom: 1px solid gray;
+}
+
+.contributors-container h1 {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 2.5rem 0;
+}
+
+.contributors {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 8%;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 4rem;
+}
+
+.contributors {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contributors-container {
+  padding-top: 20px;
 }
