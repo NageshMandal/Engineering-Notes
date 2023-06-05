@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Engineering Notes | Chaibasa engineering college</title>
     <meta name="description" content="A one stop platform for all your engineering notes and study material. Our well well-organized notes provide you deep understandingo of each domain.Our easily accessible notes are designed to support students, professionals, and enthusiasts alike">
-    <meta name="keywords" content="electrical engineering, mechanical engineering, electronics and communication engineering, computer engineering, computer science, civil engineering,  best notes, all semester, exam notes, complete notes for engineering, engineering notes, hand-written notes, hand-written engineering notes">   
-    <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="electrical engineering, mechanical engineering, electronics and communication engineering, computer engineering, computer science, civil engineering,  best notes, all semester, exam notes, complete notes for engineering, engineering notes, hand-written notes, hand-written engineering notes"> 
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https//stackpath.bootsstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
     <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
     <script src="https://kit.fontawesome.com/739255457e.js" crossorigin="anonymous"></script>
@@ -22,37 +23,55 @@
 
 </head>
 <body>
+<div class="container">
     <div class="header">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <a href="https://code-engineering.netlify.app/"><img src="images/logo1.png" alt="Chaibasa Engineering College" width="200px"></a>
-                </div>
-                <nav>
-                    <ul>
-
-                        <li><a class="nav-link" href=""></a></li>
-                        <li><a class="nav-link" href="/Gallary-section/index.html">Gallery</a></li>
-                        <li><a class="nav-link" href="projects.html">Projects</a></li>
-                        <li><a class="nav-link" href="library.html">Library</a></li>
-                        <li><a class="nav-link" href="./placement.html">Placements</a></li>
-                        <li><a class="nav-link" href="contactus.html">Contact</a></li>
-
-                        <li>
-                            <form id="search-form" action="#" method="GET">
-                                <input id="search-input" type="text" placeholder="Search">
-                                <button id="search-button" type="submit"><i class="fa fa-search"></i></button>
-                            </form>
-                        </li>
-                        <a id= "mike-button" href="#"><i class="mic fa-solid fa-microphone"></i></a>
-                        <img src="./images/GS20.gif" alt="google" class="google">
-                    </ul>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="https://code-engineering.netlify.app/">
+                        <img src="images/logo1.png" alt="Chaibasa Engineering College" height="80">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item font-weight-bold">
+                                <a class="nav-link" href="Gallary-section/index.html">Gallery</a>
+                            </li>
+                            <li class="nav-item font-weight-bold">
+                                <a class="nav-link" href="placement.html">Placements</a>
+                            </li>
+                            <li class="nav-item font-weight-bold">
+                                <a class="nav-link" href="projects.html">Projects</a>
+                            </li>
+                            <li class="nav-item font-weight-bold">
+                                <a class="nav-link" href="library.html">Library</a>
+                            </li>
+                            <li class="nav-item font-weight-bold">
+                                <a class="nav-link" href="contactus.html">Contact</a>
+                            </li>
+                        </ul>
+                        <div>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">&nbsp;
+                            <button class="btn btn-outline-light my-2 my-sm-0 w-25 d-flex align-items-center justify-content-center" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </form>
+                        <div class="toggle-mode my-4">
+                                <img class="moon" data-set="sun" src="images/moon.png" alt="dark-mode">
+                                <img class="sun"  data-set="moon" src="images/sun.png"  alt="light-mode">
+                            </div>
+                        </div>
+                    </div>
                 </nav>
             </div>
+            
             <div class="row">
                 <div class="col-2">
-                    <h1>CHAIBASA ENGINEERING<br>COLLEGE</h1>
-                    <div class="para">
+                    <h1 class="heading">CHAIBASA ENGINEERING<br>COLLEGE</h1>
+                    <br>
+                    <div class="para text-sm-left">
                         <p>
                             Chaibasa Engineering College is a college of higher education established in the year 2013 by
                             Jharkhand Govt. It is run by the Techno India Group and is recognized by AICTE.
@@ -62,7 +81,7 @@
                         </p>
                     </div>
 
-                    <div class="explore">
+                    <div class="explore text-sm-center">
                         <a href=""class="btn">Explore Now &#8594;</a>
                     </div>
                 </div>
@@ -80,7 +99,7 @@
     
 <!--------------  BRANCHES  ----------------->
 <div class="small-container">
-    <h2 class="title">BRANCHES IN CEC</h2>
+    <h1 class="title font-weight-bold">BRANCHES IN CEC</h1>
     <div class="row">
         <div class="col-3">
             <img class="branchimg" alt="computer science engineering image" src="images/cse.jpg">
@@ -141,7 +160,6 @@
      </div>
 </div>
    </div>
-</div>
 <div class="contributors-container">
     <h1>Our Valuable Contributors</h1>
     <div class="contributors" id="contributors"></div>
@@ -152,70 +170,6 @@
     >
     </a>
 </div>
-
-        <!-- <footer>
-            <div class="row">
-                <div class="col col1" id="pic" >
-                    <img src="images/nagesh.png" width="80px">
-                    <div class="myname">
-                        <h5>Nagesh Mandal</h5>
-                    </div>
-                    <p class="dev">Full Stack Web Developer</p>
-                    <div class="contact">
-                        <a href="https://www.instagram.com/nagesh_mandal7_5_/"><h4>Contact</h4></a>
-                    </div>
-                </div>
-                <div class="col col2">
-                    <a target="_blank" href="https://www.google.com/maps/place/Chaibasa+Engineering+College/@22.4643055,85.7886378,17z/data=!3m1!4b1!4m6!3m5!1s0x3a1e25ddde342373:0x4ac680428662b09d!8m2!3d22.4643055!4d85.7912127!16s%2Fg%2F1pp2wwhc_">
-                    <h3>Chaibasa Engineering College</h3>
-                    <p>Jamshedpur Keonjhar Highway</p>
-                    <p>Chaibasa Jharkhand PIN 833215, India</p>
-                    </a>
-                    <br>
-                    <a href="mailto:cordinatortigjh@gmail.com" style="color:white;"><h4>cordinatortigjh@gmail.com</h4></a>
-                    <br>
-                    <a href="tel:+919062941530" style="color:white;"><h4>+91 - 9062941530</h4></a>
-
-                </div>
-                <div class="col col3" id="link">
-                    <h3>Links</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">About us</a></li>
-                        <li><a href="">Features</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col col4">
-                    <h3>News<span>letter</span></h3>
-                    <form class="form-news">
-                        <i class="far fa-envelope"></i>
-                        <input class="emailid" type="email" placeholder="Enter your email" required>
-                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
-                    </form>
-                    <div class="social-media">
-                       <a href="https://twitter.com/NageshMandal75"> <i class="tweet fa-brands fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/nagesh_mandal7_5_/"><i class="insta fa-brands fa-instagram"></i></a>
-                       <a href="https://github.com/NageshMandal"> <i class="git fa-brands fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/nagesh-mandal-134b70237/"> <i class="in fa-brands fa-linkedin"></i></a>
-                       <a href="https://www.youtube.com/@nageshmandal9461/featured"> <i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                    </div>
-                    <div class="return-to-top" id="returnToTop">
-                        <i class="fas fa-arrow-up fa-2x fa-bounce"></i>
-                      </div>
-                </div>
-            </div>-->
-            <!--Voice Assistent-->
-            <!-- <div class="containers">
-                <div class="texts">
-                </div>
-            </div> -->
-            <!--Voice assistent end-->
-            <!-- <div class="toggle-mode">
-                <img class="moon" data-set="sun" src="images/moon.png" alt="dark-mode">
-                <img class="sun"  data-set="moon" src="images/sun.png"  alt="light-mode">
-            </div> -->
 
         <!-- </footer> -->
 
@@ -283,17 +237,17 @@
                 </div>
             </div>
             <!--Voice assistent end-->
-            <div class="toggle-mode">
+            <!-- <div class="toggle-mode">
                 <img class="moon" data-set="sun" src="images/moon.png" alt="dark-mode">
                 <img class="sun"  data-set="moon" src="images/sun.png"  alt="light-mode">
-            </div>
+            </div> -->
 
         </footer>
-
+</div>
 
     <script src="script.js"></script>
     <script src="app.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
 </body>
 </html>
