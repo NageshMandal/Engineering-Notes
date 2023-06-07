@@ -1,4 +1,8 @@
-![App Screenshot](https://github.com/NageshMandal/Engineering-Notes-Website/blob/main/images/engneering%20nots.png?raw=true)
+
+![New Tab - Google Chrome 07-06-2023 09_12_44](https://github.com/muskanmandloi/Engineering-Notes-Website/assets/54906865/12e15b02-361e-4e8b-b62e-14ccf5e25d29)
+![New Tab - Google Chrome 07-06-2023 09_12_51](https://github.com/muskanmandloi/Engineering-Notes-Website/assets/54906865/1a07327d-b299-4987-be5b-183c2139b09a)
+![New Tab - Google Chrome 07-06-2023 09_13_09](https://github.com/muskanmandloi/Engineering-Notes-Website/assets/54906865/cdb1b43e-62e5-457f-81bf-1dfb01e4737a)
+
 # ENGINEERING-NOTES-WEBSITE
 Engineering notes is a website where we provide hand writen notes
 to students free of cost. it is a an open source project where you 
