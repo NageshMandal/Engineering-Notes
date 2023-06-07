@@ -1,7 +1,6 @@
-
-![New Tab - Google Chrome 07-06-2023 09_12_44](https://github.com/muskanmandloi/Engineering-Notes-Website/assets/54906865/12e15b02-361e-4e8b-b62e-14ccf5e25d29)
-![New Tab - Google Chrome 07-06-2023 09_12_51](https://github.com/muskanmandloi/Engineering-Notes-Website/assets/54906865/1a07327d-b299-4987-be5b-183c2139b09a)
-![New Tab - Google Chrome 07-06-2023 09_13_09](https://github.com/muskanmandloi/Engineering-Notes-Website/assets/54906865/cdb1b43e-62e5-457f-81bf-1dfb01e4737a)
+![New Tab - Google Chrome 07-06-2023 09_12_44](https://github.com/muskanmandloi/Engineering-Notes-Website/assets/54906865/cbff3e5b-3388-408d-88b6-5618d87dbd07)
+![New Tab - Google Chrome 07-06-2023 09_13_09](https://github.com/muskanmandloi/Engineering-Notes-Website/assets/54906865/cf9c4682-6002-424c-bfb5-035d4e192ad9)
+![New Tab - Google Chrome 07-06-2023 09_12_51](https://github.com/muskanmandloi/Engineering-Notes-Website/assets/54906865/4c7f0390-ef76-4095-baf6-cd63d35d9807)
 
 # ENGINEERING-NOTES-WEBSITE
 Engineering notes is a website where we provide hand writen notes
