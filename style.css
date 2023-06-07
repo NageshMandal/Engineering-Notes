@@ -502,13 +502,7 @@ form input {
 }
 
 @media screen and (max-width: 800px){
-  .col-2{
-    flex-basis: 100%;
-  }
-  .col-2 h1{
-    text-align: center;
-    font-size: 2.5rem;
-  }
+
   .para{
     text-align: center;
     padding-left: 20px;
@@ -531,15 +525,46 @@ form input {
   .row{
     display: inline;
   }
+  .col2{
+    width: 100%;
+    /* margin-left: -80px; */
+    min-width: 100%;
+    margin-left: 0;
+    padding-top: 10%;
+  }
   .col3{
     margin: 1rem auto;
-     max-width: 40%;
+     max-width: 100%;
      padding-left: 0rem;
    }
-   .col2{
-     /* min-width: 21rem; */
-     margin: 1rem auto;
+   .col3 h3{
+    width: 100%;
+    text-align: center;
    }
+   .col2 h3{
+    width: 100%;
+    text-align: center;
+   }
+  .col2 h4{
+    text-align: center;
+  }
+  .col2 .email-id{
+    width: 100%;
+    text-align: center;
+  }
+  .col3 ul{
+    display: flex;
+    justify-content: space-evenly;
+    overflow: auto;
+  }
+  .col3 ul li{
+    width: 100%;
+    padding: 2%;
+  }
+  .col4 h3{
+    width: 100%;
+    text-align: center;
+  }
   nav{
     text-align: center;
   }
@@ -572,12 +597,10 @@ form input {
   #pic h5{
     margin-right: 20px;
   }
-  .col{
-    margin-left:5%;
-  }
   .contact{
     padding-right:5px;
   }
+  
 }
 
 .myname{
