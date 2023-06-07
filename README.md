@@ -126,4 +126,4 @@ This project is licensed under the terms of the [MIT License](LICENSE).
 Feel free to contribute to this repo.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-<p align="center">Copyright (c) 2023 Nagesh Mandal</p>
+<p align="center"><a href="LICENSE"> Copyright (c) 2023 Nagesh Mandal </a></p>
