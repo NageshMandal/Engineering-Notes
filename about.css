@@ -278,21 +278,20 @@ footer {
   }
   
   .toggle-mode {
-    position: absolute;
+    position: relative;
     top: 10px;
-    right: 20px;
-    width: 35px;
-    height: 35px;
+    right: 25px;
     cursor: pointer;
-    /* border: 1px solid red; */
-    /* cursor: pointer; */
   }
   
   .toggle-mode > img {
     width: 35px;
-    height: 35px;
   }
   
+  #mike-button{
+    position: absolute;
+  }
+
   .sun {
     display: none;
   }
