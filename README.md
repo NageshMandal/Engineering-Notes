@@ -96,7 +96,7 @@ We welcome contributions from everyone. Here are some guidelines to get started:
 Thanks go to these **Wonderful People**: **Contributions** of any kind are welcome!
 
 > Mention the people who successfully contributed to your project as contributors.
-<h2 align="center">Our Comtributors 🌱</h2>
+<h2 align="center">Our Contributors 🌱</h2>
 <p align="center">
   <a href="https://github.com/NageshMandal/Engineering-Notes-Website/graphs/contributors">
 </a></p>
