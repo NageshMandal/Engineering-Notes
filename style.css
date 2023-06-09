@@ -243,6 +243,7 @@ footer {
 /*   width: fit-content; */
   margin: 20px 0;
   color: #ff523b;
+  cursor: pointer;
 }
 .email-id:hover{
   font-size: 16px;
@@ -499,6 +500,10 @@ form input {
 .header-dark-mode p{
   background: #1c2020;
   color: white;
+}
+
+.fa-arrow-right{
+  cursor: pointer;
 }
 
 @media screen and (max-width: 800px){
