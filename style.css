@@ -204,7 +204,7 @@ footer {
   width: 100%;
   bottom: 0;
   background:  #192734;
-  /* background-image: linear-gradient(to right, #DECBA4, #3E5151); */
+   background-image: linear-gradient(to right, #DECBA4, #3E5151); 
   color: #fff;
   padding: 8px;
   font-size: 13px;
