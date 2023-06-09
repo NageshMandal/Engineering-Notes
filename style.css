@@ -126,6 +126,8 @@ p {
   border-radius: 30px;
   transition: 0.5s;
   margin-bottom: 1rem;
+  width: 10rem;
+  font-size: 20px;
 }
 .col-2 .btn{
   margin-top: 30px;
