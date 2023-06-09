@@ -424,14 +424,18 @@ form input {
   background-color: #ff523b;
   border-radius: 20px;
   margin-top: 10px;
+  transition: 0.5s;
 }
 .contact a h4{
   font-size: 16px;
   text-align: center;
   color: white;
 }
-.contact a h4:hover{
-  font-size: 18px;
+.contact:hover {
+  background: #29a423;
+  transform: scaleX(2);
+  transform: scaley(1.1);
+  box-shadow: 2px 2px 20px rgb(49, 49, 49);
 }
 
 .branchimg{
