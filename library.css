@@ -63,4 +63,17 @@ section#content {
     font-style: oblique;
   }
 
-  
+  @media screen and (max-width:450px) {
+    .col-2 .btn{
+      font-size: 1.1rem;
+    }
+    #bookList div{
+      width:100%;
+    }
+  }
+
+  @media screen and (max-width:800px) {
+    #bookList div{
+      width:60%;
+    }
+  }

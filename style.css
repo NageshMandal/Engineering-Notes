@@ -240,7 +240,7 @@ footer {
   line-height: 2rem;
 }
 .email-id {
-  width: fit-content;
+/*   width: fit-content; */
   margin: 20px 0;
   color: #ff523b;
 }
@@ -782,3 +782,4 @@ h3 {
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
