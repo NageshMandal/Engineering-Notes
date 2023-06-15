@@ -6,13 +6,12 @@ body {
   font-family: sans-serif;
 }
 
- /* Sticky navbar */
- .navbar {
+/* Sticky navbar */
+.navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 20px;
-  background-color: transparent;
+  background-color:rgb(255, 191, 191);
   position: sticky;
   top: 0;
   width: 100%;
@@ -23,7 +22,6 @@ body {
 .navbar.sticky {
   background-color: rgba(237, 166, 73, 0.7) ;
 } 
-
 
 h1 {
   color: coral;
