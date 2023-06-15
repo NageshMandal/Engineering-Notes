@@ -24,6 +24,9 @@ body {
   background-color: rgba(237, 166, 73, 0.7) ;
 } 
 
+ul#list-item{
+  margin-top: 0px;
+}
 
 h1 {
   color: coral;
