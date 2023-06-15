@@ -8,6 +8,10 @@ body {
 
  /* Sticky navbar */
  .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
   background-color: transparent;
   position: sticky;
   top: 0;
@@ -17,9 +21,9 @@ body {
   transition: background-color 0.3s ease-in-out;
 }
 .navbar.sticky {
-  background-color: rgba(97, 223, 80, 0.7) ;
-  height: 80px;
+  background-color: rgba(237, 166, 73, 0.7) ;
 } 
+
 
 h1 {
   color: coral;

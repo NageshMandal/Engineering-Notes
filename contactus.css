@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(245, 103, 51, 0.7);
+  background-color: rgb(255, 191, 191);
   position: sticky;
   top: 0;
   width: 100%;
