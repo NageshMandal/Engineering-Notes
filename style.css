@@ -140,9 +140,6 @@ p {
 .header {
   background: radial-gradient(#fff, rgb(255, 191, 191));
 }
-.header .row {
-  margin-top: 20px;
-}
 .categories {
   margin: 70px 0;
 }
@@ -318,7 +315,9 @@ form {
 }
 form .far {
   font-size: 38px;
-
+}
+#search-form{
+  margin-bottom:0;
 }
 
 .col ul>li{
@@ -512,6 +511,11 @@ form input {
     padding-left: 20px;
     font-size: 13px;
   }
+  .col-2 h1{
+    font-size: 5vw;
+    margin: 2vw 0;
+    line-height: 5vw;
+  }
 }
 @media screen and (max-width: 1166px){
   .col4{
@@ -522,6 +526,13 @@ form input {
   .col4{
    /* margin-left: 9rem; */
    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 500px){
+  .col-2 h1{
+    font-size: 25px;
+    margin: 20px 0;
+    line-height: 25px;
   }
 }
 
@@ -575,6 +586,9 @@ form input {
   }
   .contact{
     padding-right:5px;
+  }
+  .col-2{
+    padding:0 20px;
   }
 }
 
