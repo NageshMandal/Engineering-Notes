@@ -1,0 +1,52 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.navbar{
+    background-color: rgb(161, 241, 241);
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+    height: 100px;
+    border-radius: 10px;
+}
+.navbar2{
+    background-color: rgb(244, 140, 216);
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+    border-radius: 10px;
+}
+.logo2{
+    margin-left: 60px;
+}
+.nav-link2{
+    color:white;
+    font-size: 20px;
+}
+.nav-link2:hover{
+    text-decoration: underline;
+    color:sienna
+}
+.nav-link1{
+    font-size: 20px;
+}
+.nav-link1:hover{
+    text-decoration: underline;
+}
+.navbar3{
+    background-color:rgb(188, 246, 129);
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
+    border-radius: 10px;
+}
+.nav-link3{
+    font-size: 20px;
+}
+.nav-link3:hover{
+    text-decoration: underline;
+    color:blue
+}

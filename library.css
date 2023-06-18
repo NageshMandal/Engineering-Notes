@@ -1,3 +1,22 @@
+body{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.navbar{
+  position: sticky;
+  top: 0px;
+  z-index: 9999;
+  background-color: bisque;
+  width: 1300px;
+  border-radius: 10px;
+}
+.nav-link:hover{
+  color:blue;
+  text-decoration: underline;
+}
+
 section#content {
     padding: 20px;
   }
@@ -75,5 +94,10 @@ section#content {
   @media screen and (max-width:800px) {
     #bookList div{
       width:60%;
+    }
+  }
+  @media screen and (max-width:1000px){
+    .navbar{
+      width: 100%;
     }
   }
