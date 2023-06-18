@@ -16,17 +16,18 @@
     <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
     <script src="https://kit.fontawesome.com/739255457e.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="sidebar.css">
 </head>
 <body>
     <div class="header">
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <a href="https://code-engineering.netlify.app/"><img src="images/logo1.png" alt="Chaibasa Engineering College" width="200px"></a>
+                    <a href="index.html"><img src="images/logo1.png" alt="Chaibasa Engineering College" width="200px"></a>
                 </div>
                 <nav>
                     <ul>
-
                         <li><a class="nav-link" href=""></a></li>
                         <li><a class="nav-link" href="./Gallary-section/index.html">Gallery</a></li>
                         <li><a class="nav-link" href="./projects.html">Projects</a></li>
@@ -34,17 +35,16 @@
                         <li><a class="nav-link" href="./placement.html">Placements</a></li>
                         <li><a class="nav-link" href="./contactus.html">Contact</a></li>
                         <li><a class="nav-link" href="./syllabus.html">Syllabus</a></li>
-
-                        <li>
-                            <form id="search-form" action="#" method="GET">
-                                <input id="search-input" type="text" placeholder="Search">
-                                <button id="search-button" type="submit"><i class="fa fa-search"></i></button>
-                            </form>
-                        </li>
-                        <a id= "mike-button" href="#"><i class="mic fa-solid fa-microphone"></i></a>
-                        <img src="./images/GS20.gif" alt="google" class="google">
+                        
                     </ul>
                 </nav>
+                <div class="nav-icons">
+                    <input id="search-input" type="text" placeholder="Search">
+                    <button id="search-button" type="submit"><i class="fa fa-search"></i></button>
+                   <i class="mic fa-solid fa-microphone"></i>
+                    <img src="./images/GS20.gif" alt="google" class="google">
+                </div>
+                </div>
             </div>
             <div class="row">
                 <div class="col-2">
@@ -186,9 +186,33 @@
         <img class="moon" data-set="sun" src="images/moon.png" alt="dark-mode">
         <img class="sun"  data-set="moon" src="images/sun.png"  alt="light-mode">
     </div>
+    <div class="sidebar">
+
+        <div class="croos-icon" onclick="sidebarhide()">
+           x
+        </div>
+        <form id="search-form" action="#" method="GET">
+              <input id="search-input" type="text" placeholder="Search">
+              <button id="search-button" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <ul>
+            <li><a  href="./Gallary-section/index.html">Gallery</a></li>
+            <li><a  href="./projects.html">Projects</a></li>
+            <li><a  href="./library.html">Library</a></li>
+            <li><a href="./placement.html">Placements</a></li>
+            <li><a  href="./contactus.html">Contact</a></li>
+            <li><a  href="./syllabus.html">Syllabus</a></li>
+        </ul>
+
+
+    </div>
+    <div class="hamburger-icon" onclick="sidebarvisible()">
+        <i class="bi bi-list"></i>
+    </div>
     
 </footer>
 <script src="script.js"></script>
 <script src="app.js"></script>
+<script src="sidebar.js"></script>
 </body>
 </html>

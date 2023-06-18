@@ -3,6 +3,7 @@ const body = document.querySelector("body");
 const header = document.querySelector(".header");
 const toggle = document.querySelector(".toggle-mode");
 const links = document.querySelectorAll(".nav-link");
+const sidebarElement=document.querySelector(".sidebar")
 
 
 toggle.addEventListener("click", function (e) {
@@ -15,6 +16,7 @@ toggle.addEventListener("click", function (e) {
     document.querySelector(`.moon`).style.display = "none";
     body.classList.add("dark-mode");
     header.classList.add("header-dark-mode");
+  
     links.forEach(function (e) {
       e.classList.add("header-dark-mode");
     });
@@ -23,6 +25,7 @@ toggle.addEventListener("click", function (e) {
     document.querySelector(`.sun`).style.display = "none";
     body.classList.remove("dark-mode");
     header.classList.remove("header-dark-mode");
+  
     links.forEach(function (e) {
       e.classList.remove("header-dark-mode");
     });

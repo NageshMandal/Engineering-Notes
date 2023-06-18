@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https//stackpath.bootsstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" crossorigin="anonymous">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
     <script src="https://kit.fontawesome.com/739255457e.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
@@ -166,7 +168,31 @@
     </div>
     
 </footer>
+<div class="sidebar">
+
+    <div class="croos-icon" onclick="sidebarhide()">
+       x
+    </div>
+    <form id="search-form" action="#" method="GET">
+          <input id="search-input" type="text" placeholder="Search">
+          <button id="search-button" type="submit"><i class="fa fa-search"></i></button>
+    </form>
+    <ul>
+        <li><a  href="./Gallary-section/index.html">Gallery</a></li>
+        <li><a  href="./projects.html">Projects</a></li>
+        <li><a  href="./library.html">Library</a></li>
+        <li><a href="./placement.html">Placements</a></li>
+        <li><a  href="./contactus.html">Contact</a></li>
+        <li><a  href="./syllabus.html">Syllabus</a></li>
+    </ul>
+
+
+</div>
+<div class="hamburger-icon" onclick="sidebarvisible()">
+    <i class="bi bi-list"></i>
+</div>
 <script src="script.js"></script>
 <script src="app.js"></script>
+<script src="sidebar.js"></script>
 </body>
 </html>
