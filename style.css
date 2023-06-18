@@ -670,6 +670,7 @@ label[for="project-link"] i {
   margin: auto;
   border-style: none;
   box-shadow: 0px 0px 10px 0px hsla(0, 0%, 0%, 0.2);
+  cursor: pointer;
 }
 
 .project-section-title {
