@@ -84,7 +84,7 @@ nav ul li {
 
 a {
   text-decoration: none;
-  color: rgb(64, 64, 64);
+  /* color: rgb(64, 64, 64); */
 }
 p {
   color: white;
