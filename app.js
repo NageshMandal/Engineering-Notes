@@ -35,3 +35,29 @@ mike_btn.addEventListener('click',()=>{
     recognition.start()
     console.log('started')
 })
+
+
+// Get the input element
+const searchInput = document.getElementById('s-input');
+
+// Add an event listener for input changes
+searchInput.addEventListener('input', function() {
+  const searchTerm = this.value;
+  searchProjects(searchTerm);
+});
+
+// The searchProjects function remains the same as before
+function searchProjects(searchTerm) {
+  const cards = document.querySelectorAll('.project-card');
+
+  for (const card of cards) {
+    const collegeName = card.querySelector('.project-card-title').textContent.trim();
+    const subjectName = card.querySelector('.project-card-author').textContent.trim();
+
+    if (collegeName.toLowerCase().includes(searchTerm.toLowerCase()) || subjectName.toLowerCase().includes(searchTerm.toLowerCase())) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  }
+}
