@@ -36,25 +36,20 @@ mike_btn.addEventListener('click',()=>{
     console.log('started')
 })
 
+const syllabusSearch = document.getElementById('s-input');
+const cards = document.querySelectorAll('.project-card');
 
-// Get the input element
-const searchInput = document.getElementById('s-input');
-
-// Add an event listener for input changes
-searchInput.addEventListener('input', function() {
-  const searchTerm = this.value;
+syllabusSearch.addEventListener('input', function() {
+  const searchTerm = this.value.trim().toLowerCase();
   searchProjects(searchTerm);
 });
 
-// The searchProjects function remains the same as before
 function searchProjects(searchTerm) {
-  const cards = document.querySelectorAll('.project-card');
-
   for (const card of cards) {
-    const collegeName = card.querySelector('.project-card-title').textContent.trim();
-    const subjectName = card.querySelector('.project-card-author').textContent.trim();
-
-    if (collegeName.toLowerCase().includes(searchTerm.toLowerCase()) || subjectName.toLowerCase().includes(searchTerm.toLowerCase())) {
+    const collegeName = card.querySelector('.project-card-title').textContent.trim().toLowerCase();
+    const subjectName = card.querySelector('.project-card-author.s-subject').textContent.trim().toLowerCase();
+  
+    if (collegeName.includes(searchTerm) || subjectName.includes(searchTerm)) {
       card.style.display = 'block';
     } else {
       card.style.display = 'none';
