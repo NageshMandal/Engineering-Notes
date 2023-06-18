@@ -131,6 +131,7 @@ p {
   margin-top: 30px;
   margin-top: 32px;
   margin-bottom: 33px;
+  font-size: 1.3rem;
 }
 .btn:hover {
   background: #29a423;
@@ -141,13 +142,11 @@ p {
 .header {
   background: radial-gradient(#fff, rgb(255, 191, 191));
 }
-.header .row {
-  margin-top: 20px;
-}
 .categories {
   margin: 70px 0;
 }
 .col-3 {
+  position: relative;
   text-align:center;
   flex-basis: 30%;
   min-width: width 250px;
@@ -159,10 +158,15 @@ p {
   width: 100%;
 }
 .small-container {
-  max-width: 1080px;
+  max-width: 1200px;
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
+}
+.map{
+  margin-top:20px;
+  width: 100%;
+  align-items: center;
 }
 .col-4 {
   flex-basis: 25%;
@@ -233,7 +237,7 @@ footer {
   line-height: 2rem;
 }
 .email-id {
-  width: fit-content;
+/*   width: fit-content; */
   margin: 20px 0;
   color: #ff523b;
 }
@@ -313,7 +317,9 @@ form {
 }
 form .far {
   font-size: 38px;
-
+}
+#search-form{
+  margin-bottom:0;
 }
 
 .col ul>li{
@@ -381,11 +387,18 @@ form input {
   display: none;
 }
 .dis{
-  text-align:left;
+  position: absolute;
+  bottom: 20%;
+  text-align:center;
   font-size: 13px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-
+  padding: 1rem 1rem;
+  transition: .5s ease;
+  background-color: #a6b6bb;
+  opacity: 0;
+  overflow: hidden;;
+}
+.col-3:hover .dis{
+  opacity: 1;
 }
 #pic{
   display: flex;
@@ -422,6 +435,7 @@ form input {
 
 .branchimg{
   box-shadow: 8px 8px 8px#1c2020;
+  border-radius: 1rem;
 }
 .students{
   filter: drop-shadow(10px 10px 10px rgb(60, 60, 60));
@@ -440,23 +454,29 @@ form input {
   padding-left: 8px;
 }
 .tweet:hover{
-  color: #00B6F1;;
+  color: white;
+  background: rgb(0, 140, 255);
+
 }
 .insta:hover{
-  color:  rgb(255, 0, 43);
+  color:  white;
+  background: red;
 }
 .git:hover{
-  color: #040204;
+  color: white;
+  background: black;
 }
 .in:hover{
  color: #04669A;
+ background: white;
 }
 .tele:hover{
   color:  #0088cc;
 
 }
 .youtube:hover{
-  color:rgb(255, 0, 0);
+  color:red;
+  background: white;
 }
 /*? dark mode */
 
@@ -493,6 +513,11 @@ form input {
     padding-left: 20px;
     font-size: 13px;
   }
+  .col-2 h1{
+    font-size: 5vw;
+    margin: 2vw 0;
+    line-height: 5vw;
+  }
 }
 @media screen and (max-width: 1166px){
   .col4{
@@ -503,6 +528,13 @@ form input {
   .col4{
    /* margin-left: 9rem; */
    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 500px){
+  .col-2 h1{
+    font-size: 25px;
+    margin: 20px 0;
+    line-height: 25px;
   }
 }
 
@@ -556,6 +588,9 @@ form input {
   }
   .contact{
     padding-right:5px;
+  }
+  .col-2{
+    padding:0 20px;
   }
 }
 
@@ -612,6 +647,7 @@ form input {
 .project-form .form-input {
   margin: 0.5rem 0 1rem 0;
   width: 100%;
+  color:black;
   font-size: 0.95rem;
   border-radius: 0.25rem;
   outline-style: solid;
@@ -734,55 +770,4 @@ body.dark-mode .project-card{
 .contributors-container {
   padding-top: 20px;
 }
-@media (max-width: 865px)and (min-width:640px) {
-  nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
 
-  nav ul li {
-    margin: 0;
-    font-size: 17px;
-    padding: 7px;
-  }
-
-  .google {
-    height: 17px;
-    margin-right: 0px;
-    width: 45px;
-  }
-
-  .fa-microphone:before {
-    content: "\f130";
-    font-size: 17px;
-  }
-
-  .navbar {
-    display: flex;
-    align-items: center;
-    padding: 20px 0;
-  }
-
-  .logo img {
-    width: 194px;
-  }
-  .explore {
-    margin: 0 20px;
-  }
-}
-
-@media (max-width: 365px) {
-  body {
-    width: 115%;
-  }
-
-  .toggle-mode {
-    position: absolute;
-    top: 10px;
-    right: 0px;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-  }
-}
