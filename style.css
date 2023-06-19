@@ -112,10 +112,27 @@ p {
   padding: 50px 0px;
 }
 .col-2 h1 {
-  font-size: 50px;
-  line-height: 60px;
-  margin: 25px 0;
+  position: relative;
+  width: 26ch;
+  font-weight: bold;
+  animation: type 5s steps(23), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+} 
+@keyframes type {
+  0% {
+    width: 0;
+  }
 }
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
 .btn {
   display: inline-block;
   background: #ff523b;
