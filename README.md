@@ -41,7 +41,7 @@ can contribute.
 - [Screenshots](#screenshots)
 - [Getting Started](#getting-started)
 - [Contributing](#contributing)
-- [License](#license)
+- [LICENSE](LICENSE)
 
 <hr>
 
@@ -128,3 +128,6 @@ Include the license information for your project. For example, you can use the M
 
 This project is licensed under the terms of the [MIT License](LICENSE).
 Feel free to contribute to this repo.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<p align="center"><a href="LICENSE"> Copyright (c) 2023 Nagesh Mandal </a></p>
