@@ -308,12 +308,11 @@ ul li a:hover {
 }
 form {
   padding-bottom: 5%;
-  padding-left: 10px;
+  padding-left: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 70px;
 }
 form .far {
   font-size: 38px;
