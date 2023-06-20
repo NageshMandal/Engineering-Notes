@@ -84,7 +84,7 @@ nav ul li {
 
 a {
   text-decoration: none;
-  color: rgb(64, 64, 64);
+  /* color: rgb(64, 64, 64); */
 }
 p {
   color: white;
@@ -308,12 +308,11 @@ ul li a:hover {
 }
 form {
   padding-bottom: 5%;
-  padding-left: 10px;
+  padding-left: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 70px;
 }
 form .far {
   font-size: 38px;
@@ -671,6 +670,7 @@ label[for="project-link"] i {
   margin: auto;
   border-style: none;
   box-shadow: 0px 0px 10px 0px hsla(0, 0%, 0%, 0.2);
+  cursor: pointer;
 }
 
 .project-section-title {
