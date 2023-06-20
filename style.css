@@ -326,7 +326,7 @@ form .far {
 }
 
 /* Styling of input box */
-form input {
+.input {
   margin: auto;
   background: crimson;
   color: white;
@@ -345,29 +345,29 @@ form input {
   letter-spacing: 0.1rem;
 }
 
-form input:hover {
+.input:hover {
   cursor: pointer;
 }
 
-form input:focus {
+.input:focus {
   width: 145px;
   opacity: 1;
   cursor: text;
 }
 
-form input:focus ~ .search {
+.input:focus ~ .search {
   right: 280px;
   background: #151515;
   z-index: 6;
 }
 
-form input:focus ~ .search::before {
+.input:focus ~ .search::before {
   top: 0;
   left: 0;
   width: 25px;
 }
 
-form input:focus ~ .search::after {
+.input:focus ~ .search::after {
   top: 0;
   left: 0;
   width: 25px;
@@ -378,7 +378,7 @@ form input:focus ~ .search::after {
   transform: rotate(-45deg);
 }
 
-form input::after {
+.input::after {
   width: 25px;
   height: 2px;
   border: none;
@@ -387,7 +387,7 @@ form input::after {
   transform: rotate(-45deg);
 }
 
-form input::placeholder {
+.input::placeholder {
   color: white;
   opacity: 0.5;
   font-weight: bolder;
