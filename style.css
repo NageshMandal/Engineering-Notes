@@ -335,11 +335,17 @@ form button>i{
 
 form input {
   background: transparent;
-  color: #ccc;
+  /* color: #ccc; */
   width: 200px;
   padding: 8px;
   border: 0;
   outline: none;
+  font-size: 18px;
+}
+#search-button{
+  background: transparent;
+  border: hidden;
+  cursor: pointer;
 }
 
 .form-news{
