@@ -489,6 +489,12 @@ form input {
   background: #2c3333;
   color: white;
 }
+.dark-mode #search-button{
+  color: white;
+}
+.dark-mode #search-input{
+  color: white;
+}
 
 .dark-mode .title{
   background: #2c3333;
