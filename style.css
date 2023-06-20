@@ -84,7 +84,7 @@ nav ul li {
 
 a {
   text-decoration: none;
-  color: rgb(64, 64, 64);
+  /* color: rgb(64, 64, 64); */
 }
 p {
   color: white;
@@ -141,9 +141,6 @@ p {
 }
 .header {
   background: radial-gradient(#fff, rgb(255, 191, 191));
-}
-.header .row {
-  margin-top: 20px;
 }
 .categories {
   margin: 70px 0;
@@ -311,16 +308,17 @@ ul li a:hover {
 }
 form {
   padding-bottom: 5%;
-  padding-left: 10px;
+  padding-left: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 70px;
 }
 form .far {
   font-size: 38px;
-
+}
+#search-form{
+  margin-bottom:0;
 }
 
 .col ul>li{
@@ -514,6 +512,11 @@ form input {
     padding-left: 20px;
     font-size: 13px;
   }
+  .col-2 h1{
+    font-size: 5vw;
+    margin: 2vw 0;
+    line-height: 5vw;
+  }
 }
 @media screen and (max-width: 1166px){
   .col4{
@@ -524,6 +527,13 @@ form input {
   .col4{
    /* margin-left: 9rem; */
    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 500px){
+  .col-2 h1{
+    font-size: 25px;
+    margin: 20px 0;
+    line-height: 25px;
   }
 }
 
@@ -577,6 +587,9 @@ form input {
   }
   .contact{
     padding-right:5px;
+  }
+  .col-2{
+    padding:0 20px;
   }
 }
 
@@ -657,6 +670,7 @@ label[for="project-link"] i {
   margin: auto;
   border-style: none;
   box-shadow: 0px 0px 10px 0px hsla(0, 0%, 0%, 0.2);
+  cursor: pointer;
 }
 
 .project-section-title {
@@ -756,3 +770,30 @@ body.dark-mode .project-card{
 .contributors-container {
   padding-top: 20px;
 }
+
+.container {
+  /* text-align: center; */
+  padding: 15px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cmpny_logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cmpny_logo img {
+  width: auto;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+

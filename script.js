@@ -146,6 +146,3 @@ function searchContributors(searchTerm) {
 
 
 
-
-
-
