@@ -333,7 +333,7 @@ form input {
   text-shadow: 0 0 10px crimson;
   width: 45px;
   height: 45px;
-  padding: 0 20px;
+  padding: 0 48px 0 15px;
   border-radius: 30px;
   border: none;
   outline: none;
@@ -350,13 +350,13 @@ form input:hover {
 }
 
 form input:focus {
-  width: 180px;
+  width: 145px;
   opacity: 1;
   cursor: text;
 }
 
 form input:focus ~ .search {
-  right: -250px;
+  right: 280px;
   background: #151515;
   z-index: 6;
 }
