@@ -1,12 +1,3 @@
-<div align="center">
-
-[![Issues](https://img.shields.io/github/issues/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/issues)
-[![Pull Requests](https://img.shields.io/github/issues-pr/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/pulls)
-[![Forks](https://img.shields.io/github/forks/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/network/members)
-[![Stars](https://img.shields.io/github/stars/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/stargazers)
-[![Repo Size](https://img.shields.io/github/repo-size/NageshMandal/Engineering-Notes-Website?color=yellow)](https://github.com/NageshMandal/Engineering-Notes-Website)
-
-</div>
 
 # ENGINEERING-NOTES-WEBSITE
 
@@ -23,27 +14,55 @@ can contribute.
     </a>
 </div>
 
+<br>
+<div align="center">
+
+[![Issues](https://img.shields.io/github/issues/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/Issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/Pulls)
+[![Forks](https://img.shields.io/github/forks/NageshMandal/Engineering-Notes-Website)](https://github.com/NageshMandal/Engineering-Notes-Website/network/members)
+[![Repo Size](https://img.shields.io/github/repo-size/NageshMandal/Engineering-Notes-Website?color=yellow)](https://github.com/NageshMandal/Engineering-Notes-Website)
+[![stars](https://img.shields.io/github/stars/NageshMandal/Engineering-Notes-Website?style=social)](https://github.com/NageshMandal/Engineering-Notes-Website/stargazers)
+
+</div>
+
+<div align= "center">
+<img  src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+<img  src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"/>
+<img  src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+<img  src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"/>
+
+</div>
+
+<br><hr>
+
+
 ## Table of Contents
 
-- [Demo](https://code-engineering.netlify.app/)
-- [Technologies](HTML CSS JS BOOTSTRAP API)
-- [Getting Started](Clone your forked copy of the project🌀)
+- [Screenshots](#screenshots)
+- [Getting Started](#getting-started)
 - [Contributing](#contributing)
 - [License](#license)
 
 <hr>
 
-## Demo
 
 
 
-<hr>
+## Screenshots
+<br>
+<div align = "center">
 
-## HTML, CSS, JS, BOOTSTRAP, API
+<img src="images\ss-1.PNG" width="200" height="200">
+&nbsp
+<img src="images\college1.png" width="200" height="200">
+&nbsp
+<img src="images\ss-2.PNG" width="200" height="200">
+&nbsp
 
-List the technologies and programming languages used in your project.
+</div>
 
-<hr>
+<br><hr>
+
 
 ## Getting Started
 
@@ -87,11 +106,15 @@ We welcome contributions from everyone. Here are some guidelines to get started:
 <table>
         <tr>
             <td align="center"><a href="https://github.com/NageshMandal"><img alt=""
-                        src="https://avatars.githubusercontent.com/u/106006006?v=4" width="100px;"><br><sub><b> Nagesh Mandal
+                        src="https://avatars.githubusercontent.com/u/106006006?v=4" width="200px;"><br><sub><b> Nagesh Mandal
                         </b></sub></a><br></td> </a></td>
 </table>
 
 <h1 align=center> Contributors </h1>
+<p align="center">
+  <a href="https://github.com/ssitvit/Games-and-Go/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=NageshMandal/Engineering-Notes-Website"/>
+</a></p>
 
 Thanks go to these **Wonderful People**: **Contributions** of any kind are welcome!
 
