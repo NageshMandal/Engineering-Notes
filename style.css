@@ -51,55 +51,26 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0px 0px 4px black;
 }
 
-.navbar{
+
+.navbar {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  padding: 20px;
 }
-.navbar nav{
-  /* margin-right: 10px; */
+nav {
+  flex: 1;
+  text-align: right;
 }
-.navbar nav ul{
-  text-align: center;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  gap: 20px;
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 17px;
   padding: 10px;
-  font-weight: bold;
 }
-.nav-icons{
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  /* margin-left: 10px; */
-  
-
-}
-
-.nav-icons input{
-  padding: 4px;
-  /* background-color: rgb(199, 198, 198); */
-  color: black;
-  /* width: 30px; */
-}
-.nav-icons button{
-  padding: 4px;
-  margin: 2px;
-} 
-.nav-icons .mic{
-  margin: 20px;
-}
-.navbar nav ul li a{
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-
 .col-2 p{
   text-align: left;
   line-height: 1.7;
@@ -335,8 +306,20 @@ ul li a {
 ul li a:hover {
   color: #ff523b;
 }
-
-
+form {
+  padding-bottom: 5%;
+  padding-left: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+form .far {
+  font-size: 38px;
+}
+#search-form{
+  margin-bottom:0;
+}
 
 .col ul>li{
   width: 120px;
@@ -813,4 +796,3 @@ h3 {
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-

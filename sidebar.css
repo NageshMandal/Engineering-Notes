@@ -20,7 +20,7 @@
 .sidebar li{
     margin: 40px 10px;
     border-bottom: 1px solid rgb(177, 176, 176);
-    font-weight: bold;
+    /* font-weight: bold; */
     list-style: none;
 }
 .sidebar li a{
@@ -72,12 +72,13 @@
 .hamburger-icon i{
     font-size: 40px;
     color: black;
+    display: none;
 }
 
 
 @media (max-width:1150px){
-    .hamburger-icon{
-display: block;
+    .hamburger-icon i{
+      display: block;
     }
     .navbar nav{
         display: none;
