@@ -57,6 +57,10 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   padding: 20px;
 }
+.logo {
+  margin-bottom: 15px;
+  
+}
 nav {
   flex: 1;
   text-align: right;
@@ -67,9 +71,9 @@ nav ul {
 }
 nav ul li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 16px;
   font-size: 17px;
-  padding: 10px;
+  padding: 6px;
 }
 .col-2 p{
   text-align: left;
