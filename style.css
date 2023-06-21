@@ -51,7 +51,8 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0px 0px 4px black;
 }
 .navbar .logo img{
-  margin-top: -55px;
+  margin-top: -25px;
+  margin-left: -50px;
 }
 .navbar {
   display: flex;
@@ -337,7 +338,7 @@ form button>i{
 form input {
   background: transparent;
   color: #ccc;
-  width: 200px;
+  width: 150px;
   padding: 8px;
   border: 0;
   outline: none;
