@@ -312,7 +312,7 @@ form {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ccc;
+  margin-bottom: 70px;
 }
 form .far {
   font-size: 38px;
@@ -325,21 +325,120 @@ form .far {
   width: 120px;
 }
 
-button  .submit{
-  border-radius: 15px;
-}
-form button>i{
-  padding: 8px;
-  border-radius: 10px;
+/* Styling of input box */
+.input {
+  margin: auto;
+  background: crimson;
+  color: white;
+  text-shadow: 0 0 10px crimson;
+  width: 45px;
+  height: 45px;
+  padding: 0 48px 0 15px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 25px 0 crimson, 0 20px 25px 0 rgba(0, 0, 0, 0.2);
+  transition: all 1s;
+  opacity: 0;
+  z-index: 5;
+  font-weight: bolder;
+  letter-spacing: 0.1rem;
 }
 
-form input {
-  background: transparent;
-  color: #ccc;
-  width: 200px;
-  padding: 8px;
-  border: 0;
-  outline: none;
+.input:hover {
+  cursor: pointer;
+}
+
+.input:focus {
+  width: 145px;
+  opacity: 1;
+  cursor: text;
+}
+
+.input:focus ~ .search {
+  right: 280px;
+  background: #151515;
+  z-index: 6;
+}
+
+.input:focus ~ .search::before {
+  top: 0;
+  left: 0;
+  width: 25px;
+}
+
+.input:focus ~ .search::after {
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  border: none;
+  background: white;
+  border-radius: 0%;
+  transform: rotate(-45deg);
+}
+
+.input::after {
+  width: 25px;
+  height: 2px;
+  border: none;
+  background: white;
+  border-radius: 0%;
+  transform: rotate(-45deg);
+}
+
+.input::placeholder {
+  color: white;
+  opacity: 0.5;
+  font-weight: bolder;
+}
+
+/* Styling of search button */
+form .search {
+  position: absolute;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  background: crimson;
+  border-radius: 50%;
+  transition: all 1s;
+  z-index: 4;
+  border: none;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+}
+
+form .search:hover {
+  cursor: pointer;
+}
+
+form .search::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 0;
+  bottom: 0;
+  left: 13px;
+  margin: auto;
+  width: 7px;
+  height: 2px;
+  background: white;
+  transform: rotate(45deg);
+  transition: all 0.5s;
+}
+
+form .search::after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: -5px;
+  right: 0;
+  bottom: 0;
+  left: -5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid white;
+  transition: all 0.5s;
 }
 
 .form-news{
