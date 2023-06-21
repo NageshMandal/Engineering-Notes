@@ -143,6 +143,25 @@
 </div>
    </div>
 </div>
+
+  <div class="containerf"> 
+		<h1>Frequently Asked Questions</h1> 
+		<div class="question-container"> 
+			<div class="question">Q: What is this website all about?</div> 
+			<div class="answer">A: Chaibasa Engineering College library is a vibrant hub of knowledge and learning, catering to the intellectual needs of students and faculty alike.   </div> 
+			<hr>
+          
+            <div class="question">Q: Do I need any special software to use it?</div> 
+			<div class="answer">A: No, the only requirement is any web browser.</div> 
+            <hr>
+        
+            <div class="question">Q: Why should I prefer this website over any other website?</div> 
+			<div class="answer">A:Chaibasa Engineering College library stands as a pillar of intellectual enlightenment, fostering academic excellence among its community making it preferable over other websites.</div> 
+            <hr>
+            <div class="question">Q: What if my requirement notes is not there?</div> 
+			<div class="answer">A: Write us a message or mail us at  cordinatortigjh@gmail.com </div> 
+		</div> 
+	</div> 
 <div class="contributors-container">
     <h1>Our Valuable Contributors</h1>
     <div class="contributors" id="contributors"></div>
@@ -295,7 +314,21 @@
 
     <script src="script.js"></script>
     <script src="app.js"></script>
+ <script> 
+    const questions = document.querySelectorAll(".question"); 
 
+    questions.forEach((question) => { 
+        question.addEventListener("click", () => { 
+            question.classList.toggle("active"); 
+            const answer = question.nextElementSibling; 
+            if (answer.style.display === "block") { 
+                answer.style.display = "none"; 
+            } else { 
+                answer.style.display = "block"; 
+            } 
+        }); 
+    }); 
+</script> 
 
 </body>
 </html>
