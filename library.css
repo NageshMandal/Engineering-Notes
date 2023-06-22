@@ -74,6 +74,6 @@ section#content {
 
   @media screen and (max-width:800px) {
     #bookList div{
-      width:60%;
+      width:80%;
     }
   }
