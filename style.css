@@ -62,13 +62,6 @@ body::-webkit-scrollbar-thumb {
   z-index: 100;
   transition: background-color 0.3s ease-in-out;
 }
-.navbar.sticky {
-  background-color: rgba(237, 166, 73, 0.7) ;
-} 
-ul {
-  margin-top: 17px;
-}
-
 nav {
   flex: 1;
   text-align: right;
@@ -79,7 +72,7 @@ nav ul {
 }
 nav ul li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 16px;
   font-size: 17px;
 }
 .col-2 p{
@@ -95,7 +88,7 @@ nav ul li {
 
 a {
   text-decoration: none;
-  color: rgb(64, 64, 64);
+  /* color: rgb(64, 64, 64); */
 }
 p {
   color: white;
@@ -319,12 +312,11 @@ ul li a:hover {
 }
 form {
   padding-bottom: 5%;
-  padding-left: 10px;
+  padding-left: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 70px;
 }
 form .far {
   font-size: 38px;
@@ -348,7 +340,7 @@ form button>i{
 form input {
   background: transparent;
   color: #ccc;
-  width: 200px;
+  width: 150px;
   padding: 8px;
   border: 0;
   outline: none;
@@ -682,6 +674,7 @@ label[for="project-link"] i {
   margin: auto;
   border-style: none;
   box-shadow: 0px 0px 10px 0px hsla(0, 0%, 0%, 0.2);
+  cursor: pointer;
 }
 
 .project-section-title {
@@ -808,3 +801,6 @@ h3 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.span{
+  color:#b700ff;
+}
