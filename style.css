@@ -62,6 +62,9 @@ body::-webkit-scrollbar-thumb {
   z-index: 100;
   transition: background-color 0.3s ease-in-out;
 }
+.navbar.sticky {
+  background-color: rgba(237, 166, 73, 0.7) ;
+} 
 nav {
   flex: 1;
   text-align: right;
