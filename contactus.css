@@ -28,9 +28,8 @@
 }
 
 .navbar .logo{
-  padding-right: 200px;
-  padding-left: 13px;
-  padding-top: 10px;
+  margin-left: 50px;
+  margin-top: 35px;
 }
 nav{
   flex: 1;
@@ -40,17 +39,18 @@ nav{
 nav ul {
   display: flex;
   list-style-type: none;
+  margin-top: 0;
+  margin-left: 80px;
 }
 nav ul li {
-  margin-right: 20px;
   font-size: 17px;
-  padding: 0 10px;
+  padding-left: 15px;
 }
 
 nav ul li a {
-  padding: 0 5px;
   color: rgb(87, 81, 81);
   text-decoration: none;
+  padding-left: 25px;
 }
 
 nav ul li a:hover {
@@ -83,7 +83,7 @@ nav ul li a:hover {
   font-size: 40px;
   font-weight: 550;
   color: black;
-  padding-top: 50px;
+  padding-top: 150px;
 }
 
 .contact .contentHead p {
@@ -239,13 +239,13 @@ nav ul li a:hover {
   nav ul {
     width: 100%;
     position: absolute;
-    top: 75px;
+    top: 120px;
     z-index: 2;
     display: flex;
     flex-direction: row;
     justify-content: center;  /* Align items to the left */
-    padding-left: 0px; 
-    left: -100%;
+    margin-left: 10px; 
+    left: 0%;
   }
   
   nav ul li{
@@ -265,7 +265,7 @@ nav ul li a:hover {
     font-size: 40px;
     font-weight: 550;
     color: black;
-    padding-top: 100px;
+    padding-top: 150px;
   }
 
   .contact {
@@ -306,7 +306,8 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center; /* Align items to the left */
-    padding-left: 10px; 
+    padding-left: 2px; 
+    font-size: 15px;
   }
 
   .navbar .logo {
