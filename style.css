@@ -112,9 +112,6 @@ nav ul li {
   margin-left: -50px;
 }
 
-#search-button:hover {
-  transform: translateY(-3px);
-}
 
 .col-2 p {
   text-align: left;
@@ -145,11 +142,15 @@ p {
   padding-right: 25px;
 }
 
-.row {
+.row-header,
+.row-footer {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+.row-header{
+  padding-top: 100px;
 }
 
 .col-2 {
@@ -274,8 +275,8 @@ footer {
   line-height: 20px;
 }
 
-.row {
-  padding-top: 100px;
+.row,
+.row-footer {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -340,7 +341,7 @@ footer {
 }
 
 .col2 {
-  padding-top: 30px;
+  padding-top: 8px;
   width: 40%;
   /* margin-left: -80px; */
   min-width: 240px;
@@ -750,11 +751,11 @@ form input {
   border-radius: 50px;
   margin-right: 10px;
   font-size: 20px;
-  background-color: rgb(0, 213, 255);
+  background-color: white
 }
 
 .mic:hover {
-  background: #17d00e;
+  background: #d1d1d1;
   box-shadow: 2px 2px 20px rgb(49, 49, 49);
 }
 
