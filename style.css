@@ -3,10 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.downArrow {
+  height: 120px;
+  width: 120px;
+}
+
 .return-to-top {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 6px;
+  right: 8px;
   width: 60px;
   height: 60px;
   background-color: #d30101;
@@ -19,6 +25,186 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1;
+  animation-name: circle;
+  animation-duration: 80s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+  -webkit-animation-name: circle;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -webkit-animation-play-state: running;
+}
+
+.return-to-top:hover {
+  background: transparent;
+  background: #d30101;
+  box-shadow: 0 0 5px #d30101,
+              0 0 25px #d30101,
+              0 0 50px #d30101,
+              0 0 100px #d30101;
+}
+
+.moving {
+  background: transparent;
+  font-size: 28px;
+  color: #fff;
+  position: fixed;
+  right: 27px;
+  z-index: 1;
+  animation-name: arrow;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+  -webkit-animation-name: arrow;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -webkit-animation-play-state: running;
+}
+
+.pulse {
+	margin: 0 auto;
+	border-radius: 100px;
+	position: fixed;
+  bottom: 7px;
+  right: 10px;
+	z-index: 0;
+	background-color: transparent;
+	opacity: 0;
+	width: 60px;
+	height: 60px;
+	border: 11px solid #d30101;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	-o-border-radius: 100px;
+	-ms-border-radius: 100px;
+	border-radius: 100px;
+	-webkit-animation: pulse 1s linear infinite 0.3s;
+	-moz-animation: pulse 1s linear infinite 0.3s; 
+	border-image: initial;
+}
+
+@keyframes arrow {
+	0% {
+    bottom: 6px;
+  }
+	75% {
+    bottom: 3.5rem;
+  }
+	100% {
+    bottom: 6px;
+  }
+}
+
+@-webkit-keyframes arrow {
+	0% {
+    bottom: 6px;
+  }
+  75% {
+    bottom: 3.5rem;
+  }
+	100% {
+    bottom: 6px;
+  }
+}
+
+@keyframes circle {
+	0% {
+    height: 60px;
+  }
+	10% {
+    height: 65px;
+  }
+  50% {
+    height: 70px;
+  }
+	75% {
+    height: 75px;
+  }
+  90% {
+    height: 80px;
+  }
+	100% {
+    height: 60px;
+  }
+}
+
+@-webkit-keyframes circle {
+  0%  {
+    height: 60px;
+  }
+  10% {
+    height: 65px;
+  }
+  50% {
+    height: 70px;
+  }
+  75% {
+    height: 75px;
+  }
+  90% {
+    height: 80px;
+  }
+  100% {
+    height: 60px;
+  }
+}
+
+@-webkit-keyframes pulse {       
+  0% {-webkit-transform: scale(0); 
+    opacity: 0;
+  }
+  8% {
+    -webkit-transform: scale(0); 
+    opacity: 0;
+  }
+  15% {
+    -webkit-transform: scale(0.1); 
+    opacity: 1;
+  }
+  30% {
+    -webkit-transform: scale(0.5); 
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+    opacity: 0; 
+  }
+}
+
+@-moz-keyframes pulse {       
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  8% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  15% {
+    -webkit-transform: scale(0.1);
+    opacity: 1;
+  }
+  30% {
+    -webkit-transform: scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+    opacity: 0; 
+  }
 }
 
 .return-to-top.active {
