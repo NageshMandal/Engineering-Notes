@@ -1,0 +1,17 @@
+.navbar {
+    background-color:rgb(255, 191, 191);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    z-index: 100;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .navbar.sticky {
+    background-color: rgba(237, 166, 73, 0.7) ;
+  } 
+  
+  ul {
+    margin-top: 27px;
+  }
+  

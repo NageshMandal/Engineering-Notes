@@ -6,6 +6,28 @@ body {
   font-family: sans-serif;
 }
 
+ /* Sticky navbar */
+ .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: transparent;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  z-index: 100;
+  transition: background-color 0.3s ease-in-out;
+}
+.navbar.sticky {
+  background-color: rgba(237, 166, 73, 0.7) ;
+} 
+
+ul#list-item{
+  margin-top: 0px;
+}
+
 h1 {
   color: coral;
 }
