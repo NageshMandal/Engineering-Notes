@@ -21,33 +21,41 @@
 
 </head>
 <body>
+    <!-- Previously navbar is inside the header class due to which it is not stick to the top properly so i take it out of header class now its working -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="https://code-engineering.netlify.app/"><img src="images/logo1.png" alt="Chaibasa Engineering College" width="200px "></a>
+        </div>
+        <nav>
+            <ul>
+
+                <li><a class="nav-link" href="./index.html">Home</a></li>
+                <li><a class="nav-link" href="./Gallary-section/index.html">Gallery</a></li>
+                <li><a class="nav-link" href="./projects.html">Projects</a></li>
+                <li><a class="nav-link" href="./library.html">Library</a></li>
+                <li><a class="nav-link" href="./placement.html">Placements</a></li>
+                <li><a class="nav-link" href="./contactus.html">Contact Us</a></li>
+                        <li><a class="nav-link" href="./syllabus.html">Syllabus</a></li>
+                <li>
+                    <form id="search-form" action="#" method="GET">
+                        <input id="search-input" type="text" placeholder="Search">
+                        <button id="search-button" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </li>
+                <a id= "mike-button" href="#"><i class="mic fa-solid fa-microphone"></i></a>
+                <img src="./images/GS20.gif" alt="google" class="google">
+                <!-- Dark mode button -->
+                <div class="toggle-mode">
+                    <img class="moon" data-set="sun" src="images/moon.png" alt="dark-mode">
+                    <img class="sun"  data-set="moon" src="images/sun.png"  alt="light-mode">
+                </div>
+            </ul>
+        </nav>
+    </div>
+  
     <div class="header">
         <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <a href="https://code-engineering.netlify.app/"><img src="images/logo1.png" alt="Chaibasa Engineering College" width="200px"></a>
-                </div>
-                <nav>
-                    <ul>
-
-                        <li><a class="nav-link" href="./index.html">Home</a></li>
-                        <li><a class="nav-link" href="./Gallary-section/index.html">Gallery</a></li>
-                        <li><a class="nav-link" href="./projects.html">Projects</a></li>
-                        <li><a class="nav-link" href="./library.html">Library</a></li>
-                        <li><a class="nav-link" href="./placement.html">Placements</a></li>
-                        <li><a class="nav-link" href="./contactus.html">Contact Us</a></li>
-                        <li><a class="nav-link" href="./syllabus.html">Syllabus</a></li>
-                        <li>
-                            <form id="search-form" action="#" method="GET">
-                                <input id="search-input" type="text" placeholder="Search">
-                                <button id="search-button" type="submit"><i class="fa fa-search"></i></button>
-                            </form>
-                        </li>
-                        <a id= "mike-button" href="#"><i class="mic fa-solid fa-microphone"></i></a>
-                        <img src="./images/GS20.gif" alt="google" class="google">
-                    </ul>
-                </nav>
-            </div>
+           
             <div class="row">
                 <div class="col-2">
                     <!-- <h1>LIBRARY</h1> -->
@@ -77,7 +85,7 @@
     
 
 
-   </div>
+   </div> 
 </div>
 <!--------------  BRANCHES  ----------------->
 
@@ -208,6 +216,7 @@
     </div>
   </section>
 
+</section>
 <!-- <div class="containerlib">
     <div class="book">book1</div>
     <div class="book">book1</div>
@@ -345,11 +354,6 @@
                 </div>
             </div>
             <!--Voice assistent end-->
-            <div class="toggle-mode">
-                <img class="moon" data-set="sun" src="images/moon.png" alt="dark-mode">
-                <img class="sun"  data-set="moon" src="images/sun.png"  alt="light-mode">
-            </div>
-
         </footer>
 
 
