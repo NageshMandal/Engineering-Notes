@@ -67,6 +67,7 @@ nav {
   flex: 1;
   text-align: right;
 }
+
 nav ul {
   display: inline-block;
   list-style-type: none;
@@ -76,6 +77,13 @@ nav ul li {
   margin-right: 16px;
   font-size: 17px;
   padding: 6px;
+}
+nav ul li a:hover{
+  transform:scaleX(1.2);
+  color:red;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+  text-shadow:black;
 }
 .col-2 p{
   text-align: left;
@@ -116,6 +124,11 @@ p {
 .col-2 img {
   max-width: 100%;
   padding: 50px 0px;
+}
+.col-2 img:hover{
+ 
+  transform: scale(1.1);
+  transition: all ease-in-out 0.4s;
 }
 .col-2 h1 {
   font-size: 50px;
@@ -163,6 +176,11 @@ p {
 .col-3 img {
   width: 100%;
 }
+.col-3 img:hover{
+  transform: scale(1.1);
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+} 
 .small-container {
   max-width: 1200px;
   margin: auto;

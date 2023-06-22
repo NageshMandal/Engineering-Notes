@@ -11,6 +11,16 @@
     justify-content: center;
     flex-direction: column;
 }
+.project-card-container:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+    transition: all ease-in-out 0.2s;
+}
+.project-card:hover{
+    cursor:pointer;
+    transform: scale(1.1);
+    transition: all ease-in-out 0.2s;
+}
 .t-syllabus{
     font-size: 3rem !important;
 }
