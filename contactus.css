@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+#check{
+  display: none;
+}
+.menu-icon{
+  width: 25px;
+  float: right;
+  line-height: 80px;
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 20px;
+  display: none; 
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 3px;
+  left: 0px;
+}
+
+.navbar .logo{
+  margin-left: 50px;
+  margin-top: 35px;
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin-top: 0;
+  margin-left: 80px;
+}
+nav ul li {
+  font-size: 17px;
+  padding-left: 15px;
+}
+
+nav ul li a {
+  color: rgb(87, 81, 81);
+  text-decoration: none;
+  padding-left: 25px;
+}
+
+nav ul li a:hover {
+  color: #ff523b;
+}
+
+.contentHead{
+  top: 50%;
+}
+
+.contact {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0px 100px;
+  /* background: url(images/bg1.jpg); */
+  background: radial-gradient(#fff, rgb(255, 191, 191));
+  background-size: cover;
+}
+
+.contact .contentHead {
+  text-align: center;
+  width: 100%;
+}
+
+.contact .contentHead h2 {
+  font-size: 40px;
+  font-weight: 550;
+  color: black;
+  padding-top: 150px;
+}
+
+.contact .contentHead p {
+  font-weight: 300;
+  color: black;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.container .contactinfo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.container .contactinfo .box {
+  position: relative;
+  display: flex;
+  padding: 20px 0;
+}
+
+.container .contactinfo .box .icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ff523b;
+  border-radius: 50%;
+  min-width: 60px;
+  height: 60px;
+  font-size: 22px;
+}
+.container .contactinfo .box .map{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 40px;
+  width: 100%;
+}
+
+.container .contactinfo .box .text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  color: black;
+}
+
+.container .contactinfo .box .text h1 a {
+  color: black;
+  text-decoration: none;
+}
+
+.container .contactinfo .box .text h1 :hover {
+  color: #db4834;
+}
+
+.contactform {
+  width: 40%;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.contactform h2 {
+  font-size: 30px;
+  font-weight: 500;
+  color: #333;
+}
+
+.contactform .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactform .inputBox input,
+.contactform .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #666;
+  border-radius: 0.3rem;
+  resize: none;
+  outline: none;
+}
+
+.contactform .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5%;
+  color: #666;
+  transition: 0.9s;
+}
+
+.contactform .inputBox input:focus ~ span,
+.contactform .inputBox input:valid ~ span,
+.contactform .inputBox textarea:focus ~ span,
+.contactform .inputBox textarea:valid ~ span {
+  color: #f06553;
+  font-size: 12px;
+  transform: translateY(-20px)translateX(5px);
+}
+
+.contactform .inputBox input:valid ~ span,
+.contactform .inputBox textarea:valid ~ span {
+  color: black;
+  font-size: 12px;
+  transform: translateY(-20px)translateX(5px);
+}
+
+.contactform .inputBox input[type="submit"]{
+  width: 100%;
+  background: #ff523b;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 3px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contactform .inputBox input[type="submit"]:hover{
+  background: #f9634f;
+  transform: translateY(-4px);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#check:checked ~ ul{
+    left: 0;
+    
+}
+
+@media (max-width: 1183px) {
+  nav ul {
+    width: 100%;
+    position: absolute;
+    top: 120px;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  /* Align items to the left */
+    margin-left: 10px; 
+    left: 0%;
+  }
+  
+  nav ul li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    /* display: block; */
+  }
+  .menu-icon{
+    display: block;
+  }
+
+  .contact .contentHead h2 {
+    font-size: 40px;
+    font-weight: 550;
+    color: black;
+    padding-top: 150px;
+  }
+
+  .contact {
+    padding: 50px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  .container .contactinfo {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .container .contactform {
+    width: 100%;
+  }
+  .container .contactinfo .box .map{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 40px;
+    width: 100%;
+  }
+}
+@media (max-width: 548px) {
+  #check:checked ~ .contact .contentHead h2 {
+    font-size: 40px;
+    font-weight: 550;
+    color: black;
+    padding-top: 250px;
+  }
+  nav ul {
+    width: 100%;
+    position: absolute;
+    top: 75px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items to the left */
+    padding-left: 2px; 
+    font-size: 15px;
+  }
+
+  .navbar .logo {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .container {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .container .contactinfo {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .container .contactinfo .box .map {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .contact .contentHead h2 {
+    font-size: 40px;
+    font-weight: 550;
+    color: black;
+    padding-top: 300px;
+  }
+
+  .contactform {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .contactform .inputBox input[type="submit"] {
+    font-size: 16px;
+  }
+}
+
+
