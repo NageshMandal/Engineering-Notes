@@ -77,6 +77,13 @@ nav ul li {
   font-size: 17px;
   padding: 6px;
 }
+#search-button{
+background-color: inherit;
+border: none;
+}
+#search-button:hover{
+transform:translateY(-3px);
+}
 .col-2 p{
   text-align: left;
   line-height: 1.7;
