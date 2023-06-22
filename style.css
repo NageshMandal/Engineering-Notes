@@ -31,7 +31,7 @@ body {
 
 /*Gradient scroll bar  */
 body::-webkit-scrollbar {
-  width: 11px;
+  width: 17px;
 }
 .card:hover {
   background-color: rgb(132, 94, 144);
@@ -39,13 +39,15 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background:  linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgb(0, 35, 211) 70%);
+  border-right: 4px solid #eee;
+  border-left: 4px solid #eee;
+  background:  linear-gradient(0deg, #ff523b 0%, rgb(225, 120, 234) 70%);
 }
 
 body::-webkit-scrollbar-thumb {
   background: transparent;
-  box-shadow: 0px 0px 0px 100000vh rgb(45, 42, 42);
-    border-radius: 8px;
+  box-shadow: 0px 0px 0px 100000vh #eee;
+    border-radius: 50px;
 }
 .box {
   box-shadow: 0px 0px 4px black;
