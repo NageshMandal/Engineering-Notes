@@ -566,7 +566,7 @@ form input {
 .containers{
   display: none;
 }
-.mic{
+/* .mic{
   color: black;
   text-align: right;
   padding-right:8px;
@@ -581,6 +581,34 @@ form input {
 .mic:hover {
   background: #17d00e;
   box-shadow: 2px 2px 20px rgb(49, 49, 49);
+} */
+#mike-button {
+  display: inline-block;
+  color: black;
+  text-align: right;
+  padding: 8px;
+  border-radius: 50px;
+  margin-right: 10px;
+  font-size: 20px;
+  background-color: rgb(0, 213, 255);
+  text-decoration: none;
+}
+
+#mike-button:hover {
+  background: #17d00e;
+  box-shadow: 2px 2px 20px rgb(49, 49, 49);
+}
+#message {
+  color: #4808b6;
+  background-color: #ccc;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  width: 40%;
+  margin-right: 10px;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 50px;
 }
 .google{
   margin-right: 10px;
