@@ -809,6 +809,7 @@ label[for="project-link"] i {
 }
 
 .project-form .btn {
+  font-size: 1.2rem;
   display: block;
   margin: auto;
   border-style: none;
@@ -817,7 +818,8 @@ label[for="project-link"] i {
 }
 
 .project-section-title {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 3.5rem;
 }
 
 .project-card-container {
@@ -858,13 +860,26 @@ body.dark-mode .project-card {
   margin-bottom: 10px;
 }
 
+.project-card-link{
+  border:1.5px solid rgb(105, 105, 105);
+  border-radius: 20px;
+  width:60%;
+  padding:10px;
+  background-color: #E06469;
+}
+
+.project-card-link:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
 .project-card-link a {
   display: flex;
   align-items: center;
 }
 
 .project-card-link a {
-  color: #04669A
+  /* color: #04669A */
+  color: #fff;
 }
 
 .project-card-link i {
