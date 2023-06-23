@@ -1,0 +1,43 @@
+.syllabus{
+    width: 200px;
+}
+.s-para{
+    color: black;
+}
+.small-container{
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.t-syllabus{
+    font-size: 3rem !important;
+}
+.s-input{
+    margin-top: 30px;
+    padding: 5px 10px;
+    font-size: large;
+    width: 300px;
+}
+.link-syllabuses{
+    display: flex;
+    gap: 10px;
+}
+.s-input:focus{
+    outline: none;
+    transition: 0.2s linear;
+    box-shadow: 0px 1px 3px orangered;
+}
+@media screen and (max-width: 1000px){
+    .syllabus{
+        width: 100px;
+    }
+    .col-2 h1{
+        font-size: 2rem;
+    }
+    .logo img{
+        width: 150px;
+    }
+}
+

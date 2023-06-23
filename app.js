@@ -37,6 +37,7 @@ mike_btn.addEventListener('click',()=>{
     recognition.start()
     console.log('started')
 })
+
 // mike_btn.addEventListener('click',()=>{
 //     recognition.stop();
 //     console.log('stopped')
@@ -68,3 +69,24 @@ mike_btn.addEventListener('click', function() {
     }
   });
 });
+const syllabusSearch = document.getElementById('s-input');
+const cards = document.querySelectorAll('.project-card');
+
+syllabusSearch.addEventListener('input', function() {
+  const searchTerm = this.value.trim().toLowerCase();
+  searchProjects(searchTerm);
+});
+
+function searchProjects(searchTerm) {
+  for (const card of cards) {
+    const collegeName = card.querySelector('.project-card-title').textContent.trim().toLowerCase();
+    const subjectName = card.querySelector('.project-card-author.s-subject').textContent.trim().toLowerCase();
+  
+    if (collegeName.includes(searchTerm) || subjectName.includes(searchTerm)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  }
+}
+

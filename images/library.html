@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="library.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https//stackpath.bootsstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+    <script src="https://kit.fontawesome.com/739255457e.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="https://code-engineering.netlify.app/"><img src="images/logo1.png" alt="Chaibasa Engineering College" width="200px"></a>
+                </div>
+                <nav>
+                    <ul>
+
+                        <li><a class="nav-link" href=""></a></li>
+                        <li><a class="nav-link" href="./Gallary-section/index.html">Gallery</a></li>
+                        <li><a class="nav-link" href="./projects.html">Projects</a></li>
+                        <li><a class="nav-link" href="./library.html">Library</a></li>
+                        <li><a class="nav-link" href="./placement.html">Placements</a></li>
+                        <li><a class="nav-link" href="./contactus.html">Contact</a></li>
+                        <li><a class="nav-link" href="./syllabus.html">Syllabus</a></li>
+
+                        <li>
+                            <form id="search-form" action="#" method="GET">
+                                <input id="search-input" type="text" placeholder="Search">
+                                <button id="search-button" type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </li>
+                        <a id= "mike-button" href="#"><i class="mic fa-solid fa-microphone"></i></a>
+                        <img src="./images/GS20.gif" alt="google" class="google">
+                    </ul>
+                </nav>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <!-- <h1>LIBRARY</h1> -->
+                    <h1>LIBRARY  🕮</h1>
+                    <div class="para">
+                        <!-- <p>
+                            Chaibasa Engineering College library is a hub of knowledge and learning, providing a vast collection of books, resources, and digital materials to support the academic pursuits of our students and faculty members. With a diverse range of subjects and resources, our library serves as an essential resource center for research, study, and personal enrichment.
+                        </p> -->
+                        <p>
+                            Chaibasa Engineering College library is a vibrant hub of knowledge and learning, catering to the intellectual needs of students and faculty alike. Nestled in the heart of the college campus, the library boasts a <span class="span">vast collection of books </span> and digital resources spanning various disciplines. Its serene ambiance and modern infrastructure create a conducive environment for study and research. 
+                        </p><br>
+                        <p>
+                            Equipped with state-of-the-art facilities and computer systems, it offers seamless access to online databases and e-books. The diligent library staff ensures efficient services and supports academic growth through workshops and training programs. Chaibasa Engineering College library stands as a <span class="span">pillar of intellectual enlightenment</span>, fostering academic excellence among its community.
+                        </p>
+                    </div>
+
+                    <div class="explore">
+                        <a href=""class="btn">Explore Now &#8594;</a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <img class="students" src="images/college1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+   </div>
+</div>
+<!--------------  BRANCHES  ----------------->
+
+<section id="content">
+    <div class="filter">
+        <label for="branch">Select Branch:</label>
+        <select id="branch">
+          <option value="">All</option>
+          <option value="cs">Computer Science Engineering</option>
+          <option value="ce">Civil Engineering</option>
+          <option value="ec">Electronics and Communication Engineering</option>
+          <option value="me">Mechanical Engineering</option>
+          <option value="it">Information Technology</option>
+        </select>
+      </div>
+    <!-- <h2>Available Books</h2> -->
+    <div class="books_available"><h2>Books in Inventory</h2></div>
+    <div id="bookList">
+      <div data-branch="cs">
+        <a href="https://www.cs.bham.ac.uk/~jxb/DSA/dsa.pdf"><img src="images/book1.jpg" alt="Book 1"></a>
+        <h3>Data Structures <br> using C</h3>
+        <p>Author: Author 1</p>
+        <p>Category: Category 1</p>
+      </div>
+      <div data-branch="cs">
+        <a href="https://gfgc.kar.nic.in/sirmv-science/GenericDocHandler/138-a2973dc6-c024-4d81-be6d-5c3344f232ce.pdf"><img src="images/book2.jpg" alt="Book 2"></a>
+        <h3>Java Programming</h3>
+        <p>Author: Author 2</p>
+        <p>Category: Category 2</p>
+      </div>
+      <div data-branch="cs">
+        <a href="https://vipulzblog.files.wordpress.com/2019/08/e_balagurusamy-object_oriented_programming_with_c.pdf"><img src="images/book13.png" alt="Book 13"></a>
+        <h3>OOPS with C++</h3>
+        <p>Author: Author 2</p>
+        <p>Category: Category 2</p>
+      </div>
+      <div data-branch="cs">
+        <a href="https://vipulzblog.files.wordpress.com/2019/08/introduction.to_.algorithms.clrs_.3rd.edition.sep_.2009.pdf"><img src="images/book14.png" alt="Book 14"></a>
+        <h3>Intro to Algorithms</h3>
+        <p>Author: Author 2</p>
+        <p>Category: Category 2</p>
+      </div>
+      <div data-branch="cs">
+        <a href="https://vipulzblog.files.wordpress.com/2019/08/database-system-concepts-6th-edition.pdf"><img src="images/book15.png" alt="Book 15"></a>
+        <h3>Database System Concepts</h3>
+        <p>Author: Author 2</p>
+        <p>Category: Category 2</p>
+      </div>
+      <div data-branch="cs">
+        <a href="https://jntukucen.ac.in/ebook_files/116.pdf"><img src="images/book16.png" alt="Book 16"></a>
+        <h3>Data Mining. Concepts and Techniques</h3>
+        <p>Author: Author 2</p>
+        <p>Category: Category 2</p>
+      </div>
+      <div data-branch="cs">
+        <a href="https://www.ktunotes.in/wp-content/uploads/2018/05/Theory-of-Computation-John-C.-Martin-min.pdf"><img src="images/book17.png" alt="Book 17"></a>
+        <h3>Theory-of-Computation</h3>
+        <p>Author: Author 2</p>
+        <p>Category: Category 2</p>
+      </div>
+        <div data-branch="cs">
+        <a href="https://shorturl.at/yBDGP"><img src="images/book18.png" alt="Book 18"></a>
+        <h3>Machine Learning</h3>
+        <p>Author: Author 2</p>
+        <p>Category: Category 2</p>
+      </div>
+      <!-- New added books -->
+      <div data-branch="cs">
+        <a href="http://www.uoitc.edu.iq/images/documents/informatics-institute/Competitive_exam/Systemanalysisanddesign.pdf"><img src="images/book19.png" alt="Book 19"></a>
+        <h3>Systems Analysis & Design</h3>
+        <p>Author: Author 2</p>
+        <p>Category: Category 2</p>
+      </div>
+      <div data-branch="cs">
+        <a href="https://cseweb.ucsd.edu/classes/wi19/cse124-a/courseoverview/compnetworks.pdf"><img src="images/book20.png" alt="Book 20"></a>
+        <h3>Computer Networks</h3>
+        <p>Author: Author 2</p>
+        <p>Category: Category 2</p>
+      </div>
+      <div data-branch="ce">
+        <a href="https://content.kopykitab.com/ebooks/2014/10/3685/sample/sample_3685.pdf"><img src="images/book3.jpg" alt="Book 3"></a>
+        <h3>Railway Bridges and <br>Tunnels</h3>
+        <p>Author: Author 2</p>
+        <p>Category: Category 2</p>
+      </div>
+      <div data-branch="ce">
+        <a href="https://vipulzblog.files.wordpress.com/2018/08/strength-of-material-by-r-k-bansal-31.pdf"><img src="images/book4.jpg" alt="Book 4"></a>
+        <h3>Strengths of <br>Materials</h3>
+        <p>Author: Author 2</p>
+        <p>Category: Category 2</p>
+      </div>
+      <div data-branch="ce">
+        <a href="https://www.iare.ac.in/sites/default/files/lecture_notes/EG_LECTURE_NOTES.pdf"><img src="images/book5.jpg" alt="Book 5"></a>
+        <h3>Engineering Geology</h3>
+        <p>Author: Author 2</p>
+        <p>Category: Category 2</p>
+      </div>
+      <div data-branch="ec">
+        <a href="https://elearningatria.files.wordpress.com/2013/10/ece-iii-electronic-instrumentation-10it35-notes.pdf"><img src="images/book6.jpg" alt="Book 6"></a>
+        <h3>Electronic<br> instrumentation<br> and Measurements</h3>
+        <p>Author: Author 2</p>
+        <p>Category: Category 2</p>
+      </div>
+      <div data-branch="ec">
+        <a href="https://elearningatria.files.wordpress.com/2013/10/ece-iii-electronic-instrumentation-10it35-notes.pdf"><img src="images/book7.jpg" alt="Book 7"></a>
+        <h3>Network Analysis</h3>
+        <p>Author: Author 2</p>
+        <p>Category: Category 2</p>
+      </div>
+      <div data-branch="ec">
+        <a href="https://edutechlearners.com/download/books/An%20Introduction%20to%20Microprocessor%208085%20PDF%20by%20Dr.%20K%20K%20Kausik.pdf"><img src="images/book22.png" alt="Book 22"></a>
+        <h3>An Introduction to Microprocessor 8085</h3>
+        <p>Author: Author 2</p>
+        <p>Category: Category 2</p>
+      </div>
+      <div data-branch="ec">
+        <a href="https://jntukucen.ac.in/ebook_files/155.pdf"><img src="images/book23.png" alt="Book 23"></a>
+        <h3>Advanced Microprocessors and Peripherals</h3>
+        <p>Author: Author 2</p>
+        <p>Category: Category 2</p>
+      </div>
+      <div data-branch="me">
+        <a href="https://elearningatria.files.wordpress.com/2013/10/ece-iii-electronic-instrumentation-10it35-notes.pdf"><img src="images/book8.jpg" alt="Book 8"></a>
+        <h3>Manufacturing <br>Processes</h3>
+        <p>Author: Author 2</p>
+        <p>Category: Category 2</p>
+      </div>
+      <div data-branch="me">
+        <a href="https://elearningatria.files.wordpress.com/2013/10/ece-iii-electronic-instrumentation-10it35-notes.pdf"><img src="images/book9.jpg" alt="Book 9"></a>
+        <h3>An Introduction To <br>Thermodynamics</h3>
+        <p>Author: Author 2</p>
+        <p>Category: Category 2</p>
+      </div>
+      <div data-branch="me">
+        <a href="https://elearningatria.files.wordpress.com/2013/10/ece-iii-electronic-instrumentation-10it35-notes.pdf"><img src="images/book10.jpg" alt="Book 10"></a>
+        <h3>Machine Drawing</h3>
+        <p>Author: Author 2</p>
+        <p>Category: Category 2</p>
+      </div>
+      <div data-branch="me">
+        <a href="https://drive.google.com/file/d/1EFWHhaIjwXknOfWyfoTvgTrnG666WWkV/view"><img src="images/book21.png" alt="Book 21"></a>
+        <h3>Applied Thermodynamics</h3>
+        <p>Author: Author 2</p>
+        <p>Category: Category 2</p>
+      </div>
+      <div data-branch="it">
+        <a href="https://elearningatria.files.wordpress.com/2013/10/ece-iii-electronic-instrumentation-10it35-notes.pdf"><img src="images/book11.jpg" alt="Book 11"></a>
+        <h3>Object Oriented <br>Programming <br>Methodology</h3>
+        <p>Author: Author 2</p>
+        <p>Category: Category 2</p>
+      </div>
+      <div data-branch="it">
+        <a href="https://elearningatria.files.wordpress.com/2013/10/ece-iii-electronic-instrumentation-10it35-notes.pdf"><img src="images/book12.jpg" alt="Book 12"></a>
+        <h3>Electric Circuits and<br> Electronics Devices</h3>
+        <p>Author: Author 2</p>
+        <p>Category: Category 2</p>
+      </div>
+      <!-- Add more book items as needed -->
+    </div>
+  </section>
+
+<!-- <div class="containerlib">
+    <div class="book">book1</div>
+    <div class="book">book1</div>
+    <div class="book">book1</div>
+    <div class="book">book1</div>
+    <div class="book">book1</div>
+    <div class="book">book1</div>
+    <div class="book">book1</div>
+</div> -->
+
+        <!-- <footer>
+            <div class="row">
+                <div class="col col1" id="pic" >
+                    <img src="images/nagesh.png" width="80px">
+                    <div class="myname">
+                        <h5>Nagesh Mandal</h5>
+                    </div>
+                    <p class="dev">Full Stack Web Developer</p>
+                    <div class="contact">
+                        <a href="https://www.instagram.com/nagesh_mandal7_5_/"><h4>Contact</h4></a>
+                    </div>
+                </div>
+                <div class="col col2">
+                    <a target="_blank" href="https://www.google.com/maps/place/Chaibasa+Engineering+College/@22.4643055,85.7886378,17z/data=!3m1!4b1!4m6!3m5!1s0x3a1e25ddde342373:0x4ac680428662b09d!8m2!3d22.4643055!4d85.7912127!16s%2Fg%2F1pp2wwhc_">
+                    <h3>Chaibasa Engineering College</h3>
+                    <p>Jamshedpur Keonjhar Highway</p>
+                    <p>Chaibasa Jharkhand PIN 833215, India</p>
+                    </a>
+                    <br>
+                    <a href="mailto:cordinatortigjh@gmail.com" style="color:white;"><h4>cordinatortigjh@gmail.com</h4></a>
+                    <br>
+                    <a href="tel:+919062941530" style="color:white;"><h4>+91 - 9062941530</h4></a>
+
+                </div>
+                <div class="col col3" id="link">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col col4">
+                    <h3>News<span>letter</span></h3>
+                    <form class="form-news">
+                        <i class="far fa-envelope"></i>
+                        <input class="emailid" type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                    <div class="social-media">
+                       <a href="https://twitter.com/NageshMandal75"> <i class="tweet fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/nagesh_mandal7_5_/"><i class="insta fa-brands fa-instagram"></i></a>
+                       <a href="https://github.com/NageshMandal"> <i class="git fa-brands fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/nagesh-mandal-134b70237/"> <i class="in fa-brands fa-linkedin"></i></a>
+                       <a href="https://www.youtube.com/@nageshmandal9461/featured"> <i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="return-to-top" id="returnToTop">
+                        <i class="fas fa-arrow-up fa-2x fa-bounce"></i>
+                      </div>
+                </div>
+            </div>-->
+            <!--Voice Assistent-->
+            <!-- <div class="containers">
+                <div class="texts">
+                </div>
+            </div> -->
+            <!--Voice assistent end-->
+            <!-- <div class="toggle-mode">
+                <img class="moon" data-set="sun" src="images/moon.png" alt="dark-mode">
+                <img class="sun"  data-set="moon" src="images/sun.png"  alt="light-mode">
+            </div> -->
+
+        <!-- </footer> -->
+
+        <footer>
+            <div class="row">
+                <div class="col col1" id="pic" >
+                    <img src="images/nagesh.png" width="80px">
+                    <div class="myname">
+                        <h5>Nagesh Mandal</h5>
+                    </div>
+                    <p class="dev">Full Stack Web Developer</p>
+                    <div class="contact">
+                        <a href="https://www.instagram.com/nagesh_mandal7_5_/"><h4>Contact</h4></a>
+                    </div>
+                </div>
+                <div class="col col2">
+                    <h3>Chaibasa Engineering College</h3>
+                    <p><i class="fa-solid fa-location-dot"></i>
+                        Jamshedpur Keonjhar Highway
+                       Chaibasa Jharkhand PIN 833215, India
+                    </p>
+                    <p class="email-id"><i class="far fa-envelope"></i>
+                        cordinatortigjh@gmail.com
+                    </p>
+                    <h4>
+                        <i class="fa-solid fa-phone" style="color: #fff;"></i>
+                         +91 - 9062941530
+                    </h4>
+                </div>
+                <div class="col col3" id="link">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col col4">
+                    <h3>News<span>letter</span></h3>
+                    <form class="form-news">
+                        <i class="far fa-envelope"></i>
+                        <input class="emailid" type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                    </form>
+                    <div class="social-icons social-media">
+                       <a href="https://twitter.com/NageshMandal75"> <i class="tweet fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/nagesh_mandal7_5_/"><i class="insta fa-brands fa-instagram"></i></a>
+                       <a href="https://github.com/NageshMandal"> <i class="git fa-brands fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/nagesh-mandal-134b70237/"> <i class="in fa-brands fa-linkedin"></i></a>
+                       <a href="https://www.youtube.com/@nageshmandal9461/featured"> <i class="youtube fa fa-youtube-play" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="return-to-top" id="returnToTop">
+                        <i class="fas fa-arrow-up fa-2x fa-bounce"></i>
+                      </div>
+                </div>
+            </div>
+            <!--Voice Assistent-->
+            <div class="containers">
+                <div class="texts">
+                </div>
+            </div>
+            <!--Voice assistent end-->
+            <div class="toggle-mode">
+                <img class="moon" data-set="sun" src="images/moon.png" alt="dark-mode">
+                <img class="sun"  data-set="moon" src="images/sun.png"  alt="light-mode">
+            </div>
+
+        </footer>
+
+
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+    <script src="library.js"></script>
+
+
+</body>
+</html>
