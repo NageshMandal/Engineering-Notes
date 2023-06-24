@@ -71,11 +71,14 @@ body::-webkit-scrollbar-thumb {
 .navbar {
   height: 88px;
   min-width: 99.35vw;
-  margin: -15px 0 0 -1px;
+  margin: -1px 0 0 -1px;
   background: #131C2B;
   display: flex;
   justify-content: space-around;
   align-items: normal;
+  position: sticky;
+  top: -1px;
+  z-index: 100;
 }
 
 nav {
@@ -470,8 +473,8 @@ form input {
 
 .toggle-mode {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 30px;
+  right: 15px;
   width: 35px;
   height: 35px;
   cursor: pointer;
