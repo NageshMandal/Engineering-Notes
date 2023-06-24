@@ -61,7 +61,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navbar {
-  filter: drop-shadow(0px 0px 5px rgb(5, 5, 5));
   height: 88px;
   min-width: 99.35vw;
   margin: -30px 0 0 -128px;
@@ -393,7 +392,7 @@ ul li a {
 }
 
 ul li a:hover {
-  color: #f96e5c;
+  color: #ff523b;
 }
 
 form {
@@ -598,23 +597,23 @@ form input {
 /*? dark mode */
 
 .dark-mode {
-  background: #131C2B;
+  background: #2c3333;
   color: white;
 }
 
 .dark-mode .title {
-  background: #131C2B;
+  background: #2c3333;
   color: #bf7474
 }
 
 .header-dark-mode {
 
-  background: #131C2B;
-  color: #ffffff;
+  background: #1c2020;
+  color: #bf7474;
 }
 
 .header-dark-mode p {
-  background: #131C2B;
+  background: #1c2020;
   color: white;
 }
 
