@@ -70,6 +70,9 @@ section#content {
     color:#b700ff;
   }
 
+  .row-lib{
+    padding-top: 60px;
+  }
   .books_available{
     text-align: center;
     font-size: 1.5rem;
@@ -93,7 +96,7 @@ section#content {
 
   @media screen and (max-width:800px) {
     #bookList div{
-      width:60%;
+      width:80%;
     }
   }
   @media screen and (max-width:1000px){
