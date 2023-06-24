@@ -489,10 +489,11 @@ form input {
   position: absolute;
   bottom: 20%;
   text-align: center;
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: 500;
   padding: 1rem 1rem;
   transition: .5s ease;
-  background-color: #a6b6bb;
+  background-color: #5b8997;
   opacity: 0;
   overflow: hidden;
   ;
