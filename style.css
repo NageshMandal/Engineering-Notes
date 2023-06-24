@@ -777,6 +777,8 @@ form input {
 .project-form-container {
   max-width: 30rem;
   margin: auto;
+  background-color: #f5d7d7;
+  color :rgb(72, 74, 87);
 }
 
 .project-form {
@@ -784,6 +786,7 @@ form input {
   padding: 1.25rem 1rem;
   display: block;
   border-width: 1px;
+  font-weight: bold;
 }
 
 .project-form .form-input {
