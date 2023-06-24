@@ -742,7 +742,7 @@ form input {
 }
 
 .mic {
-  color: black;
+  color: rgb(29, 3, 29);
   text-align: right;
   padding-right: 8px;
   padding-left: 8px;
@@ -755,8 +755,8 @@ form input {
 }
 
 .mic:hover {
-  background: #d1d1d1;
-  box-shadow: 2px 2px 20px rgb(49, 49, 49);
+  color : rgb(111, 69, 111);
+  /* box-shadow: 2px 2px 20px rgb(49, 49, 49); */
 }
 
 .google {
