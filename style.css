@@ -172,7 +172,7 @@ p {
 
 .btn {
   display: inline-block;
-  background: #1d3b9e;
+  background: #ff523b;
   color: #fff;
   padding: 8px 30px;
   margin-left: 20%px;
@@ -190,10 +190,10 @@ p {
 }
 
 .btn:hover {
-  background: #ebc145;
+  background: #29a423;
   transform: scaleX(2);
   transform: scaley(1.1);
-  box-shadow: 2px 2px 8px rgb(49, 49, 49);
+  box-shadow: 2px 2px 20px rgb(49, 49, 49);
 }
 
 .header {
@@ -248,7 +248,7 @@ p {
   position: relative;
   line-height: 60px;
   padding-top: 20px;
-  font-size: 40px;
+  font-size: 25px;
   color: rgb(54, 53, 53);
 }
 
