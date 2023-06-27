@@ -101,36 +101,785 @@
     </div>
 </div>
 <!-------------- Project forms section  ----->
-<div class="project-container small-container">
-    <h2 class="title">Submit your Own Project</h2>
-    <div class="project-form-container">
-        <form class="project-form" action="mailto:evergreennageshmandal@gmail.com">
-            <div class="form-input-group">
-                <label for="project-name">Project Name: </label>
-                <br>
-                <input class="form-input" type="text" id="project-name" name="project-name" placeholder="Your project's Name." required>
+
+    
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap");
+
+        :root {
+            --bodybg: #fff;
+            --primary-color: #5138ee;
+            --grey: #d6d6d6;
+            --placeholder: #969696;
+            --white: #fff;
+            --text: #333;
+            --slider-bg: #eff3ff;
+            --login-cta-hover: #1f0098;
+        }
+
+
+
+        .pp {
+            background: var(--bodybg);
+            font-family: "Raleway", sans-serif;
+            display: flex;
+            max-height: 100hv;
+            width: 100%;
+            /* Adjust the maximum height as needed */
+            overflow-y: auto;
+
+        }
+
+
+
+
+        .login-container {
+            display: flex;
+            max-width: 1200px;
+            background: var(--white);
+            margin: auto;
+            width: 100%;
+            min-width: 320px;
+        }
+
+        .login-container .logo svg {
+            height: 40px;
+            width: 40px;
+            fill: var(--primary-color);
+        }
+
+        .login-container .login-form {
+            width: 50%;
+            box-sizing: border-box;
+            padding: 50px 50px 10px 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+            background-color: #eff3ff;
+            border-radius: 10px 0px 0px 10px;
+        }
+
+        .login-container .login-form .login-form-inner {
+            max-width: 380px;
+            width: 95%;
+        }
+
+        .login-container .login-form .google-login-button .google-icon svg {
+            height: 20px;
+            display: flex;
+            margin-right: 10px;
+        }
+
+        .login-container .login-form .google-login-button {
+            color: var(--text);
+            border: 1px solid var(--grey);
+            margin: 40px 0 20px;
+        }
+
+        .login-container .login-form .sign-in-seperator {
+            text-align: center;
+            color: var(--placeholder);
+            position: relative;
+            margin: 30px 0 20px;
+        }
+
+        .login-container .login-form .sign-in-seperator span {
+            background: var(--white);
+            z-index: 1;
+            position: relative;
+            padding: 0 10px;
+            font-size: 14px;
+        }
+
+        .login-container .login-form .sign-in-seperator:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background: var(--grey);
+            left: 0;
+            top: 50%;
+            z-index: 0;
+        }
+
+        .login-container .login-form .login-form-group {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .login-container .login-form .login-form-group label {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text);
+            margin-bottom: 10px;
+        }
+
+        .login-container .login-form .login-form-group input {
+            padding: 13px 20px;
+            box-sizing: border-box;
+            border: 1px solid var(--grey);
+            border-radius: 50px;
+            font-family: "Raleway", sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--text);
+            transition: linear 0.2s;
+        }
+
+        .login-container .login-form .login-form-group input:focus {
+            outline: none;
+            border: 1px solid var(--primary-color);
+        }
+
+        .login-container .login-form .login-form-group input::-webkit-input-placeholder {
+            color: var(--placeholder);
+            font-weight: 300;
+            font-size: 14px;
+        }
+
+        .login-container .login-form .login-form-group.single-row {
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 5px;
+        }
+
+        /* custom checkbox */
+        .login-container .login-form .custom-check input[type="checkbox"] {
+            height: 23px;
+            width: 23px;
+            margin: 0;
+            padding: 0;
+            opacity: 1;
+            appearance: none;
+            border: 2px solid var(--primary-color);
+            border-radius: 3px;
+            background: var(--white);
+            position: relative;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .login-container .login-form .custom-check input[type="checkbox"]:checked {
+            border: 2px solid var(--primary-color);
+            background: var(--primary-color);
+        }
+
+        .login-container .login-form .custom-check input[type="checkbox"]:checked:before,
+        .login-container .login-form .custom-check input[type="checkbox"]:checked:after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            background: var(--white);
+        }
+
+        .login-container .login-form .custom-check input[type="checkbox"]:checked:before {
+            width: 8px;
+            top: 11px;
+            left: 2px;
+            transform: rotate(44deg);
+        }
+
+        .login-container .login-form .custom-check input[type="checkbox"]:checked:after {
+            width: 14px;
+            top: 8px;
+            left: 5px;
+            transform: rotate(-55deg);
+        }
+
+        .login-container .login-form .custom-check input[type="checkbox"]:focus {
+            outline: none;
+        }
+
+        .login-container .login-form .custom-check {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-container .login-form .custom-check label {
+            margin: 0;
+            color: var(--text);
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .login-container .login-form .link {
+            color: var(--primary-color);
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .login-container .login-form .link:hover {
+            text-decoration: underline;
+        }
+
+        .login-container .login-form .login-cta {
+            color: var(--white);
+            text-decoration: none;
+            border: 1px solid var(--primary-color);
+            margin: 25px 0 35px;
+            background: var(--primary-color);
+        }
+
+        .login-container .login-form .login-cta:hover {
+            background: var(--login-cta-hover);
+        }
+
+        .login-container .onboarding {
+            flex: 1;
+            background: var(--slider-bg);
+            display: none;
+            width: 50%;
+        }
+
+        .login-container .login-form .login-form-group label .required-star {
+            color: var(--primary-color);
+            font-size: 18px;
+            line-height: 10px;
+        }
+
+        .login-container .rounded-button {
+            display: flex;
+            width: 100%;
+            text-decoration: none;
+            border-radius: 50px;
+            padding: 13px 20px;
+            box-sizing: border-box;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 500;
+            align-items: center;
+            transition: linear 0.2s;
+        }
+
+        .login-container .rounded-button:hover {
+            box-shadow: 0px 0px 4px 0px var(--grey);
+        }
+
+        .login-container .body-text {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text);
+        }
+
+        .login-container .onboarding .swiper-container {
+            width: 100%;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .login-container .onboarding .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 400;
+            color: var(--text);
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .login-container .onboarding .swiper-pagination-bullet-active {
+            background-color: var(--primary-color);
+        }
+
+        .login-container .onboarding .swiper-slide {
+            flex-direction: column;
+            display: flex;
+        }
+
+        .login-container .onboarding .swiper-slide .slide-image img {
+            width: 100%;
+            /*height: 80%;*/
+            height: 80%
+        }
+
+
+        .login-container .onboarding .slide-content {
+            width: 60%;
+        }
+
+        .login-container .onboarding .slide-content h2 {
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
+
+        .login-container .onboarding .slide-content p {
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 300;
+        }
+
+        .swiper-pagination-fraction,
+        .swiper-pagination-custom,
+        .swiper-container-horizontal>.swiper-pagination-bullets {
+            bottom: 30px;
+        }
+
+        .login-container .login-form .login-form-inner h1 {
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+
+        @media screen and (min-width: 768px) {
+            .login-container .onboarding {
+                display: flex;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .login-container {
+                height: 100vh;
+            }
+        }
+
+        @media screen and (width: 768px) {
+            .login-container .onboarding {
+                order: 0;
+            }
+
+            .login-container .login-form {
+                order: 1;
+            }
+
+            .login-container {
+                height: 100vh;
+            }
+        }
+
+        @media screen and (max-width: 420px) {
+            .login-container .login-form {
+                padding: 20px;
+            }
+
+            .login-container .login-form-group {
+                margin-bottom: 16px;
+            }
+
+            .login-container {
+                margin: 0;
+            }
+        }
+    </style>
+
+    <style>
+        form.google-sheet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            border: none;
+            padding-bottom: 50px;
+
+        }
+
+
+
+        form.google-sheet h1 {
+            margin-top: 0;
+        }
+
+        form.google-sheet .login-form-group {
+            margin-bottom: 15px;
+        }
+
+        form.google-sheet input[type="text"],
+        form.google-sheet textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        form.google-sheet .login-cta {
+            margin-top: 15px;
+        }
+
+        /* Add any additional styles as needed */
+    </style>
+
+    <form class="google-sheet" action="mailto:evergreennageshmandal@gmail.com">
+
+        <div class="pp">
+
+            <div class="login-container">
+                <div class="login-form">
+                    <div class="login-form-inner">
+                        <div class="logo">
+                            <img src="https://code-engineering.netlify.app/images/logo1.png"
+                                style="width: 35%;height:30%;">
+                        </div>
+                        <h1>Submit your own project</h1>
+                        <p class="body-text">See your growth and get consulting support!</p>
+
+                        <!-- <a href="#" class="rounded-button google-login-button">
+                    <span class="google-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M113.47 309.408L95.648 375.94l-65.139 1.378C11.042 341.211 0 299.9 0 256c0-42.451 10.324-82.483 28.624-117.732h.014L86.63 148.9l25.404 57.644c-5.317 15.501-8.215 32.141-8.215 49.456.002 18.792 3.406 36.797 9.651 53.408z"
+                                fill="#fbbb00" />
+                            <path
+                                d="M507.527 208.176C510.467 223.662 512 239.655 512 256c0 18.328-1.927 36.206-5.598 53.451-12.462 58.683-45.025 109.925-90.134 146.187l-.014-.014-73.044-3.727-10.338-64.535c29.932-17.554 53.324-45.025 65.646-77.911h-136.89V208.176h245.899z"
+                                fill="#518ef8" />
+                            <path
+                                d="M416.253 455.624l.014.014C372.396 490.901 316.666 512 256 512c-97.491 0-182.252-54.491-225.491-134.681l82.961-67.91c21.619 57.698 77.278 98.771 142.53 98.771 28.047 0 54.323-7.582 76.87-20.818l83.383 68.262z"
+                                fill="#28b446" />
+                            <path
+                                d="M419.404 58.936l-82.933 67.896C313.136 112.246 285.552 103.82 256 103.82c-66.729 0-123.429 42.957-143.965 102.724l-83.397-68.276h-.014C71.23 56.123 157.06 0 256 0c62.115 0 119.068 22.126 163.404 58.936z"
+                                fill="#f14336" />
+                        </svg></span>
+                    <span>Sign in with google</span>
+                </a> -->
+
+                        <div class="sign-in-seperator">
+                            <span id="text-box">feel free to share</span>
+                        </div>
+
+                        <div class="login-form-group">
+                            <label for="name">Project Name <span class="required-star">*</span></label>
+                            <input type="text" placeholder="disaster management system" name="proj_name" id="proj_name"
+                                required>
+                        </div>
+                        <div class="login-form-group">
+                            <label for="pwd">Project Author(s)<span class="required-star">*</span></label>
+                            <input autocomplete="off" type="text" placeholder="prayag bhosale," name="proj_authors"
+                                id="proj_authors" required>
+                        </div>
+
+                        <div class="login-form-group">
+                            <label for="pwd">Project Description<span class="required-star">*</span></label>
+                            <input autocomplete="off" type="text" placeholder="description in 100 words"
+                                name="proj_description" id="proj_description" required>
+                        </div>
+
+                        <div class="login-form-group">
+                            <label for="pwd">Repository Link (Github)<span class="required-star">*</span></label>
+                            <input autocomplete="off" type="text" placeholder="description in 100 words"
+                                name="repo_link" id="repo_link" required>
+                        </div>
+
+
+
+
+                        <div class="login-form-group single-row">
+                            <div class="custom-check">
+                                <input autocomplete="off" type="checkbox" id="remember" required><label for="remember">I
+                                    Agree to Terms & Conditions
+                                </label> <br />
+                                <br />
+
+
+                            </div>
+
+                            <!-- <a href="#" class="link forgot-link">Forgot Password ?</a> -->
+                        </div>
+
+                        <a href="#" class="rounded-button login-cta" id="submit-button">Submit</a>
+                        <!-- 
+                <div class="register-div">Not registered yet? <a href="#" class="link create-account" -link>Create
+                        an
+                        account ?</a></div> -->
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="onboarding" style="border-radius: 0px 10px 10px 0px;">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide color-1">
+                                <div class="slide-image">
+                                    <img src="https://raw.githubusercontent.com/ismailvtl/ismailvtl.github.io/master/images/startup-launch.png"
+                                        loading="lazy" alt="" />
+                                </div>
+                                <div class="slide-content">
+                                    <h2>Turn your ideas into reality.</h2>
+                                    <p style="color:#333;">Consistent quality and experience across all platforms and
+                                        devices.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="swiper-slide color-1">
+                <div class="slide-image">
+                    <img src="https://raw.githubusercontent.com/ismailvtl/ismailvtl.github.io/master/images/cloud-storage.png"
+                        loading="lazy" alt="" />
+                </div>
+                <div class="slide-content">
+                    <h2>Turn your ideas into reality.</h2>
+                    <p>Consistent quality and eperience across all platform and devices</p>
+                </div>
             </div>
-            <div class="form-input-group">
-                <label for="project-author">Project Author(s): </label>
-                <br>
-                <input class="form-input" type="text" id="project-author" name="project-author" placeholder="Your project's Authors" required>
+
+            <div class="swiper-slide color-1">
+                <div class="slide-image">
+                    <img src="https://raw.githubusercontent.com/ismailvtl/ismailvtl.github.io/master/images/cloud-storage.png"
+                        loading="lazy" alt="" />
+                </div>
+                <div class="slide-content">
+                    <h2>Turn your ideas into reality.</h2>
+                    <p>Consistent quality and eperience across all platform and devices</p>
+                </div>
+            </div> -->
             </div>
-            <div class="form-input-group">
-                <label for="project-description">Project Description:</label>
-                <br>
-                <input type="text" class="form-input" id="project-description" name="project-description" placeholder="Few words about your project." required>
-            </div>
-            <div class="form-input-group">
-                <label for="project-link">Repository Link (Github)<i class="fa-brands fa-github"></i> :</label>
-                <br>
-                <input class="form-input" type="text" id="project-link" name="project-link" placeholder="Repository Link" required>
-            </div>
-            <div class="form-input-group">
-                <button class="btn" type="submit">Submit Project</button>
-            </div>
-        </form>
-    </div>
-</div>     
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        </div>
+        </div>
+
+        </div>
+    </form>
+
+    <style>
+        .thank-you-message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .alert1 {
+            display: flex;
+            align-items: center;
+            padding: 0.55rem 0.65rem 0.55rem 0.75rem;
+            border-radius: 1rem;
+            min-width: 100px;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+
+            box-shadow:
+                0px 3.2px 13.8px rgba(0, 0, 0, 0.02),
+                0px 7.6px 33.3px rgba(0, 0, 0, 0.028),
+                0px 14.4px 62.6px rgba(0, 0, 0, 0.035),
+                0px 25.7px 111.7px rgba(0, 0, 0, 0.042),
+                0px 48px 208.9px rgba(0, 0, 0, 0.05),
+                0px 115px 500px rgba(0, 0, 0, 0.07)
+        }
+
+        .content1 {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon1 {
+            font-size: 10px;
+            padding: 0.5rem;
+            margin-right: 1rem;
+            border-radius: 39% 61% 42% 58% / 50% 51% 49% 50%;
+            box-shadow:
+                0px 3.2px 13.8px rgba(0, 0, 0, 0.02),
+                0px 7.6px 33.3px rgba(0, 0, 0, 0.028),
+                0px 14.4px 62.6px rgba(0, 0, 0, 0.035),
+                0px 25.7px 111.7px rgba(0, 0, 0, 0.042),
+                0px 48px 208.9px rgba(0, 0, 0, 0.05),
+                0px 115px 500px rgba(0, 0, 0, 0.07)
+        }
+
+
+
+        .success1 {
+            background-color: #d7f1de;
+            border: 2px solid #3ebd61;
+        }
+
+        .success1 .icon1 {
+            background-color: #3ebd61;
+        }
+
+
+
+
+        .info1 {
+            background-color: #c2dfe8;
+            border: 2px solid #006CE3;
+            margin-right: 10%;
+
+
+        }
+
+        .info1 .icon1 {
+            background-color: #006CE3;
+
+        }
+
+
+
+        #text-box {
+            font-size: 15px;
+            font-weight: 700;
+            color: #222222;
+
+        }
+
+
+
+        .cont {
+
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: red;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var emailLink = document.getElementById('submit-button');
+            var projNameInput = document.getElementById('proj_name');
+            var projAuthorsInput = document.getElementById('proj_authors');
+            var projDescriptionInput = document.getElementById('proj_description');
+            var repoLinkInput = document.getElementById('repo_link');
+            var agreeCheckbox = document.getElementById('remember');
+
+
+
+            console.log(projNameInput.value + projAuthorsInput.value + projDescriptionInput.value + repoLinkInput.value);
+
+            emailLink.addEventListener('click', function (event) {
+                event.preventDefault();
+
+                if (projNameInput == "" || projNameInput == "" || projAuthorsInput == "" || projDescriptionInput == "" || repoLinkInput == "" || !agreeCheckbox.checked) {
+
+                    alert('Enter all fields properly')
+                }
+
+                else {
+
+                    var recipientEmail = 'evergreennageshmandal@gmail.com';
+                    var subject = 'Interested in sharing own project: ' + projNameInput.value;
+                    var body =
+                        'Project Name: ' +
+                        projNameInput.value +
+                        '\n' +
+                        'Project Author(s): ' +
+                        projAuthorsInput.value +
+                        '\n' +
+                        'Project Description: ' +
+                        projDescriptionInput.value +
+                        '\n' +
+                        'Repository Link (Github): ' +
+                        repoLinkInput.value;
+
+                    showMessage1('Project Details Saved !!');
+                    sendEmail(recipientEmail, subject, body);
+                }
+            });
+
+
+
+
+            function showMessage1(message) {
+                var messageBox = document.createElement('div');
+                //  messageBox.textContent = message;
+                console.log('inside copied ')
+                messageBox.innerHTML = `     <div class="info1 alert1">
+                      <div class="content1">
+                         <div class="icon1">
+                                  <svg width="50" height="50" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><circle fill="#fff" cx="64" cy="64" r="64"/></g><g><path fill="#006CE3" d="M54.3,97.2L24.8,67.7c-0.4-0.4-0.4-1,0-1.4l8.5-8.5c0.4-0.4,1-0.4,1.4,0L55,78.1l38.2-38.2   c0.4-0.4,1-0.4,1.4,0l8.5,8.5c0.4,0.4,0.4,1,0,1.4L55.7,97.2C55.3,97.6,54.7,97.6,54.3,97.2z"/></g></svg>
+                              </div>
+                      <p id="text-box"> ${message}</p>
+              
+                      </div>
+                      
+                    </div>
+                  
+              
+                  `;
+
+                var imageElement = document.querySelector('.slide-image img');
+                if (imageElement) {
+                    imageElement.remove();
+                }
+
+
+                var slideHeading = document.querySelector('.slide-content h2');
+                var slideDescription = document.querySelector('.slide-content p');
+
+                slideHeading.style.fontWeight = '500';
+                slideHeading.style.marginBottom = '15px';
+                slideHeading.style.width = '100%';
+
+                if (slideHeading && slideDescription) {
+                    slideHeading.textContent = 'Thank you for submitting your project to our platform. We appreciate your contribution and will review your submission shortly. <br/> If you have any questions or need further assistance, please feel free to contact us.';
+                    slideDescription.textContent = '';
+                }
+
+
+                messageBox.style.position = 'fixed';
+                messageBox.style.top = '0';
+                messageBox.style.left = '0';
+                messageBox.style.width = '100%';
+                messageBox.style.height = '100%';
+                messageBox.style.backgroundColor = 'rgba(0, 0, 0, 0.5)';
+                messageBox.style.display = 'flex';
+                messageBox.style.alignItems = 'center';
+                messageBox.style.justifyContent = 'center';
+
+
+
+                messageBox.classList.add('clipboard-message');
+                document.body.appendChild(messageBox);
+                setTimeout(function () {
+                    document.body.removeChild(messageBox);
+                }, 5000);
+            }
+
+
+
+            function sendEmail(recipientEmail, subject, body) {
+                var emailUrl = 'mailto:' + recipientEmail;
+
+                if (subject) {
+                    emailUrl += '?subject=' + encodeURIComponent(subject);
+                }
+
+                if (body) {
+                    emailUrl += '&body=' + encodeURIComponent(body);
+                }
+
+                window.location.href = emailUrl;
+
+                reloadpage();
+
+            }
+
+            function reloadpage() {
+
+                setTimeout(() => {
+                    location.reload();
+                }, 2000);
+            };
+
+        });
+
+    </script>
+
+
+
+
+    
 <footer>
     <div class="row">
         <div class="col col1" id="pic" >
