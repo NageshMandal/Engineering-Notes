@@ -47,6 +47,8 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: space-around;
   align-items: normal;
+  position: sticky;
+  top: -12px;
 }
 
 nav {
@@ -338,8 +340,8 @@ button .submit {
 
 .toggle-mode {
   position: absolute;
-  top: 30px;
-  right: 40px;
+  top: 43px;
+  right: 29px;
   width: 35px;
   height: 35px;
   cursor: pointer;
