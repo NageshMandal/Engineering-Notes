@@ -36,6 +36,121 @@ body::-webkit-scrollbar {
   width: 11px;
 }
 
+
+/*sidebar*/
+.sidebar{
+  position: fixed;
+  /* display: flex; */
+  width: 300px;
+  top: -50px;
+  /* bottom: 0; */
+  /* right: 0; */
+  left: -1000px;
+  top: 70px;
+  z-index: 10;
+height: 100%;
+  /* transform: translateX(-100%); */
+  /* transition: transform 0.2s;
+  background-color: transparent; */
+background-color: #131C2B;
+/* background-color: transparent; */
+/* opacity: 40%; */
+/* filter: blur(100px); */
+  /* -webkit-filter: blur(100px); */
+
+}
+
+.sidebar ul{
+  margin-top: 38px;
+  filter: blur(0px);
+}
+.sidebar ul a{
+  display: block;
+  height: 1005;
+  width: 100%;
+  line-height: 65px;
+  font-size: 22px;
+  /* color: white; */
+  font-weight: 900;
+  padding-left: 40px;
+  box-sizing: border-box;
+  /* border: 2px solid black; */
+  /* border-bottom: 1px solid whitesmoke; */
+  margin: 22px 0px;
+}
+.sidebar ul li a{
+filter: blur(0px);
+-webkit-filter: blur(0px);
+}
+.sidebar ul li:hover a{
+  padding-left: 80px;
+  opacity: 100%;
+  transform: scale(1.2);
+  transition: 0.5s;
+  color: #F44336;
+
+}
+#check{
+display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  cursor: pointer;
+}
+label #btn{
+
+  top: 18px;
+  left: 150px;
+  font-size: 25px;
+  /* opacity: 0;
+  pointer-events: none; */
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  padding: 4px 9px;
+  width: 50px;
+  background-color: #131C2B;
+  opacity: 100%;
+}
+label #cancel:hover{
+  color: white;
+}
+label #cancel{
+  left: 1450px;
+  opacity: 0;
+}
+#check:checked ~ .sidebar{
+  left: 0px;
+  right: 0;
+
+}
+#check:checked ~ label #btn{
+  z-index: 11111;
+  /* left: -1950px; */
+  
+  font-size: 25px;
+  border-radius: 20px;
+  color: white;
+  padding: 4px 9px;
+  width: 50px;
+  text-align: center;
+  /* opacity: 0; */
+  background-color: #131C2B;
+  
+  opacity: 60%;
+
+
+}
+#check:checked ~ label #cancel{
+  z-index: 11111;
+  left: 270px;
+  top: 85px;
+  font-size: 25px;
+  color: white;
+  opacity: 80%;
+}
+
+
 .card:hover {
   background-color: rgb(132, 94, 144);
   transform: scale(1.1);

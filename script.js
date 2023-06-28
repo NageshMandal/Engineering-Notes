@@ -9,6 +9,17 @@ function scrollToTop() {
   });
 }
 
+//sidebar
+// const sidebarnav=document.getElementById("sidebar-show")
+// const sidebaropen=document.getElementById("open-nav")
+// const sidebarclose=document.getElementById("sidebar-close")
+
+// sidebaropen.addEventListener("click",()=>{
+//     sidebarnav.classList.toggle("sidebar-show")
+// })
+// sidebarclose.addEventListener("click",()=>{
+//     sidebarnav.classList.toggle("sidebar-show")
+// })
 
 // Function to toggle the visibility of the "return to top" button
 function toggleReturnToTopButton() {
