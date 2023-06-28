@@ -57,13 +57,13 @@ body::-webkit-scrollbar-thumb {
 
 .navbar .logo img {
   margin-top: 25px;
-  margin-left: 30px;
+  margin-left: 11px;
 }
 
 .navbar {
   height: 88px;
   min-width: 99.35vw;
-  margin: -30px 0 0 -128px;
+  margin: -30px 0 0 0;
   background: #131C2B;
   display: flex;
   justify-content: space-around;
@@ -149,7 +149,8 @@ p {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.row-header{
+
+.row-header {
   padding-top: 100px;
 }
 
@@ -661,7 +662,7 @@ form input {
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 750px) {
   .row {
     display: inline;
   }
@@ -916,7 +917,7 @@ body.dark-mode .project-card {
 
 .container {
   /* text-align: center; */
-  padding: 15px;
+  padding: 15px 0px;
   margin-bottom: 50px;
 }
 
@@ -942,4 +943,102 @@ h3 {
 
 .span {
   color: #b700ff;
+}
+
+@media (max-width:900px)and (min-width:750px) {
+  nav ul li {
+    color: white;
+    display: inline-block;
+    margin: 6px 12px 0 0;
+    font-size: 14.5px;
+    padding: 30px 1px;
+  }
+
+  #search-form {
+    width: 147px;
+    height: 28px;
+    border-radius: 80px;
+
+  }
+
+  .toggle-mode>img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .toggle-mode {
+    position: absolute;
+    top: 20px;
+    right: 6px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .mic {
+    color: black;
+    text-align: right;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+    margin-right: 10px;
+    font-size: 17px;
+    background-color: white;
+  }
+}
+
+@media (max-width:1265px) and (min-width:900px) {
+  nav ul li {
+    color: white;
+    display: inline-block;
+    margin: 6px 13.5px 0 0;
+    font-size: 15px;
+    padding: 30px 8px;
+  }
+
+  #search-form {
+    width: 175px;
+    height: 30px;
+    border-radius: 80px;
+
+  }
+
+  .mic {
+    color: black;
+    text-align: right;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+    margin-right: 10px;
+    font-size: 18px;
+    background-color: white;
+  }
+
+  .toggle-mode>img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .toggle-mode {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width:1265px) {
+  nav ul li {
+    color: white;
+    display: inline-block;
+    margin: 6px 16px 0 0;
+    font-size: 17px;
+    padding: 30px 16px;
+  }
 }
