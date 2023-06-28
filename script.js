@@ -9,6 +9,14 @@ function scrollToTop() {
   });
 }
 
+function myFunction() {
+  var x = document.getElementById("mobileNav");
+  if (x.className === "") {
+    x.className = "mobileNav";
+  } else {
+    x.className = "";
+  }
+}
 
 // Function to toggle the visibility of the "return to top" button
 function toggleReturnToTopButton() {

@@ -56,15 +56,15 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navbar .logo img {
-  margin-top: 25px;
+  margin-top: 16px;
   margin-left: 30px;
 }
 
 .navbar {
   height: 88px;
-  min-width: 99.35vw;
-  margin: -30px 0 0 -128px;
-  background: #131C2B;
+  /* min-width: 99.35vw; */
+  /* margin: -30px 0 0 -128px; */
+  background: #131c2b;
   display: flex;
   justify-content: space-around;
   align-items: normal;
@@ -112,7 +112,6 @@ nav ul li {
   margin-left: -50px;
 }
 
-
 .col-2 p {
   text-align: left;
   line-height: 1.7;
@@ -122,7 +121,6 @@ nav ul li {
 .para {
   max-width: 500px;
   font-family: "Poppins", sans-serif;
-
 }
 
 a {
@@ -149,7 +147,7 @@ p {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.row-header{
+.row-header {
   padding-top: 100px;
 }
 
@@ -198,6 +196,7 @@ p {
 
 .header {
   background: radial-gradient(#fff, rgb(255, 191, 191));
+  position: relative;
 }
 
 .categories {
@@ -337,7 +336,6 @@ footer {
 
 .col p {
   font-size: 16px;
-
 }
 
 .col2 {
@@ -412,7 +410,7 @@ form .far {
   margin-bottom: 0;
 }
 
-.col ul>li {
+.col ul > li {
   width: 120px;
 }
 
@@ -420,7 +418,7 @@ button .submit {
   border-radius: 15px;
 }
 
-form button>i {
+form button > i {
   padding: 8px;
   border-radius: 10px;
 }
@@ -471,7 +469,7 @@ form input {
   /* cursor: pointer; */
 }
 
-.toggle-mode>img {
+.toggle-mode > img {
   width: 35px;
   height: 35px;
 }
@@ -491,11 +489,10 @@ form input {
   text-align: center;
   font-size: 13px;
   padding: 1rem 1rem;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-color: #a6b6bb;
   opacity: 0;
   overflow: hidden;
-  ;
 }
 
 .col-3:hover .dis {
@@ -512,7 +509,7 @@ form input {
   margin-right: 1rem;
 }
 
-#pic>.dev {
+#pic > .dev {
   padding: 10px 0;
 }
 
@@ -566,7 +563,6 @@ form input {
 .tweet:hover {
   color: white;
   background: rgb(0, 140, 255);
-
 }
 
 .insta:hover {
@@ -580,13 +576,12 @@ form input {
 }
 
 .in:hover {
-  color: #04669A;
+  color: #04669a;
   background: white;
 }
 
 .tele:hover {
   color: #0088cc;
-
 }
 
 .youtube:hover {
@@ -603,11 +598,10 @@ form input {
 
 .dark-mode .title {
   background: #2c3333;
-  color: #bf7474
+  color: #bf7474;
 }
 
 .header-dark-mode {
-
   background: #1c2020;
   color: #bf7474;
 }
@@ -615,6 +609,14 @@ form input {
 .header-dark-mode p {
   background: #1c2020;
   color: white;
+}
+
+.menu-icon {
+  display: none;
+}
+
+#mobileNav {
+  display: none;
 }
 
 @media screen and (max-width: 800px) {
@@ -650,6 +652,40 @@ form input {
   .col4 {
     /* margin-left: 9rem; */
     margin-top: 2rem;
+  }
+  .menu-icon {
+    display: block;
+    margin-top: 1.4rem;
+  }
+  .menu-icon {
+    font-size: 8vw;
+    right: 15px;
+    top: -2px;
+    position: absolute;
+  }
+  .toggle-mode {
+    top: 25px;
+    right: 60px;
+  }
+
+  #mobileNav {
+    position: relative;
+    display: block;
+  }
+
+  .mobileNav nav {
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background-color: #131c2b;
+  }
+
+  .mobileNav nav ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
   }
 }
 
@@ -687,7 +723,7 @@ form input {
   }
 
   .logo {
-    width: 50px;
+    /* width: 50px; */
   }
 
   nav ul li {
@@ -734,7 +770,6 @@ form input {
 
 .myname {
   width: 180px;
-
 }
 
 .containers {
@@ -751,7 +786,7 @@ form input {
   border-radius: 50px;
   margin-right: 10px;
   font-size: 20px;
-  background-color: white
+  background-color: white;
 }
 
 .mic:hover {
@@ -793,7 +828,7 @@ form input {
   font-size: 0.95rem;
   border-radius: 0.25rem;
   outline-style: solid;
-  outline-width: 1px
+  outline-width: 1px;
 }
 
 .project-form label {
@@ -864,7 +899,7 @@ body.dark-mode .project-card {
 }
 
 .project-card-link a {
-  color: #04669A
+  color: #04669a;
 }
 
 .project-card-link i {
