@@ -210,7 +210,8 @@ p {
 .map {
   margin-top: 20px;
   width: 100%;
-  align-items: center;
+  align-items: flex-start;
+  height: auto; 
 }
 
 .col-4 {
@@ -626,50 +627,64 @@ button .submit {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column; 
   margin-top: 30px;
   padding-top: 20px;
 }
 
 .container .contactinfo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 50%;
+  justify-content: center;
+  margin-left: 80px;
 }
 
 .container .contactinfo .box {
-  position: relative;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 20px 0;
+  gap: 20px;
+  width: 100%;
 }
 
 .container .contactinfo .box .icon {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background: #ff523b;
   border-radius: 50%;
   min-width: 60px;
   height: 60px;
   font-size: 22px;
+  margin-top: 10px;
 }
-.container .contactinfo .box .map{
+.container  .map{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
   width: 100%;
 }
 
 .container .contactinfo .box .text {
+
+  text-align: center;
+  margin-top: 40px; 
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+  margin-left: 40px;
+  margin-right: 40px;  
+  padding-right: 40px;
   font-size: 16px;
   font-weight: 300;
   color: black;
+  justify-content: center;
+  align-items: center;
 }
 
 .container .contactinfo .box .text h1 a {
@@ -682,10 +697,13 @@ button .submit {
 }
 
 .contactform {
-  width: 60%;
+  width: 50%;
   padding: 40px;
   background-color: #fff;
+  flex-direction: column;
   border-radius: 5px;
+  margin-bottom: 30px; 
+  align-items: flex-start;
 }
 
 .contactform h2 {
