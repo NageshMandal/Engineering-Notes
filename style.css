@@ -265,6 +265,8 @@ p {
 }
 
 footer {
+  padding: 0;
+  margin: 0;
   width: 100%;
   bottom: 0;
   background: #192734;
