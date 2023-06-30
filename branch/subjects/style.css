@@ -379,6 +379,14 @@ module-list::part(module__li__a) {
   padding: 5px 10px;
   border-radius: 8px;
   display: block;
+  &:hover {
+    color: #000000;
+    background-color: rgb(38, 230, 0);
+    box-shadow: 2px 2px 20px rgb(49, 49, 49);
+    font-weight: bold;
+    transform: scaleX(2);
+    transform: scaley(1.1);
+  }
 }
 module-list::part(modules__ul) {
   margin-bottom: 50px;
@@ -387,12 +395,3 @@ module-list::part(module) {
   margin-top: 40px;
 }
 
-module-list::part(module__li__a):hover {
-  width: fit-content;
-      color: #000000;
-    background-color: rgb(38, 230, 0);
-    box-shadow: 2px 2px 20px rgb(49, 49, 49);
-    font-weight: bold;
-    transform: scaleX(2);
-    transform: scaley(1.1);
-}
