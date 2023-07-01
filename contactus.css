@@ -6,7 +6,10 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+ul li a:hover{
+  color:#ff523b;
+  text-decoration: underline;
+}
 #check{
   display: none;
 }

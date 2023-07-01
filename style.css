@@ -40,7 +40,10 @@ body::-webkit-scrollbar {
   background-color: rgb(132, 94, 144);
   transform: scale(1.1);
 }
-
+ul li a:hover{
+  color:#ff523b;
+  text-decoration: underline;
+}
 body::-webkit-scrollbar-track {
   background: linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgb(0, 35, 211) 70%);
 }

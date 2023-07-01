@@ -11,6 +11,10 @@
     justify-content: center;
     flex-direction: column;
 }
+ul li a:hover{
+    color:#ff523b;
+    text-decoration: underline;
+  }
 .t-syllabus{
     font-size: 3rem !important;
 }
