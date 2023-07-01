@@ -9,7 +9,10 @@
 {
     text-align: left;
 }
-
+ul li a:hover{
+  color:#ff523b;
+  text-decoration: underline;
+}
 .container h2
 {
     /* color: black; */

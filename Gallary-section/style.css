@@ -95,6 +95,10 @@ nav ul li {
   font-size: 17px;
   padding: 30px;
 }
+ul li a:hover{
+  text-decoration: underline;
+  color:#ff523b;
+}
 
 #search-form {
   width: 267px;
