@@ -10,12 +10,15 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https//stackpath.bootsstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
     <script src="https://kit.fontawesome.com/739255457e.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+  
 </head>
 <body>
     <div class="header">
@@ -44,34 +47,38 @@
                     </ul>
                 </nav>
             </div>
-
-            <div class="row-header">
-                <div class="col-2">
-                    <h1>Syllabus<br>Of Different Colleges</h1>
-                    <div class="para">
-                        <p>
-                            The syllabus provided for various colleges and branches is subject to change based on different academic sessions. Please ensure to check the year mentioned in the syllabus to obtain the most accurate and up-to-date information. Explore the extensive collection of syllabi from multiple colleges and universities available here to stay informed and make informed decisions.
-                        </p>
-                    </div>
-
-                    <div class="explore">
-                        <a href="#search-syllabus"class="btn">Search Syllabus &#8594;</a>
-                    </div>
+        </div>
+    </div>
+    <div class="top-container" style="background: radial-gradient(#fff, rgb(255, 191, 191));">
+        <div class="row-header" style="overflow: hidden; position: relative;">
+            <img class="syllabus" src="./images/syllabus/syllabus.png" style="opacity: 0.1; position: absolute; left: 50px; top: -90px; width: 90%; height: auto; object-fit: cover;">
+            <!-- <div style="overflow: hidden; position: relative;"> -->
+                <div class="para" style="position: relative;">
+                    <h1>Syllabus Of <br> Different Colleges</h1>
+                    <p>
+                        The syllabus provided for various colleges and branches is subject to change based on different academic sessions. Please ensure to check the year mentioned in the syllabus to obtain the most accurate and up-to-date information. Explore the extensive collection of syllabi from multiple colleges and universities available here to stay informed and make informed decisions.
+                    </p>
+                <!-- </div> -->
+                    
+                <div class="explore">
+                    <a href="#search-syllabus"class="btn">Search Syllabus &#8594;</a>
                 </div>
-                <div class="col-2">
-                    <img class="syllabus" src="./images/syllabus/syllabus_icon_1.png">
-                    <img class="syllabus" src="./images/syllabus/syllabus_icon_2.png" alt="">
-                    <img class="syllabus" src="./images/syllabus/syllabus_icon_3.png" alt="">
-                </div>
-
             </div>
+            <!-- <div class="col-lg-6 col-md-12 col-sm-12"> -->
+                <!-- <img class="syllabus" src="./images/syllabus/syllabus_icon_2.png" alt=""> -->
+                <!-- <img class="syllabus" src="./images/syllabus/syllabus_icon_3.png" alt=""> -->
+            <!-- </div> -->
         </div>
     </div>
     <div class="small-container ">
-        <img src="./images/syllabus/syllabus_icon_1.png" class="syllabus" alt="">
-        <h2 class="project-section-title title t-syllabus">Syllabus</h2>
-        <p class="s-para"> A Platform For Syllabus Of various colleges</p>
-        <input type="text" id="s-input" class="s-input search-syllabus" placeholder="Search Subject/College...">
+        <h2 class="project-section-title title t-syllabus"><img src="./images/syllabus/syll_icon.png" class="syll_icon" alt=""> Syllabus</h2>
+        <p class="s-para"> A Platform For Syllabus Of Various Colleges</p>
+        <!-- <input type="text" id="s-input" class="s-input search-syllabus" placeholder="Search Subject/College..."> -->
+        <div class="contr">
+            <input type="text" id="s-input" class="search__box search-syllabus s-input" placeholder="Search Subject/College...">
+            <i class="fas fa-search search__icon" id="icon" onclick="toggleShow()"></i>
+        </div>
+
         <div class="project-card-container">
             <div class="project-card">
                 <h2 class="project-card-title s-title">MAIT </h2>
@@ -79,7 +86,7 @@
                 <h3 class="project-card-author s-subject"><strong>Semester: </strong>1st</h3>
                 <div class="link-syllabuses">
                     <div class="project-card-link">
-                        <a href="https://youtube.com/playlist?list=PL5fCG6TOVhr4jafvBSrmouZt0aqNjPlhd" target="_blank"><i class="fa-brands f"></i> Playlist Link</a>
+                        <a href="https://youtube.com/playlist?list=PL5fCG6TOVhr4jafvBSrmouZt0aqNjPlhd" target="_blank">Playlist Link</a>
                     </div>
                     <div class="project-card-link">
                         <a href="http://www.ipu.ac.in/UnivSyllabus/btechsyllbus060317/3Final%20Syllabus-CSE-(1st%20to%208th%20Semester).pdf" target="_blank"><i class="fa-solid fa-book-open"></i> Syllabus Link</a>
@@ -107,27 +114,27 @@
         <div class="project-form-container">
             <form class="project-form" action="mailto:evergreennageshmandal@gmail.com">
                 <div class="form-input-group">
-                    <label for="project-name">Subject Name: </label>
+                    <label for="project-name">Subject Name : </label>
                     <p class="s-para">(Type <strong> All Subjects</strong> if it is full syllabus)*</p>
                     <input class="form-input" type="text" id="subject-name" name="subject-name" placeholder="Subject Name" required>
                 </div>
                 <div class="form-input-group">
-                    <label for="college-name">College Name: </label>
+                    <label for="college-name">College Name : </label>
                     <br>
                     <input class="form-input" type="text" id="college-name" name="college-name" placeholder="College Name" required>
                 </div>
                 <div class="form-input-group">
-                    <label for="semester">Semester: </label>
+                    <label for="semester">Semester : </label>
                     <br>
                     <input class="form-input" type="text" id="semester" name="semester" placeholder="Semester" required>
                 </div>
                 <div class="form-input-group">
-                    <label for="lecture-link">Lecture/Playlist Link:</label>
+                    <label for="lecture-link">Lecture/Playlist Link : </label>
                     <br>
                     <input class="form-input" type="text" id="lecture-link" name="lecture-link" placeholder="Lectures/Playlist Link" required>
                 </div>
                 <div class="form-input-group">
-                    <label for="syllabus-link">Syllabus Link (Original)<i class="fa-solid fa-book-open"></i> :</label>
+                    <label for="syllabus-link">Syllabus Link (Original)  <i class="fa-solid fa-book-open"></i>  : </label>
                     <br>
                     <input class="form-input" type="text" id="syllabus-link" name="syllabus-link" placeholder="Syllabus Link" required>
                 </div>
