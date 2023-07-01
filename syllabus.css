@@ -1,0 +1,170 @@
+h1  {
+    color: #ec380b;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+
+.para p {
+    color: black;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.container {
+    margin-bottom: 0 !important;
+}
+
+.btn {
+    margin-bottom: 50px;
+}
+
+.small-container{
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row-header {
+    animation: first 2s linear;
+    /* padding: 5%; */
+}
+
+@keyframes first {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+}
+
+.syll_icon {
+    width: 100px;
+    position: relative;
+    top: 30px;
+}
+
+.t-syllabus{
+    font-size: 3rem !important;
+    margin-bottom: 50px;
+    color: orangered;
+}
+
+.s-para{
+    color: black;
+}
+
+
+.link-syllabuses{
+    display: flex;
+    gap: 70px;
+}
+
+.project-container {
+    border-width: 4px !important;
+    border-style: inset;
+    width: 600px !important;
+    margin-bottom: 100px;
+}
+
+.project-container .title {
+    color: #ec380b;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+.project-container label {
+    font-weight: bold;
+}
+/* -----------------------------------Search Box ------------------------------------- */
+.contr {
+    width: 350px;
+    height: auto;
+    background-color: ghostwhite;
+    position: relative;
+    top: 30px;
+    left: 175px;
+    transform: translate(-50%, -50%);
+    border-radius: 4rem;
+    padding: 10px;
+
+}
+  
+.search__box {
+    float: left;
+    width: 0;
+    height: 1.5rem;
+    background: ghostwhite;
+    color: #000000;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+    outline: none;
+    border: none;
+    position: relative;
+    opacity: 1;
+    transition: all .75s ease-in;
+    cursor: pointer;
+}
+  
+.search__box:focus, .search__box:hover {
+    background-color: ghostwhite;
+}
+  
+.search__icon {
+    box-sizing: border-box;
+    float: right;
+    font-size: 1.25rem;
+    display: inline-block;
+    margin-left: .8rem;
+    margin-top: 0;
+    cursor: pointer;
+    position: absolute;
+    color: orangered;
+    transition: all .25s ease-in;
+    border-radius: 1.5rem;
+}
+  
+.contr:hover > .search__box {
+    width: 85%;
+    padding: 0 1rem;
+}
+  
+.contr:hover > .search__icon {
+    background-color: ghostwhite;
+}
+  
+.show {
+    width: 85%;
+    border: 1px solid red;
+}
+  
+  /* ------------------------------------------------------------------------------ */
+  
+@media screen and (max-width: 1000px){
+
+    
+    .top-container {
+        overflow: hidden;
+        object-fit: cover;
+    }
+    .col-2 h1{
+        font-size: 2rem;
+    }
+    .logo img{
+        width: 150px;
+    }
+}
+
+/* ------------------------------------------------------------------------- */
+
+

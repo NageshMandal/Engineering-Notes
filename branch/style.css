@@ -129,7 +129,6 @@ p {
   transition: 0.5s;
 }
 .col-2 .btn{
-  margin-top: 70px;
   margin-bottom: 1rem;
 }
 .btn:hover {
@@ -140,9 +139,6 @@ p {
 }
 .header {
   background: radial-gradient(#fff, rgb(255, 191, 191));
-}
-.header .row {
-  margin-top: 70px;
 }
 .categories {
   margin: 70px 0;
@@ -366,9 +362,6 @@ form input {
 .dis{
   text-align:left;
   font-size: 13px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  
 }
 #pic{
   display: flex;
@@ -469,7 +462,12 @@ form input {
   .col-2 img {
     max-width: 70%;
     padding: 45px 14px;
-}
+  }
+  .col-2 h1{
+    font-size: 5vw;
+    margin: 2vw 0;
+    line-height: 5vw;
+  }
 }
 @media screen and (max-width: 640px){
   .row{
@@ -516,8 +514,9 @@ form input {
     margin-bottom:none;
   }
   .col-2 h1{
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 25px;
+    margin: 20px 0;
+    line-height: 25px;
   }
   #pic p{
     text-align: left;
