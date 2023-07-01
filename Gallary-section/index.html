@@ -5,37 +5,61 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+  <script src="https://kit.fontawesome.com/739255457e.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
   <title>Gallery</title>
 </head>
 
 <body>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
-  <script src="https://kit.fontawesome.com/739255457e.js" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+  
+  
+
+
+
   <div class="navbar">
     <div class="logo">
-      <a href="https://code-engineering.netlify.app/"><img src="../images/Logonew.png" alt="Chaibasa Engineering College" width="50px"></a>
+        <a href="https://code-engineering.netlify.app/"><img src="../images/Logonew.png" alt="Chaibasa Engineering College" width="50px"></a>
     </div>
+    <div class="navSub">
+    <input type="checkbox" id="toggle-menu" class="toggle-menu-checkbox">
+    <label for="toggle-menu" class="toggle-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
     <nav>
-      <ul>
-          <li><a class="nav-link" href="./index.html">Gallery</a></li>
-          <li><a class="nav-link" href="../projects.html">Projects</a></li>
-          <li><a class="nav-link" href="../library.html">Library</a></li>
-          <li><a class="nav-link" href="../placement.html">Placements</a></li>
-          <li><a class="nav-link" href="../contactus.html">Contacts</a></li>
-          <li><a class="nav-link" href="../syllabus.html">Syllabus</a></li>
+        <ul class="nav-items">
+            <li><a class="nav-link" href="./Gallary-section/index.html">Gallery</a></li>
+            <li><a class="nav-link" href="./library.html">Library</a></li>
+            <li><a class="nav-link" href="./contactus.html">Contacts</a></li>
+            <li class="dropdown">
+                <a href="#" class="nav-link">More&nbsp;<i class="fa-solid fa-arrow-down"></i></a>
+                <ul class="dropdown-menu" >
+                    <li><a class="nav-link" href="./syllabus.html">Syllabus</a></li>
+                    <li><a class="nav-link" href="./placement.html">Placements</a></li>
+                    <li><a class="nav-link" href="./projects.html">Projects</a></li>
+                    <li><a class="nav-link" href="./event.html">Events</a></li>
+                </ul>
+            </li>
+            <li>
+                <form id="search-form" action="#" method="GET">
+                    <input id="search-input" type="text" placeholder="Search...">
+                    <button id="search-button" type="submit"><a id="mike-button" href="#"><i class="mic fa-solid fa-microphone"></i></a></button>
+                </form>
+            </li>
+        </ul>
+        <div class="toggle-mode">
+            <img class="sun" data-set="moon" src="images/Moontoggle.png" alt="light-mode">
+            <img class="moon" data-set="sun" src="images/sun.png" alt="dark-mode">
+        </div>
+    </nav>
+</div>
+</div>
 
-          <li>
-              <form id="search-form" action="#" method="GET">
-                  <input id="search-input" type="text" placeholder="Search...">
-                  <button id="search-button" type="submit"><a id= "mike-button" href="#"><i class="mic fa-solid fa-microphone"></i></a>
-                  </button>
-              </form>
-          </li>
-      </ul>
-  </nav>
-  </div>
+
   <h1>Gallery of <a href="https://chaibasaengg.edu.in/">Chaibasa engineering college</a></h1>
   <br>
 <div class="grid-container">

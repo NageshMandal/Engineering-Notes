@@ -8,10 +8,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https//stackpath.bootsstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all"
+    crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+<script src="https://kit.fontawesome.com/739255457e.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Contact Page</title>
   </head>
   <body>
@@ -19,25 +24,40 @@
         <div class="logo">
             <a href="https://code-engineering.netlify.app/"><img src="images/Logonew.png" alt="Chaibasa Engineering College" width="50px"></a>
         </div>
+        <div class="navSub">
+        <input type="checkbox" id="toggle-menu" class="toggle-menu-checkbox">
+        <label for="toggle-menu" class="toggle-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
         <nav>
-            <ul>
+            <ul class="nav-items">
                 <li><a class="nav-link" href="./Gallary-section/index.html">Gallery</a></li>
-                <li><a class="nav-link" href="./projects.html">Projects</a></li>
                 <li><a class="nav-link" href="./library.html">Library</a></li>
-                <li><a class="nav-link" href="./placement.html">Placements</a></li>
                 <li><a class="nav-link" href="./contactus.html">Contacts</a></li>
-                <li><a class="nav-link" href="./syllabus.html">Syllabus</a></li>
-                <li><a class="nav-link" href="./event.html">Events</a></li>
-                  
+                <li class="dropdown">
+                    <a href="#" class="nav-link">More&nbsp;<i class="fa-solid fa-arrow-down"></i></a>
+                    <ul class="dropdown-menu" >
+                        <li><a class="nav-link" href="./syllabus.html">Syllabus</a></li>
+                        <li><a class="nav-link" href="./placement.html">Placements</a></li>
+                        <li><a class="nav-link" href="./projects.html">Projects</a></li>
+                        <li><a class="nav-link" href="./event.html">Events</a></li>
+                    </ul>
+                </li>
                 <li>
                     <form id="search-form" action="#" method="GET">
                         <input id="search-input" type="text" placeholder="Search...">
-                        <button id="search-button" type="submit"><a id= "mike-button" href="#"><i class="mic fa-solid fa-microphone"></i></a>
-                        </button>
+                        <button id="search-button" type="submit"><a id="mike-button" href="#"><i class="mic fa-solid fa-microphone"></i></a></button>
                     </form>
                 </li>
             </ul>
+            <div class="toggle-mode">
+                <img class="sun" data-set="moon" src="images/Moontoggle.png" alt="light-mode">
+                <img class="moon" data-set="sun" src="images/sun.png" alt="dark-mode">
+            </div>
         </nav>
+    </div>
     </div>
     <section class="about">
         <h1 class="head">About Us</h1>
@@ -119,18 +139,9 @@
                 </div>
             </div>
         </div>
-        <!--Voice Assistent-->
-        <div class="containers">
-            <div class="texts">
-            </div>
-        </div>
-        <!--Voice assistent end-->
-        <div class="toggle-mode">
-            <img class="moon" data-set="sun" src="images/moon.png" alt="dark-mode">
-            <img class="sun"  data-set="moon" src="images/sun.png"  alt="light-mode">
-        </div>
 
     </footer>
-
+    <script src="script.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
