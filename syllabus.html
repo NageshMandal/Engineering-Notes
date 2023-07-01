@@ -24,26 +24,41 @@
                 <div class="logo">
                     <a href="https://code-engineering.netlify.app/"><img src="images/Logonew.png" alt="Chaibasa Engineering College" width="50px"></a>
                 </div>
+                <div class="navSub">
+                <input type="checkbox" id="toggle-menu" class="toggle-menu-checkbox">
+                <label for="toggle-menu" class="toggle-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
                 <nav>
-                    <ul>
+                    <ul class="nav-items">
                         <li><a class="nav-link" href="./Gallary-section/index.html">Gallery</a></li>
-                        <li><a class="nav-link" href="./projects.html">Projects</a></li>
                         <li><a class="nav-link" href="./library.html">Library</a></li>
-                        <li><a class="nav-link" href="./placement.html">Placements</a></li>
                         <li><a class="nav-link" href="./contactus.html">Contacts</a></li>
-                        <li><a class="nav-link" href="./syllabus.html">Syllabus</a></li>
-                        <li><a class="nav-link" href="./event.html">Events</a></li>
-
+                        <li class="dropdown">
+                            <a href="#" class="nav-link">More&nbsp;<i class="fa-solid fa-arrow-down"></i></a>
+                            <ul class="dropdown-menu" >
+                                <li><a class="nav-link" href="./syllabus.html">Syllabus</a></li>
+                                <li><a class="nav-link" href="./placement.html">Placements</a></li>
+                                <li><a class="nav-link" href="./projects.html">Projects</a></li>
+                                <li><a class="nav-link" href="./event.html">Events</a></li>
+                            </ul>
+                        </li>
                         <li>
                             <form id="search-form" action="#" method="GET">
                                 <input id="search-input" type="text" placeholder="Search...">
-                                <button id="search-button" type="submit"><a id= "mike-button" href="#"><i class="mic fa-solid fa-microphone"></i></a>
-                                </button>
+                                <button id="search-button" type="submit"><a id="mike-button" href="#"><i class="mic fa-solid fa-microphone"></i></a></button>
                             </form>
                         </li>
                     </ul>
+                    <div class="toggle-mode">
+                        <img class="sun" data-set="moon" src="images/Moontoggle.png" alt="light-mode">
+                        <img class="moon" data-set="sun" src="images/sun.png" alt="dark-mode">
+                    </div>
                 </nav>
             </div>
+        </div>
 
             <div class="row-header">
                 <div class="col-2">

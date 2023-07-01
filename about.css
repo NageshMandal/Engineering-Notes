@@ -7,31 +7,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  top: 0px;
-}
-nav ul {
-  display: flex;
-  list-style-type: none;
-}
-nav ul li {
-  margin-right: 20px;
-  font-size: 17px;
-  padding: 0 10px;
-}
-
-nav ul li a {
-  color: rgb(87, 81, 81);
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  color: #ff523b;
-}
 
 .about {
   position: relative;
@@ -71,27 +46,6 @@ nav ul li a:hover {
 
 
 /* navbar */
-
-.navbar {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-  }
-  nav {
-    flex: 1;
-    text-align: right;
-  }
-  nav ul {
-    display: inline-block;
-    list-style-type: none;
-  }
-  nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-    font-size: 17px;
-    padding: 10px;
-  }
-
 .center{
     text-align: center;
 }
@@ -218,7 +172,7 @@ footer {
     color: #ff523b;
   }
 
-  form {
+  footer form {
     padding-bottom: 5%;
     padding-left: 10px;
     display: flex;
@@ -277,25 +231,7 @@ footer {
     transition: all 0.3s;
   }
   
-  .toggle-mode {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    /* border: 1px solid red; */
-    /* cursor: pointer; */
-  }
   
-  .toggle-mode > img {
-    width: 35px;
-    height: 35px;
-  }
-  
-  .sun {
-    display: none;
-  }
   .dis{
     position: absolute;
     bottom: 20%;
@@ -344,7 +280,7 @@ footer {
   }
   
   .branchimg{
-    box-shadow: 8px 8px 8px#1c2020;
+    box-shadow: 8px 8px 8px #1c2020;
     border-radius: 1rem;
   }
   .students{
