@@ -188,6 +188,39 @@ p {
   margin-bottom: 33px;
   font-size: 1.3rem;
 }
+.col-3 .btn{
+  position: absolute;
+  left: 38%;
+  bottom: 5%;
+  border-radius: 0;
+  /* border-radius: 5px; */
+  font-weight: 400;
+}
+.col-3 .btn:hover{
+  transform: scaleX(1.05);
+  /*border: 1px solid #ff523b;
+   background-color: white; 
+  color: #ff523b;
+  box-shadow: 1px 1px 5px#ff523b;*/
+}
+.col-3 .btn::before{
+  content:"";
+  /* border-radius: 5px; */
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: #29a423;
+  transform: scaleX(0);
+  transform-origin: 0;
+  transition: 0.4s ease-in;
+  z-index: -3;
+}
+.col-3 .btn:hover::before{
+  content:"";
+  transform: scaleX(1);
+}
 
 .btn:hover {
   background: #29a423;
@@ -212,11 +245,13 @@ p {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+  transition: 1s ease-in;
 }
 
 .col-3 img {
   width: 100%;
 }
+
 
 .small-container {
   max-width: 1200px;
@@ -265,8 +300,6 @@ p {
 }
 
 footer {
-  padding: 0;
-  margin: 0;
   width: 100%;
   bottom: 0;
   background: #192734;
@@ -493,15 +526,25 @@ form input {
   text-align: center;
   font-size: 13px;
   padding: 1rem 1rem;
-  transition: .5s ease;
-  background-color: #a6b6bb;
+  width: 100%;
+  background-color: #242423;
   opacity: 0;
   overflow: hidden;
-  ;
+  transition: 0.4s ease-in;
+  color: white;
 }
 
 .col-3:hover .dis {
   opacity: 1;
+}
+.col-3 img{
+  filter:grayscale(0.3);
+}
+.col-3:hover img{
+  border: 1px solid #ffffff98;
+  filter: brightness(1.2);
+  transform: scale(1.1);
+
 }
 
 #pic {
@@ -823,16 +866,17 @@ label[for="project-link"] i {
 }
 
 .project-card-container {
-  display: inline-block;
+  display: flex;
   justify-content: center;
-  margin-top: 30px !important;
+  flex-wrap: wrap;
+  margin: auto;
 }
 
 .project-card {
-  padding: 1.25rem 3rem;
+  padding: 1rem 1.25rem;
   box-shadow: 0px 0px 10px 0px hsla(0, 0%, 0%, 0.2);
-  width: 600px;
-  margin: 3rem;
+  max-width: 20rem;
+  margin: 1rem;
   border-radius: 1rem;
 }
 
@@ -860,9 +904,12 @@ body.dark-mode .project-card {
 }
 
 .project-card-link a {
-  display: inline-block;
-  align-items: left;
-  color: #087cba
+  display: flex;
+  align-items: center;
+}
+
+.project-card-link a {
+  color: #04669A
 }
 
 .project-card-link i {
