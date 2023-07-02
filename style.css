@@ -265,6 +265,8 @@ p {
 }
 
 footer {
+  padding: 0;
+  margin: 0;
   width: 100%;
   bottom: 0;
   background: #192734;
@@ -821,17 +823,16 @@ label[for="project-link"] i {
 }
 
 .project-card-container {
-  display: flex;
+  display: inline-block;
   justify-content: center;
-  flex-wrap: wrap;
-  margin: auto;
+  margin-top: 30px !important;
 }
 
 .project-card {
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 3rem;
   box-shadow: 0px 0px 10px 0px hsla(0, 0%, 0%, 0.2);
-  max-width: 20rem;
-  margin: 1rem;
+  width: 600px;
+  margin: 3rem;
   border-radius: 1rem;
 }
 
@@ -859,12 +860,9 @@ body.dark-mode .project-card {
 }
 
 .project-card-link a {
-  display: flex;
-  align-items: center;
-}
-
-.project-card-link a {
-  color: #04669A
+  display: inline-block;
+  align-items: left;
+  color: #087cba
 }
 
 .project-card-link i {
