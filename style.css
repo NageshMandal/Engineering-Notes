@@ -193,7 +193,7 @@ p {
   background: #29a423;
   transform: scaleX(2);
   transform: scaley(1.1);
-  box-shadow: 2px 2px 20px rgb(49, 49, 49);
+  box-shadow: 2px 2px 20px rgb(52, 237, 28);
 }
 
 .header {
@@ -488,6 +488,9 @@ form input {
 }
 
 .dis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   bottom: 20%;
   text-align: center;
@@ -497,7 +500,8 @@ form input {
   background-color: #a6b6bb;
   opacity: 0;
   overflow: hidden;
-  ;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .col-3:hover .dis {
@@ -542,7 +546,12 @@ form input {
 
 .branchimg {
   box-shadow: 8px 8px 8px#1c2020;
-  border-radius: 1rem;
+  border-radius: 50px;
+}
+.branchimg:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 8px 8px 8px #0eaaf8;
 }
 
 .students {
