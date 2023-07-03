@@ -150,8 +150,21 @@ p {
   justify-content: space-around;
 }
 .row-header{
-  padding-top: 100px;
+  padding-top: 60px;
 }
+
+.train-placement{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#placement-para{
+  padding:10px 150px;
+  font-size: 1.1rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
 
 .col-2 {
   flex-basis: 50%;
