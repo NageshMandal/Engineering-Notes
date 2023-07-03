@@ -195,7 +195,7 @@ p {
   transition: tra;
 }
 footer {
-  width: 100%;
+  width:100%;
   bottom: 0;
   background:  #192734;
   /* background-image: linear-gradient(to right, #DECBA4, #3E5151); */
@@ -210,6 +210,21 @@ footer {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
+}
+#contact {
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background: #f80000;
+  padding:15px ;
+  font-size: 20px;
+  line-height: 20px;
+  word-spacing: 0%;
+}
+#contact1{
+  width: 50%;
+  height: 150%;
+  background: #ffffff;
 }
 .col {
   flex-basis: 25px;
