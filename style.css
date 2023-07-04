@@ -64,7 +64,7 @@ body::-webkit-scrollbar-thumb {
   height: 88px;
   min-width: 99.35vw;
   margin: -30px 0 0 -128px;
-  background: #131C2B;
+  background: #061631;
   display: flex;
   justify-content: space-around;
   align-items: normal;
@@ -792,6 +792,8 @@ form input {
 .project-form-container {
   max-width: 30rem;
   margin: auto;
+  background-color: #f5d7d7;
+  color :rgb(72, 74, 87);
 }
 
 .project-form {
@@ -799,6 +801,7 @@ form input {
   padding: 1.25rem 1rem;
   display: block;
   border-width: 1px;
+  font-weight: bold;
 }
 
 .project-form .form-input {
