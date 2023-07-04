@@ -1,5 +1,7 @@
-const mike_btn = document.querySelector('#mike-button')
+// const mike_btn = document.querySelector('#mike-button')
+window.addEventListener('DOMContentLoaded',()=>{
 window.SpeechRecognition= window.SpeechRecognition || window.webkitSpeechRecognition
+
 
 const recognition= new SpeechRecognition()
 
@@ -30,12 +32,43 @@ recognition.addEventListener('result',(e)=>{
     }
 })
 
-
+const mike_btn = document.getElementById('mike-button')
 mike_btn.addEventListener('click',()=>{
     recognition.start()
     console.log('started')
 })
 
+// mike_btn.addEventListener('click',()=>{
+//     recognition.stop();
+//     console.log('stopped')
+// })
+// mike_btn.addEventListener('click',()=>{
+//     recognition.abort();
+//     console.log('aborted')
+// })
+
+// Get the message element to display the text messages
+const messageElement = document.getElementById('message');
+
+// Flag to track if recording is in progress
+let isRecording = false;
+
+// Event listener for hovering over the Voice Mic
+mike_btn.addEventListener('mouseover', function() {
+  messageElement.innerText = 'Click One Time & Start Recording.';
+});
+mike_btn.addEventListener('click', function() {
+    if (!isRecording) {
+      messageElement.innerText = 'Start Recording & Tell Me User Name.';
+      // Start recording logic here
+      isRecording = true;
+    } else {
+      messageElement.innerText = 'Recording Finished.';
+      // Stop recording logic here
+      isRecording = false;
+    }
+  });
+});
 const syllabusSearch = document.getElementById('s-input');
 const cards = document.querySelectorAll('.project-card');
 
@@ -56,3 +89,4 @@ function searchProjects(searchTerm) {
     }
   }
 }
+
