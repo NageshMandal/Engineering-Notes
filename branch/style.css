@@ -46,10 +46,12 @@ nav ul {
   list-style-type: none;
 }
 nav ul li {
+  color: white;
   display: inline-block;
-  margin-right: 20px;
+  margin: 2px 3px;
+  /* position: relative; */
   font-size: 17px;
-  padding: 10px;
+  padding: 40px;
 }
 
 .nav-link {

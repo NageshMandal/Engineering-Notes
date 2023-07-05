@@ -83,12 +83,11 @@ nav ul {
   list-style-type: none;
 }
 
-nav ul li {
-  color: white;
+nav ul li {color: white;
   display: inline-block;
-  margin: 6px 16px 0 0;
+  margin: 2px 3px;
   font-size: 17px;
-  padding: 30px;
+  padding: 40px;
 }
 
 #search-form {
