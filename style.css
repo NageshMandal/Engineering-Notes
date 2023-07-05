@@ -139,7 +139,6 @@ p {
 
 .container {
   margin: auto;
-  padding-bottom: 50px;
 }
 
 .row-header,
@@ -922,11 +921,6 @@ body.dark-mode .project-card {
 
 .contributors-container {
   padding-top: 20px;
-}
-
-.container {
-  /* text-align: center; */
-  margin-bottom: 50px;
 }
 
 h3 {
