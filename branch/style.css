@@ -67,8 +67,7 @@ nav ul li {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: 
-  rgb(87, 81, 81);
+    background-color: #131C2B !important;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -445,7 +444,7 @@ form input {
 }
 
 .header-dark-mode {
-  background: #1c2020;
+  background: #000000;
   color: #f5f5f5;
 }
 
