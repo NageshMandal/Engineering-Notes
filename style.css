@@ -954,3 +954,55 @@ h3 {
 .span {
   color: #b700ff;
 }
+
+/* faqs */
+
+.containerf { 
+  font-family: Arial, sans-serif; 
+  max-width: 1000px; 
+  margin: 0 auto; 
+  padding: 20px; 
+margin-top: 100px;
+} 
+
+h1 { 
+  font-size: 36px; 
+  margin-bottom: 20px; 
+} 
+
+.question { 
+  font-weight: bold; 
+  font-size: 20px;
+  margin-top: 40px; 
+  margin-bottom: 30px; 
+  cursor: pointer; 
+
+} 
+.question:after {
+content: '\02795';
+/* Unicode character for "plus" sign (+) */
+font-size: 20px;
+color: #777;
+float: right;
+margin-left: 5px;
+margin-bottom: 20px;
+}
+hr{
+margin-top: 50px;
+background-color: white;
+}
+
+.answer { 
+  margin-bottom: 20px; 
+  display: none; 
+  font-size: 20px;
+} 
+
+.answer p { 
+  margin: 0; 
+  line-height: 1.5; 
+} 
+
+.answer.active { 
+  display: block; 
+} 
