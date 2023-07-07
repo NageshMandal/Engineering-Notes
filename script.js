@@ -2,6 +2,8 @@
 
 var alanBtnInstance = alanBtn({
   key: "410d98d30ce6489164a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+  bottom: '50px',
+   left: '50px',
   onCommand: function (commandData) {
    if (commandData && commandData.command === 'openURL') {
            if (commandData.target === '_blank'){
@@ -12,14 +14,7 @@ var alanBtnInstance = alanBtn({
          }
        
    },
-   onButtonState: async function (status) {
-if (status === "ONLINE") {
-if (!this.greetingWasSaid) {
- await alanBtnInstance.activate();
- this.greetingWasSaid = true;
-}
-}
-},
+   
   rootEl: document.getElementById("alan-btn"),
 });
 var returnToTopButton = document.getElementById('returnToTop');
