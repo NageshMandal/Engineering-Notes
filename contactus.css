@@ -67,28 +67,43 @@ nav ul li {
   padding: 30px;
 }
 
+
 #search-form {
-  width: 267px;
-  height: 30px;
-  border-radius: 80px;
-  background-color: white;
+  width: 380px;
+  height: 50px;
+  box-shadow:0 5px 10px rgba(0,0,0,0.25);
+  border-radius:25px;
+  background:#fff;
+  display: flex;
+  margin-left: 20px;
 }
 
 #search-input {
+  width: 80%;
   font-weight: 500;
+  font-size: 18px;
+  border: none;
+  outline: none;
   color: #474747;
-  margin-top: 13px;
+  margin-top: 16px;
+  margin-left: 10px;
 }
 
 #search-button {
   cursor: pointer;
-  background-color: white;
-  border: none;
+    background: pink;
+    position: relative;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    margin-top: 17px;
+    opacity: 0.8;
 }
 
-.fa-microphone {
-  margin-top: 19px;
-  margin-left: -50px;
+#search-button i{
+  background: pink;
+ margin: auto;
 }
 
 .contact{
