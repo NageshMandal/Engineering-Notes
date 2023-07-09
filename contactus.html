@@ -134,19 +134,19 @@
         <form action="">
           <h2>Send Message</h2>
           <div class="inputBox">
-            <input type="text" name="" required="required" />
+            <input type="text" name="fullName" required="required" minlength="5"/>
             <span>Full Name</span>
           </div>
           <div class="inputBox">
-            <input type="text" name="" required="required" />
+            <input type="email" name="email" required="required" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"/>
             <span>Email</span>
           </div>
           <div class="inputBox">
-            <textarea required="required"></textarea>
+            <textarea required="required" minlength="5"></textarea>
             <span>Type your Message ..</span>
           </div>
           <div class="inputBox">
-            <input type="submit" name="" value="Send" />
+            <input type="submit" value="Send" />
           </div>
         </form>
       </div>
