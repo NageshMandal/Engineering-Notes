@@ -556,9 +556,6 @@ form input {
   #pic h5{
     margin-right: 20px;
   }
-  .col{
-    margin-left:5%;
-  }
   .contact{
     padding-right:5px;
   }
@@ -738,4 +735,28 @@ body.dark-mode .project-card{
 
 .contributors-container {
   padding-top: 20px;
+}
+
+@media(max-width:440px){
+  .row-footer{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+  .col-2{
+    margin: 1rem;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .col-3{
+    display: none;
+  }
+  .col-4{
+    margin:auto;
+  }
+  #pic{
+    margin-right: 0rem;
+    padding: inherit;
+    text-align: center;
+  }
 }
