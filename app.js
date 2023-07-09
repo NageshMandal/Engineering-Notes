@@ -1,93 +1,37 @@
-//! voice assistent
+const mike_btn = document.querySelector('#mike-button')
+window.SpeechRecognition= window.SpeechRecognition || window.webkitSpeechRecognition
 
-const texts = document.querySelector(".texts");
+const recognition= new SpeechRecognition()
 
-window.SpeechRecognition =  window.SpeechRecognition || window.webkitSpeechRecognition;
+recognition.addEventListener('result',(e)=>{
+    let text = Array.from(e.results)
+            .map(result => result[0])
+            .map(result => result.transcript)
+            .join('');
 
-const recognition = new window.SpeechRecognition();
-recognition.interimResult = true;
+    console.log(typeof(text))
 
-let p = document.createElement('p');
-
-recognition.addEventListener('result',(e) => {
-    const text = Array.from(e.results)
-        .map(result => result[0])
-        .map(result => result.transcript)
-        .join('');
-    p.innerText = text;
-    texts.appendChild(p);
-
-    if(e.results[0].isFinal){
-        if(text.includes('hello')){
-            p = document.createElement('p');
-            p.classList.add('replay');
-            p.innerText = 'hi';
-            texts.appendChild(p);
-        }
-        if(text.includes('open my YouTube channel')){
-            p = document.createElement('p');
-            p.classList.add('replay');
-            p.innerText = 'opening...';
-            texts.appendChild(p);
-            window.open('https: //www.youtube.com')
-        }
-        if(text.includes('open engineering notes website') || text.includes("engineering notes")){
-            p = document.createElement('p');
-            p.classList.add('replay');
-            p.innerText = 'opening...';
-            texts.appendChild(p);
-            window.open('https://nageshmandal.github.io/Engineering-Notes-Website/')
-        }
-        if(text.includes('open computer science branch')
-            || text.includes("open CSE branch") || text.includes("open CS branch")){
-            p = document.createElement('p');
-            p.classList.add('replay');
-            p.innerText = 'opening...';
-            texts.appendChild(p);
-            window.open('https://nageshmandal.github.io/Engineering-Notes-Website/branch/cs.html')
-        }
-        if(text.includes('open ECE branch')
-            || text.includes("open EC branch") || text.includes("open Electronics branch")){
-            p = document.createElement('p');
-            p.classList.add('replay');
-            p.innerText = 'opening...';
-            texts.appendChild(p);
-            window.open('https://nageshmandal.github.io/Engineering-Notes-Website/branch/ece.html')
-        }
-        if(text.includes('open EE branch')
-            || text.includes("open electrical branch") || text.includes("open electrical engneering branch")){
-            p = document.createElement('p');
-            p.classList.add('replay');
-            p.innerText = 'opening...';
-            texts.appendChild(p);
-            window.open('https://nageshmandal.github.io/Engineering-Notes-Website/branch/ee.html')
-        }
-        if(text.includes('open mechanical branch')
-            || text.includes("open ME branch") || text.includes("open mechanical engineering branch")){
-            p = document.createElement('p');
-            p.classList.add('replay');
-            p.innerText = 'opening...';
-            texts.appendChild(p);
-            window.open('https://nageshmandal.github.io/Engineering-Notes-Website/branch/ME.html')
-        }
-        if(text.includes('open civil branch')
-            || text.includes("open civil engineering branch") || text.includes("open Sea branch")){
-            p = document.createElement('p');
-            p.classList.add('replay');
-            p.innerText = 'opening...';
-            texts.appendChild(p);
-            window.open('https://nageshmandal.github.io/Engineering-Notes-Website/branch/CE.html')
-        }
-        
-        p = document.createElement('p');
+    text = text.toLowerCase()
+    console.log(text)
+    if(text.includes("open computer science")){
+        window.location.replace('branch/cs.html');
     }
-
-    console.log(texts);
+    if(text.includes("open ece") || text.includes("open electronics and communication")){ 
+        window.location.replace('branch/ece.html');
+    }
+    if(text.includes("open ee") ||text.includes("open electrical engineering")){
+        window.location.replace('branch/ee.html');
+    }
+    if(text.includes("open mechanical")){
+        window.location.replace('branch/ME.html');
+    }
+    if(text.includes("open civil")){
+        window.location.replace('branch/CE.html');
+    }
 })
-recognition.addEventListener('end',()=>{
-    recognition.start();
+
+
+mike_btn.addEventListener('click',()=>{
+    recognition.start()
+    console.log('started')
 })
-recognition.start();
-
-
-
