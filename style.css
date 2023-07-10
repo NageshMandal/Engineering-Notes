@@ -63,7 +63,7 @@ body::-webkit-scrollbar-thumb {
 .navbar {
   height: 88px;
   min-width: 99.35vw;
-  margin: -30px 0 0 -128px;
+  margin: -25px 0 0 -80px;
   background: #131C2B;
   display: flex;
   justify-content: space-around;
@@ -88,9 +88,14 @@ nav ul li {
   padding: 30px;
 }
 
+.mic:hover {
+  background: #d1d1d1;
+  box-shadow: 2px 2px 20px rgba(49, 49, 49, 0.152);
+}
+
 #search-form {
   width: 267px;
-  height: 30px;
+  height: 35px;
   border-radius: 80px;
   background-color: white;
 }
@@ -146,12 +151,25 @@ p {
 .row-footer {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .row-header{
-  padding-top: 100px;
+  padding-top: 60px;
 }
+
+.train-placement{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#placement-para{
+  padding:10px 150px;
+  font-size: 1.1rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
 
 .col-2 {
   flex-basis: 50%;
@@ -318,10 +336,15 @@ footer {
 }
 
 .email-id:hover {
+  cursor: pointer;
   font-size: 16px;
   font-weight: 100;
   color: white;
   transition-duration: 0.7s;
+}
+
+.phone:hover{
+  cursor: pointer;
 }
 
 .col2 h4 {
@@ -374,7 +397,7 @@ footer {
 .col4 {
   margin-left: -50px;
   margin-right: 100px;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .col4 h3 {
@@ -538,6 +561,7 @@ form input {
 
 .contact a h4:hover {
   font-size: 18px;
+  transition: .3s ease;
 }
 
 .branchimg {
@@ -563,6 +587,10 @@ form input {
   font-size: 25px;
   padding-right: 8px;
   padding-left: 8px;
+}
+
+.youtube{
+  margin-top: 5px;
 }
 
 .tweet:hover {
@@ -756,11 +784,6 @@ form input {
   background-color: white
 }
 
-.mic:hover {
-  background: #d1d1d1;
-  box-shadow: 2px 2px 20px rgb(49, 49, 49);
-}
-
 .google {
   margin-right: 10px;
   width: 45px;
@@ -941,3 +964,55 @@ h3 {
 .span {
   color: #b700ff;
 }
+
+/* faqs */
+
+.containerf { 
+  font-family: Arial, sans-serif; 
+  max-width: 1000px; 
+  margin: 0 auto; 
+  padding: 20px; 
+margin-top: 100px;
+} 
+
+h1 { 
+  font-size: 36px; 
+  margin-bottom: 20px; 
+} 
+
+.question { 
+  font-weight: bold; 
+  font-size: 20px;
+  margin-top: 40px; 
+  margin-bottom: 30px; 
+  cursor: pointer; 
+
+} 
+.question:after {
+content: '\02795';
+/* Unicode character for "plus" sign (+) */
+font-size: 20px;
+color: #777;
+float: right;
+margin-left: 5px;
+margin-bottom: 20px;
+}
+hr{
+margin-top: 50px;
+background-color: white;
+}
+
+.answer { 
+  margin-bottom: 20px; 
+  display: none; 
+  font-size: 20px;
+} 
+
+.answer p { 
+  margin: 0; 
+  line-height: 1.5; 
+} 
+
+.answer.active { 
+  display: block; 
+} 
