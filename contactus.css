@@ -339,8 +339,8 @@ button .submit {
 
 .toggle-mode {
   position: absolute;
-  top: 30px;
-  right: 40px;
+  top: 20px;
+  right: 20px;
   width: 35px;
   height: 35px;
   cursor: pointer;
@@ -893,3 +893,5 @@ button .submit {
     font-size: 16px;
   }
 }
+
+

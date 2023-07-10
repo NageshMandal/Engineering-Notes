@@ -63,7 +63,7 @@ body::-webkit-scrollbar-thumb {
 .navbar {
   height: 88px;
   min-width: 99.35vw;
-  margin: -30px 0 0 -128px;
+  margin: -25px 0 0 -80px;
   background: #131C2B;
   display: flex;
   justify-content: space-around;
