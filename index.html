@@ -18,9 +18,38 @@
     <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
     <script src="https://kit.fontawesome.com/739255457e.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+<style>
+    .loader {
 
+  position: fixed;
+  z-index: 99999 !important;
+  background: #fff;
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.disappear {
+  animation: vanish 6s forwards;
+}
+
+@keyframes vanish {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+</style>
 </head>
 <body>
+    <div id="preload" class="loader">
+      <img src="images/loading.gif" alt="" />
+    </div>
     <div class="header">
         <div class="container">
             <div class="navbar">
@@ -327,6 +356,12 @@
         }); 
     }); 
 </script> 
-
+ <script>
+    var loader = document.querySelector(".loader");
+    window.addEventListener("load", vanish);
+    function vanish() {
+      loader.classList.add("disappear");
+    }
+  </script>
 </body>
 </html>
