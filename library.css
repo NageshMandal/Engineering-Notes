@@ -11,35 +11,66 @@ section#content {
   }
 
   .filter {
+    font-size:larger;
     margin-bottom: 20px;
     text-align: center;
   }
-  
+  .filter select{
+    font-size: large;
+    color: white;
+    border: 2px solid black;
+    border-radius: none;
+    background-color: #455369;
+  }
+  .filter option{
+    font-size: large;
+    background-color: rgb(43, 58, 58);
+  }
   #bookList {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px; 
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;  */
+    margin: 0 auto;
+    width: 90%;
+    gap: 20px;
   }
   
-  #bookList div {
-    border: 2px solid #ccc;
+  #bookList .book-card {
+    border: 1px solid #cccccc9f;
     padding: 10px 15px;
     border-radius: 10px;
-    box-shadow: 2px 3px 2px gray;
     width: 20%;
+    /* height: 100%; */
     margin: 15px;
+    transition : transform 0.3s ease-in;
   }
-
-  #bookList div:hover{
-    box-shadow: 4px 6px 4px 4px gray;
+  #bookList .book-card .book-name{
+    font-weight: 700;
+    color: rgb(200, 255, 0);
+  }
+  #bookList .book-card .author{
+    color: rgb(0, 183, 255);
+  }
+  #bookList .book-card .category{
+    color: rgb(0, 255, 174);
+  }
+  #bookList .book-card:hover{
+    background-color: black;
+    filter: drop-shadow(5px 5px 5px #000);
+    transform: scale(1.1);
   }
   
-  #bookList div img {
+  #bookList .book-card img {
     /* width: 183px; */
-    height: 276px;
+    /* height: 276px; */
+    height: 70%;
     width:100%;
+    object-fit:fill
+  }
+  .checked {
+    color: orange;
   }
 
   #branch{
