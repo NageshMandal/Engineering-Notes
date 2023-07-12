@@ -42,7 +42,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgb(0, 35, 211) 70%);
+  background:salmon;
 }
 
 body::-webkit-scrollbar-thumb {
