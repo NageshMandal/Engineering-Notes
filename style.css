@@ -403,7 +403,7 @@ footer {
 
 .col4 h3 {
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -468,7 +468,6 @@ form input {
   display: flex;
   text-align: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .social-media i {
@@ -590,9 +589,6 @@ form input {
   padding-left: 8px;
 }
 
-.youtube{
-  margin-top: 5px;
-}
 
 .tweet:hover {
   color: white;

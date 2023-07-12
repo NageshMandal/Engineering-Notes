@@ -278,6 +278,8 @@ p {
 }
 
 footer {
+  padding: 0;
+  margin: 0;
   width: 100%;
   bottom: 0;
   background: #192734;
@@ -329,10 +331,15 @@ footer {
 }
 
 .email-id:hover {
+  cursor: pointer;
   font-size: 16px;
   font-weight: 100;
   color: white;
   transition-duration: 0.7s;
+}
+
+.phone:hover{
+  cursor: pointer;
 }
 
 .col2 h4 {
@@ -385,12 +392,12 @@ footer {
 .col4 {
   margin-left: -50px;
   margin-right: 100px;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .col4 h3 {
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -455,7 +462,6 @@ form input {
   display: flex;
   text-align: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .social-media i {
@@ -549,6 +555,7 @@ form input {
 
 .contact a h4:hover {
   font-size: 18px;
+  transition: .3s ease;
 }
 
 .branchimg {
@@ -575,6 +582,7 @@ form input {
   padding-right: 8px;
   padding-left: 8px;
 }
+
 
 .tweet:hover {
   color: white;
@@ -606,6 +614,7 @@ form input {
   color: red;
   background: white;
 }
+
 
 /*? dark mode */
 
