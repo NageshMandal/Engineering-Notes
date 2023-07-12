@@ -208,7 +208,8 @@ p {
 }
 
 .btn:hover {
-  background: #29a423;
+  background: rgba(255, 255, 255, 0.496);
+  color: #ff523b;
   transform: scaleX(2);
   transform: scaley(1.1);
   box-shadow: 2px 2px 20px rgb(49, 49, 49);
