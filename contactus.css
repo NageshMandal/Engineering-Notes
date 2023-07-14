@@ -67,14 +67,9 @@ nav ul li {
   padding: 30px;
 }
 
-.mic:hover {
-  background: #d1d1d1;
-  box-shadow: 2px 2px 20px rgba(49, 49, 49, 0.152);
-}
-
 #search-form {
   width: 267px;
-  height: 35px;
+  height: 30px;
   border-radius: 80px;
   background-color: white;
 }
@@ -344,8 +339,8 @@ button .submit {
 
 .toggle-mode {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 30px;
+  right: 40px;
   width: 35px;
   height: 35px;
   cursor: pointer;
@@ -898,5 +893,3 @@ button .submit {
     font-size: 16px;
   }
 }
-
-

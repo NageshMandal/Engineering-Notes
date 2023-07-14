@@ -22,17 +22,7 @@ h1  {
 .btn {
     margin-bottom: 50px;
 }
-.mic:hover {
-    background: #d1d1d1;
-    box-shadow: 2px 2px 20px rgba(49, 49, 49, 0.152);
-  }
-  
-  #search-form {
-    width: 267px;
-    height: 35px;
-    border-radius: 80px;
-    background-color: white;
-  }
+
 .small-container{
     padding-top: 0;
     display: flex;
