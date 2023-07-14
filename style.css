@@ -63,7 +63,7 @@ body::-webkit-scrollbar-thumb {
 .navbar {
   height: 88px;
   min-width: 99.35vw;
-  margin: -25px 0 0 -80px;
+  margin: -30px 0 0 -128px;
   background: #131C2B;
   display: flex;
   justify-content: space-around;
@@ -88,14 +88,9 @@ nav ul li {
   padding: 30px;
 }
 
-.mic:hover {
-  background: #d1d1d1;
-  box-shadow: 2px 2px 20px rgba(49, 49, 49, 0.152);
-}
-
 #search-form {
   width: 267px;
-  height: 35px;
+  height: 30px;
   border-radius: 80px;
   background-color: white;
 }
@@ -782,6 +777,11 @@ form input {
   margin-right: 10px;
   font-size: 20px;
   background-color: white
+}
+
+.mic:hover {
+  background: #d1d1d1;
+  box-shadow: 2px 2px 20px rgb(49, 49, 49);
 }
 
 .google {
