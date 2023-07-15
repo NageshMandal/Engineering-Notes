@@ -536,9 +536,12 @@ form input {
 
 .contact {
   padding-right: 5px;
-  background-color: #ff523b;
-  border-radius: 20px;
+
+ border:3px inset white;
   margin-top: 10px;
+}
+.contact:hover{
+  border-color: #ff523b;
 }
 
 .contact a h4 {
