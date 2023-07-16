@@ -28,7 +28,7 @@
               <li><a class="nav-link" href="./projects.html">Projects</a></li>
               <li><a class="nav-link" href="./library.html">Library</a></li>
               <li><a class="nav-link" href="./placement.html">Placements</a></li>
-              <li><a class="nav-link" href="./contactus.html">Contacts</a></li>
+              <li><a class="nav-link" href="./contact.html">Contacts</a></li>
               <li><a class="nav-link" href="./syllabus.html">Syllabus</a></li>
               <li><a class="nav-link" href="./event.html">Events</a></li>
 
@@ -134,28 +134,36 @@
         <form action="">
           <h2>Send Message</h2>
           <div class="inputBox">
-            <input type="text" name="" required="required" />
+            <input type="text" name="fullName" required="required" minlength="5"/>
             <span>Full Name</span>
           </div>
           <div class="inputBox">
-            <input type="text" name="" required="required" />
+            <input type="email" name="email" required="required" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"/>
             <span>Email</span>
           </div>
           <div class="inputBox">
-            <textarea required="required"></textarea>
+            <textarea required="required" minlength="5"></textarea>
             <span>Type your Message ..</span>
           </div>
           <div class="inputBox">
-            <input type="submit" name="" value="Send" />
+            <input type="submit" value="Send" />
           </div>
         </form>
       </div>
 
 
     </section>
-    <div class="toggle-mode">
+     <!--Voice Assistent-->
+     <div class="containers">
+      <div class="texts">
+      </div>
+  </div>
+  <!--Voice assistent end-->
+  <div class="toggle-mode">
       <img class="sun"  data-set="moon" src="images/Moontoggle.png"  alt="light-mode">
       <img class="moon" data-set="sun" src="images/sun.png" alt="dark-mode">
   </div>
+  <script src="script.js"></script>
+<script src="app.js"></script>
   </body>
 </html>
