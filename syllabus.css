@@ -13,6 +13,7 @@ h1  {
     line-height: 1.5;
     margin-bottom: 20px;
     font-weight: bold;
+    background: transparent;
 }
 
 .container {

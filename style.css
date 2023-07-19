@@ -458,11 +458,16 @@ form button>i {
 
 form input {
   background: transparent;
-  color: #ccc;
-  width: 150px;
+  width:200px;
   padding: 8px;
   border: 0;
   outline: none;
+  font-size: 18px;
+}
+#search-button{
+  background: transparent;
+  border: hidden;
+  cursor: pointer;
 }
 
 .form-news {
@@ -634,6 +639,12 @@ form input {
 
 .dark-mode {
   background: #2c3333;
+  color: white;
+}
+.dark-mode #search-button{
+  color: white;
+}
+.dark-mode #search-input{
   color: white;
 }
 
