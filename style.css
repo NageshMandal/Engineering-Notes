@@ -581,7 +581,12 @@ form input {
 }
 
 .students {
+  transition: transform 0.5s ease;
   filter: drop-shadow(10px 10px 10px rgb(60, 60, 60));
+  cursor: pointer;
+}
+.col-2:hover .students {
+  transform: rotateY(180deg) scale(1.01); /* Apply rotation and scaling on hover */
 }
 
 .far {
