@@ -124,7 +124,7 @@ nav ul li {
 
 
 .col-2 p {
-  text-align: left;
+  text-align: justify;
   line-height: 1.7;
   color: black;
 }
@@ -863,7 +863,7 @@ label[for="project-link"] i {
 }
 
 .project-card-container {
-  display: inline-block;
+  display: flex;
   justify-content: center;
   margin-top: 30px !important;
 }
