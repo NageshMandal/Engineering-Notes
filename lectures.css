@@ -1,0 +1,45 @@
+.lec-section{
+    background-color: rgb(255, 221, 221);
+}
+
+.lec-card{
+    background-color: rgb(245, 239, 239);
+    cursor: pointer;
+    max-width:none ;
+    width: 500px;
+}
+.lecture-container{
+    width: 90%;
+    background-color: rgb(250, 215, 215);
+    padding: 50px 25px ;
+    margin: 20px auto ;
+    display: flex;
+    flex-direction: column;
+    
+}
+.project-card-description{
+    color: black;
+}
+.info a{
+    color: rgb(211 0 87);
+}
+.info .contact{
+    width: 100px;
+    border: transparent;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+.project-card-link-2{
+    font-size: 1.2rem;
+    color: blueviolet !important;
+    text-align: center;
+}
+.project-card-link:hover{
+    transition: all 0.3s linear ;
+}
+@media screen and (max-width:550px){
+    .lec-card{
+        width: 300px;
+    }
+}

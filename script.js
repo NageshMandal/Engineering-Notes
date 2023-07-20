@@ -56,7 +56,7 @@ toggle.addEventListener("click", function (e) {
     body.classList.add("dark-mode");
     header.classList.add("header-dark-mode");
     paragraph.classList.add("header-dark-mode");
-    pcol.style.color="white";
+    pcol.style.color = "white";
     links.forEach(function (e) {
       e.classList.add("header-dark-mode");
     });
@@ -69,7 +69,7 @@ toggle.addEventListener("click", function (e) {
     body.classList.remove("dark-mode");
     header.classList.remove("header-dark-mode");
     paragraph.classList.remove("header-dark-mode");
-    pcol.style.color="black";
+    pcol.style.color = "black";
     links.forEach(function (e) {
       e.classList.remove("header-dark-mode");
     });
@@ -145,4 +145,21 @@ function searchContributors(searchTerm) {
 }
 
 
+// // Js for lectures show/hide
+// function showInfo(divNumber) {
+//   // Hide the main view and show the info view for the selected div
+//   document.querySelector('.main-view').style.display = 'none';
+//   document.querySelector('.info-view').style.display = 'block';
+//   document.getElementById(`info${divNumber}`).style.display = 'block';
+// }
 
+// function showMainView() {
+//   // Hide the info view and show the main view again
+//   document.querySelector('.main-view').style.display = 'block';
+//   document.querySelector('.info-view').style.display = 'none';
+
+//   // Hide all info divs
+//   const infoDivs = document.querySelectorAll('.info');
+//   infoDivs.forEach(div => div.style.display = 'none');
+  
+// }
