@@ -229,14 +229,59 @@ p {
 }
 
 .col-3 {
-  position: relative;
-  text-align: center;
-  flex-basis: 30%;
-  min-width: width 250px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: transparent;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: auto;
+  perspective: 1000px; 
+  margin-bottom: 100px;
+
 }
+
+.inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.col-3:hover .inner{
+  transform: rotateY(180deg);
+}
+
+.front-side, .dis{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.front-side{
+  background-color: #bbb;
+  /* color: black; */
+  border-radius: 20px;
+  height: 200px;
+}
+
+.dis{
+  background-color: rgb(255, 166, 166);
+  color: black;
+
+  transform: rotateY(180deg);
+  
+}
+
+.dis h3{
+  font-size: 20px;
+  text-align:center;
+}
+
 
 .col-3 img {
   width: 100%;
@@ -522,21 +567,23 @@ form input {
 }
 
 .dis {
-  position: absolute;
-  bottom: 20%;
+  height: 200px;
+  border-radius: 10px;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  position: relative;
   text-align: center;
   font-size: 13px;
   padding: 1rem 1rem;
   transition: .5s ease;
-  background-color: #a6b6bb;
-  opacity: 0;
-  overflow: hidden;
-  ;
+  /* background-color: black */
+
 }
 
-.col-3:hover .dis {
+/* .col-3:hover .dis {
   opacity: 1;
-}
+} */
 
 #pic {
   display: flex;

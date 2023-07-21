@@ -133,7 +133,7 @@ h1  {
   
 .search__icon {
     box-sizing: border-box;
-    float: right;
+    /* float: right; */
     font-size: 1.25rem;
     display: inline-block;
     margin-left: .8rem;
