@@ -123,8 +123,8 @@ Thanks go to these **Wonderful People**: **Contributions** of any kind are welco
 <hr>
 
 ## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Include the license information for your project. For example, you can use the MIT License:
+Terms and conditions for use, reproduction and distribution are under the [MIT License](https://opensource.org/license/mit/).
 
-This project is licensed under the terms of the [MIT License](LICENSE).
 Feel free to contribute to this repo.
