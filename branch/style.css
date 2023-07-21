@@ -46,10 +46,12 @@ nav ul {
   list-style-type: none;
 }
 nav ul li {
+  color: white;
   display: inline-block;
-  margin-right: 20px;
+  margin: 2px 3px;
+  /* position: relative; */
   font-size: 17px;
-  padding: 10px;
+  padding: 40px;
 }
 
 .nav-link {
@@ -67,8 +69,7 @@ nav ul li {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: 
-  rgb(87, 81, 81);
+    background-color: #131C2B !important;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -96,8 +97,6 @@ p {
 .container {
   max-width: 1300px;
   margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
 }
 .row {
   display: flex;
@@ -445,7 +444,7 @@ form input {
 }
 
 .header-dark-mode {
-  background: #1c2020;
+  background: #000000;
   color: #f5f5f5;
 }
 

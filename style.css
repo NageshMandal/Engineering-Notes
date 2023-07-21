@@ -63,6 +63,9 @@ body::-webkit-scrollbar-thumb {
   margin-left: 30px;
 }
 
+.nav-link{
+  background-color: #131C2B;
+}
 .navbar {
   height: 88px;
   min-width: 100vw;
@@ -85,12 +88,11 @@ nav ul {
   list-style-type: none;
 }
 
-nav ul li {
-  color: white;
+nav ul li {color: white;
   display: inline-block;
-  margin: 6px 16px 0 0;
+  margin: 2px 3px;
   font-size: 17px;
-  padding: 30px;
+  padding: 40px;
 }
 
 .mic:hover {
@@ -145,11 +147,7 @@ p {
 }
 
 .container {
-  max-width: 1300px;
   margin: auto;
-  padding-bottom: 50px;
-  padding-left: 25px;
-  padding-right: 25px;
 }
 
 .row-header,
@@ -660,12 +658,11 @@ form input {
 
 .header-dark-mode {
 
-  background: #1c2020;
+  background: #000000;
   color: #bf7474;
 }
 
 .header-dark-mode p {
-  background: #1c2020;
   color: white;
 }
 
@@ -955,12 +952,6 @@ body.dark-mode .project-card {
 
 .contributors-container {
   padding-top: 20px;
-}
-
-.container {
-  /* text-align: center; */
-  padding: 15px;
-  margin-bottom: 50px;
 }
 
 h3 {

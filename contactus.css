@@ -62,9 +62,10 @@ nav ul {
 nav ul li {
   color: white;
   display: inline-block;
-  margin: 18px 16px 0 0;
+  margin: 2px 3px;
+  /* position: relative; */
   font-size: 17px;
-  padding: 30px;
+  padding: 40px;
 }
 
 .mic:hover {
