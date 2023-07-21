@@ -135,9 +135,70 @@ nav ul li {
 
 }
 
-a {
+#btn3 {
   text-decoration: none;
-  /* color: rgb(64, 64, 64); */
+  display: inline-block;
+  /* background: #ff523b; */
+  color: #fff;
+  padding: 8px 30px;
+  margin-left: 20%px;
+  margin-top: 20px;
+  transition: 0.5s;
+  margin-bottom: 1rem;
+  position:relative;
+  transition:all 0.3s;
+  font-weight: 600;
+}
+#btn3 ::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255,255,255,0.5);
+  border-bottom-color: rgba(255,255,255,0.5);
+  transform: scale(0.1, 1);
+}
+.col-2 #btn3 {
+  margin-top: 30px;
+  margin-top: 32px;
+  margin-bottom: 33px;
+  font-size: 1.3rem;
+}
+
+#btn3:hover {
+ 
+  transform: scaleX(2);
+  transform: scaley(1.1);
+  box-shadow: 2px 2px 20px rgb(49, 49, 49);
+  letter-spacing: 2px;
+}
+#btn3 :hover::before {
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+#btn3 ::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255,255,255,0.1);
+}
+#btn3:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
 }
 
 p {
@@ -193,32 +254,84 @@ p {
   margin: 25px 0;
 }
 
-.btn {
+#btn1,#btn5,#btn6,#btn7,#btn8{
+  text-decoration: none;
   display: inline-block;
-  background: #ff523b;
+  /* background: #ff523b; */
   color: #fff;
   padding: 8px 30px;
   margin-left: 20%px;
   margin-top: 20px;
-  border-radius: 30px;
   transition: 0.5s;
   margin-bottom: 1rem;
+  position:relative;
+  transition:all 0.3s;
+  font-weight: 600;
 }
-
-.col-2 .btn {
+#btn1 ::before,#btn5 ::before,#btn6 ::before,#btn7::before,#btn8::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(255,255,255,0.5);
+  border-bottom-color: rgba(255,255,255,0.5);
+  transform: scale(0.1, 1);
+}
+.col-2 #btn1,#btn5,#btn6,#btn7,#btn8{
   margin-top: 30px;
   margin-top: 32px;
   margin-bottom: 33px;
   font-size: 1.3rem;
 }
 
-.btn:hover {
-  background: #29a423;
+#btn1:hover,#btn5:hover,#btn6:hover,#btn7:hover,#btn8:hover {
+ 
   transform: scaleX(2);
   transform: scaley(1.1);
   box-shadow: 2px 2px 20px rgb(49, 49, 49);
+  letter-spacing: 2px;
 }
+#btn1 :hover::before,#btn5 :hover ::before,#btn6 :hover ::before,#btn7 :hover ::before,#btn8:hover::before{
+  opacity: 1; 
+  transform: scale(1, 1); 
+}
+#btn1 ::after,#btn5::after,#btn6::after,#btn7::after,#btn8::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+  background-color: rgba(255,255,255,0.1);
+}
+#btn1:hover::after,#btn5:hover::after,#btn6:hover::after,#btn7:hover::after,#btn8:hover::after {
+  opacity: 0; 
+  transform: scale(0.1, 1);
+}
+#CSE,#EEE,#ECE,#ME,#CE{
 
+ padding-top: 3px;
+ padding-left: 9px;
+ padding-right: 9px;
+ padding-bottom: 3px;
+ margin-top:20px;
+ color:rgb(255, 191, 191);
+ font-size: 25px;;
+}
+#CSE:hover,#EEE:hover,#ECE:hover,#ME:hover,#CE:hover{
+  border:2px inset rgb(255, 191, 191);
+}
 .header {
   overflow-x: hidden;
   background: radial-gradient(#fff, rgb(255, 191, 191));
@@ -559,12 +672,15 @@ form input {
 
 .contact {
   padding-right: 5px;
-  background-color: #ff523b;
-  border-radius: 20px;
+ border:3px inset white;
   margin-top: 10px;
+}
+.contact:hover{
+  border-color: #ff523b;
 }
 
 .contact a h4 {
+  text-decoration: none;
   font-size: 16px;
   text-align: center;
   color: white;
@@ -573,6 +689,7 @@ form input {
 .contact a h4:hover {
   font-size: 18px;
   transition: .3s ease;
+
 }
 
 .branchimg {
@@ -861,6 +978,10 @@ label[for="project-link"] i {
   border-style: none;
   box-shadow: 0px 0px 10px 0px hsla(0, 0%, 0%, 0.2);
   cursor: pointer;
+  padding:10px;
+  padding-top: 10px;;
+  background-color: transparent;
+  color:white
 }
 
 .project-section-title {
@@ -907,8 +1028,9 @@ body.dark-mode .project-card {
 .project-card-link a {
   display: inline-block;
   align-items: left;
-  color: #087cba
+  color: #ff523b;
 }
+
 
 .project-card-link i {
   font-size: 1.25rem;
