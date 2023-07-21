@@ -139,7 +139,7 @@ h1  {
     margin-left: .8rem;
     margin-top: 0;
     cursor: pointer;
-    position: absolute;
+    position: relative;
     color: orangered;
     transition: all .25s ease-in;
     border-radius: 1.5rem;
