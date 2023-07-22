@@ -57,6 +57,8 @@
                                 <input id="search-input" type="text" placeholder="Search...">
                                 <button id="search-button" type="submit"><a id="mike-button" href="#"><i
                                             class="mic fa-solid fa-microphone"></i></a>
+
+                                            <div class="alan-btn"></div>
                                 </button>
                             </form>
                         </li>
@@ -341,6 +343,29 @@
         </div>
     
     </footer>
+    <script type="text/javascript"
+    src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+
+
+    <script>
+        var alanBtnInstance = alanBtn({
+          key: "410d98d30ce6489164a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+          bottom: '50px',
+   left: '50px',
+          onCommand: function (commandData) {
+           if (commandData && commandData.command === 'openURL') {
+                   if (commandData.target === '_blank'){
+                     window.open(commandData.url,'_newtab' + Math.floor(Math.random()*999999));
+                   } else {
+                     window.location.href = commandData.url;
+                   }
+                 }
+
+           },
+
+          rootEl: document.getElementById("alan-btn"),
+        });
+      </script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
