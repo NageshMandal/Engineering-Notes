@@ -131,9 +131,21 @@ h1  {
     background-color: ghostwhite;
 }
   
+.toggle-mode {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 35px;
+  height: 35px;
+  z-index: 100;
+  top:10;
+  cursor: pointer;
+  /* border: 1px solid red; */
+  /* cursor: pointer; */
+}
 .search__icon {
     box-sizing: border-box;
-    float: right;
+    /* float: right; */
     font-size: 1.25rem;
     display: inline-block;
     margin-left: .8rem;
