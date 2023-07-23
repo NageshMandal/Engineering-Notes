@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  overflow-x: hidden;
+}
 
 .return-to-top {
   position: fixed;
@@ -62,12 +65,14 @@ body::-webkit-scrollbar-thumb {
 
 .navbar {
   height: 88px;
-  min-width: 99.35vw;
-  margin: -25px 0 0 -80px;
+  min-width: 100vw;
+  margin: -25px 0 0 0;
   background: #131C2B;
   display: flex;
   justify-content: space-around;
   align-items: normal;
+  position: absolute;
+  left: 0;
 }
 
 nav {
@@ -119,7 +124,7 @@ nav ul li {
 
 
 .col-2 p {
-  text-align: left;
+  text-align: justify;
   line-height: 1.7;
   color: black;
 }
@@ -215,6 +220,7 @@ p {
 }
 
 .header {
+  overflow-x: hidden;
   background: radial-gradient(#fff, rgb(255, 191, 191));
 }
 
@@ -452,11 +458,16 @@ form button>i {
 
 form input {
   background: transparent;
-  color: #ccc;
-  width: 150px;
+  width:200px;
   padding: 8px;
   border: 0;
   outline: none;
+  font-size: 18px;
+}
+#search-button{
+  background: transparent;
+  border: hidden;
+  cursor: pointer;
 }
 
 .form-news {
@@ -570,7 +581,12 @@ form input {
 }
 
 .students {
+  transition: transform 0.5s ease;
   filter: drop-shadow(10px 10px 10px rgb(60, 60, 60));
+  cursor: pointer;
+}
+.col-2:hover .students {
+  transform: rotateY(180deg) scale(1.01); /* Apply rotation and scaling on hover */
 }
 
 .far {
@@ -628,6 +644,12 @@ form input {
 
 .dark-mode {
   background: #2c3333;
+  color: white;
+}
+.dark-mode #search-button{
+  color: white;
+}
+.dark-mode #search-input{
   color: white;
 }
 
@@ -846,7 +868,7 @@ label[for="project-link"] i {
 }
 
 .project-card-container {
-  display: inline-block;
+  display: flex;
   justify-content: center;
   margin-top: 30px !important;
 }
