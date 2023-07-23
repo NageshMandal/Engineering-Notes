@@ -3,8 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  overflow-x: hidden;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
 }
 
 .return-to-top {
@@ -191,6 +195,7 @@ p {
   font-size: 50px;
   line-height: 60px;
   margin: 25px 0;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
 }
 
 .btn {

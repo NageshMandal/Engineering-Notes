@@ -1,15 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   font-family: sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .return-to-top {
@@ -49,6 +48,10 @@ body::-webkit-scrollbar {
   transform: scale(1.1);
 }
 
+.header {
+  overflow-x: hidden;
+  background: radial-gradient(#fff, rgb(255, 191, 191));
+}
 body::-webkit-scrollbar-track {
   background: linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgb(0, 35, 211) 70%);
 }
@@ -70,12 +73,14 @@ body::-webkit-scrollbar-thumb {
 
 .navbar {
   height: 88px;
-  min-width: 99.35vw;
-  margin: -15px 0 0 -1px;
+  min-width: 100vw;
+  margin: -10px 0 0 0;
   background: #131C2B;
   display: flex;
   justify-content: space-around;
   align-items: normal;
+  position: absolute;
+  left: 0;
 }
 
 nav {
@@ -127,7 +132,7 @@ nav ul li {
 
 
 .col-2 p {
-  text-align: left;
+  text-align: justify;
   line-height: 1.7;
   color: black;
 }
@@ -159,11 +164,13 @@ p {
 .row-footer {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .row-header{
-  padding-top: 100px;
+  margin-top: -75px;
+  margin-left: 30px;
+  margin-bottom: 15px;
 }
 
 .col-2 {
@@ -210,6 +217,7 @@ p {
 }
 
 .header {
+  overflow-x: hidden;
   background: radial-gradient(#fff, rgb(255, 191, 191));
 }
 
@@ -755,7 +763,7 @@ form input {
 }
 
 h1 {
-  color: coral;
+  color: black;
 }
 
 .grid-container {
