@@ -57,21 +57,24 @@ body::-webkit-scrollbar-thumb {
 .box {
   box-shadow: 0px 0px 4px black;
 }
-
+.navbar .logo{
+  display: flex;
+  align-items: center;
+}
 .navbar .logo img {
   margin-top: 25px;
   margin-left: 30px;
 }
 
 .navbar {
-  height: 88px;
+  height: 100%;
   min-width: 100vw;
   margin: -25px 0 0 0;
   background: #131C2B;
   display: flex;
   justify-content: space-around;
   align-items: normal;
-  position: absolute;
+  position: relative;
   left: 0;
 }
 
@@ -146,11 +149,17 @@ p {
 
 .container {
   max-width: 1300px;
-  margin: auto;
+  /* margin: auto; */
   padding-bottom: 50px;
-  padding-left: 25px;
-  padding-right: 25px;
+  /* padding-left: 25px;
+  padding-right: 25px; */
+  
+  text-align: center;
+  /* padding: 15px; */
+  margin-bottom: 50px;
 }
+
+
 
 .row-header,
 .row-footer {
@@ -957,11 +966,6 @@ body.dark-mode .project-card {
   padding-top: 20px;
 }
 
-.container {
-  /* text-align: center; */
-  padding: 15px;
-  margin-bottom: 50px;
-}
 
 h3 {
   font-size: 24px;

@@ -63,14 +63,20 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0px 0px 4px black;
 }
 
+.navbar .logo{
+  display: flex;
+  align-items: center;
+}
 .navbar .logo img {
   margin-top: 25px;
   margin-left: 30px;
 }
 
 .navbar {
-  height: 88px;
-  min-width: 99.35vw;
+  /* height: 88px; */
+  /* min-width: 99.35vw; */
+  height: 100%;
+  width: 100%;
   margin: -15px 0 0 -1px;
   background: #131C2B;
   display: flex;
