@@ -69,8 +69,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navbar {
-  height: 88px;
-  min-width: 99.35vw;
+  /* height: 88px; */
+  /* min-width: 99.35vw; */
+  height: 100%;
+  width: 100%;
   margin: -15px 0 0 -1px;
   background: #131C2B;
   display: flex;
