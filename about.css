@@ -8,11 +8,17 @@
 }
 
 .navbar {
+  height: 88px;
+  min-width: 100vw;
+  margin: -25px 0 0 0;
+  background: #131C2B;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  top: 0px;
+  justify-content: space-around;
+  align-items: normal;
+  position: fixed;
+  left: 0;
+  top: 10;
+  z-index: 100;
 }
 nav ul {
   display: flex;

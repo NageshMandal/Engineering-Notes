@@ -71,8 +71,10 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: space-around;
   align-items: normal;
-  position: absolute;
+  position: fixed;
   left: 0;
+  top: 10px;
+  z-index: 100;
 }
 
 nav {
@@ -497,11 +499,12 @@ form input {
 }
 
 .toggle-mode {
-  position: absolute;
-  top: 20px;
+  position: fixed;
   right: 20px;
   width: 35px;
   height: 35px;
+  z-index: 100;
+  top:10px;
   cursor: pointer;
   /* border: 1px solid red; */
   /* cursor: pointer; */
