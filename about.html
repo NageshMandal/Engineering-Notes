@@ -29,14 +29,21 @@
                 <li><a class="nav-link" href="./projects.html">Projects</a></li>
                 <li><a class="nav-link" href="./library.html">Library</a></li>
                 <li><a class="nav-link" href="./placement.html">Placements</a></li>
-                <li><a class="nav-link" href="./contactus.html">Contacts</a></li>
+                <li><a class="nav-link" href="./contact.html">Contacts</a></li>
                 <li><a class="nav-link" href="./syllabus.html">Syllabus</a></li>
-
                 <li>
                     <form id="search-form" action="#" method="GET">
                         <input id="search-input" type="text" placeholder="Search...">
                         <button id="search-button" type="submit"><a id="mike-button" href="#"><i
                                     class="mic fa-solid fa-microphone"></i></a>
+
+                <li><a class="nav-link" href="./event.html">Events</a></li>
+                  
+                <li>
+                    <form id="search-form" action="#" method="GET">
+                        <input id="search-input" type="text" placeholder="Search...">
+                        <button id="search-button" type="submit"><a id= "mike-button" href="#"><i class="mic fa-solid fa-microphone"></i></a>
+                            <div class="alan-btn"></div>
                         </button>
                     </form>
                 </li>
@@ -116,6 +123,12 @@
                     <li><a href="./about.html">About us</a></li>
                     <li><a href="./placement.html">Placements</a></li>
                     <li><a href="./contact.html">Contact</a></li>
+
+                    <li><a href="">Services</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
                 </ul>
             </div>
             <div class="col col4">
@@ -149,6 +162,29 @@
         </div>
 
     </footer>
+    <script type="text/javascript"
+    src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+
+
+    <script>
+        var alanBtnInstance = alanBtn({
+          key: "410d98d30ce6489164a5a62bdae65be32e956eca572e1d8b807a3e2338fdd0dc/stage",
+          bottom: '50px',
+   left: '50px',
+          onCommand: function (commandData) {
+           if (commandData && commandData.command === 'openURL') {
+                   if (commandData.target === '_blank'){
+                     window.open(commandData.url,'_newtab' + Math.floor(Math.random()*999999));
+                   } else {
+                     window.location.href = commandData.url;
+                   }
+                 }
+
+           },
+
+          rootEl: document.getElementById("alan-btn"),
+        });
+      </script>
 
 </body>
 

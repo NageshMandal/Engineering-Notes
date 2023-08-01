@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  overflow-x: hidden;
+}
 
 .return-to-top {
   position: fixed;
@@ -62,11 +65,19 @@ body::-webkit-scrollbar-thumb {
 
 .navbar {
   height: 88px;
+
   margin: -30px 0 0 0px;
   padding: 0 ;
+  min-width: 100vw;
+  margin: -25px 0 0 0;
+
   background: #131C2B;
   display: flex;
   align-items: normal;
+  position: fixed;
+  left: 0;
+  top: 10px;
+  z-index: 100;
 }
 
 
@@ -84,9 +95,14 @@ nav ul li {
   padding: 30px;
 }
 
+.mic:hover {
+  background: #d1d1d1;
+  box-shadow: 2px 2px 20px rgba(49, 49, 49, 0.152);
+}
+
 #search-form {
   width: 267px;
-  height: 30px;
+  height: 35px;
   border-radius: 80px;
   background-color: white;
 }
@@ -110,7 +126,7 @@ nav ul li {
 
 
 .col-2 p {
-  text-align: left;
+  text-align: justify;
   line-height: 1.7;
   color: black;
 }
@@ -142,13 +158,27 @@ p {
 .row-footer {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
-
 .row-header {
   padding-top: 100px;
+.row-header{
+  padding-top: 60px;
 }
+
+.train-placement{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#placement-para{
+  padding:10px 150px;
+  font-size: 1.1rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
 
 .col-2 {
   flex-basis: 50%;
@@ -194,6 +224,7 @@ p {
 }
 
 .header {
+  overflow-x: hidden;
   background: radial-gradient(#fff, rgb(255, 191, 191));
 }
 
@@ -262,6 +293,8 @@ p {
 }
 
 footer {
+  padding: 0;
+  margin: 0;
   width: 100%;
   bottom: 0;
   background: #192734;
@@ -313,10 +346,15 @@ footer {
 }
 
 .email-id:hover {
+  cursor: pointer;
   font-size: 16px;
   font-weight: 100;
   color: white;
   transition-duration: 0.7s;
+}
+
+.phone:hover{
+  cursor: pointer;
 }
 
 .col2 h4 {
@@ -369,7 +407,7 @@ footer {
 .col4 {
   margin-left: -50px;
   margin-right: 100px;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .col4 h3 {
@@ -424,11 +462,16 @@ form button>i {
 
 form input {
   background: transparent;
-  color: #ccc;
-  width: 150px;
+  width:200px;
   padding: 8px;
   border: 0;
   outline: none;
+  font-size: 18px;
+}
+#search-button{
+  background: transparent;
+  border: hidden;
+  cursor: pointer;
 }
 
 .form-news {
@@ -458,11 +501,12 @@ form input {
 }
 
 .toggle-mode {
-  position: absolute;
-  top: 20px;
+  position: fixed;
   right: 20px;
   width: 35px;
   height: 35px;
+  z-index: 100;
+  top:10px;
   cursor: pointer;
   /* border: 1px solid red; */
   /* cursor: pointer; */
@@ -533,6 +577,7 @@ form input {
 
 .contact a h4:hover {
   font-size: 18px;
+  transition: .3s ease;
 }
 
 .branchimg {
@@ -541,7 +586,12 @@ form input {
 }
 
 .students {
+  transition: transform 0.5s ease;
   filter: drop-shadow(10px 10px 10px rgb(60, 60, 60));
+  cursor: pointer;
+}
+.col-2:hover .students {
+  transform: rotateY(180deg) scale(1.01); /* Apply rotation and scaling on hover */
 }
 
 .far {
@@ -558,6 +608,10 @@ form input {
   font-size: 25px;
   padding-right: 8px;
   padding-left: 8px;
+}
+
+.youtube{
+  margin-top: 5px;
 }
 
 .tweet:hover {
@@ -595,6 +649,12 @@ form input {
 
 .dark-mode {
   background: #2c3333;
+  color: white;
+}
+.dark-mode #search-button{
+  color: white;
+}
+.dark-mode #search-input{
   color: white;
 }
 
@@ -751,11 +811,6 @@ form input {
   background-color: white
 }
 
-.mic:hover {
-  background: #d1d1d1;
-  box-shadow: 2px 2px 20px rgb(49, 49, 49);
-}
-
 .google {
   margin-right: 10px;
   width: 45px;
@@ -820,15 +875,14 @@ label[for="project-link"] i {
 .project-card-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  margin: auto;
+  margin-top: 30px !important;
 }
 
 .project-card {
-  padding: 1rem 1.25rem;
+  padding: 1.25rem 3rem;
   box-shadow: 0px 0px 10px 0px hsla(0, 0%, 0%, 0.2);
-  max-width: 20rem;
-  margin: 1rem;
+  width: 600px;
+  margin: 3rem;
   border-radius: 1rem;
 }
 
@@ -856,12 +910,9 @@ body.dark-mode .project-card {
 }
 
 .project-card-link a {
-  display: flex;
-  align-items: center;
-}
-
-.project-card-link a {
-  color: #04669A
+  display: inline-block;
+  align-items: left;
+  color: #087cba
 }
 
 .project-card-link i {
@@ -940,3 +991,55 @@ h3 {
 .span {
   color: #b700ff;
 }
+
+/* faqs */
+
+.containerf { 
+  font-family: Arial, sans-serif; 
+  max-width: 1000px; 
+  margin: 0 auto; 
+  padding: 20px; 
+margin-top: 100px;
+} 
+
+h1 { 
+  font-size: 36px; 
+  margin-bottom: 20px; 
+} 
+
+.question { 
+  font-weight: bold; 
+  font-size: 20px;
+  margin-top: 40px; 
+  margin-bottom: 30px; 
+  cursor: pointer; 
+
+} 
+.question:after {
+content: '\02795';
+/* Unicode character for "plus" sign (+) */
+font-size: 20px;
+color: #777;
+float: right;
+margin-left: 5px;
+margin-bottom: 20px;
+}
+hr{
+margin-top: 50px;
+background-color: white;
+}
+
+.answer { 
+  margin-bottom: 20px; 
+  display: none; 
+  font-size: 20px;
+} 
+
+.answer p { 
+  margin: 0; 
+  line-height: 1.5; 
+} 
+
+.answer.active { 
+  display: block; 
+} 

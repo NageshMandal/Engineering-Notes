@@ -42,11 +42,16 @@ body::-webkit-scrollbar-thumb {
 
 .navbar {
   height: 88px;
-  width: 100vw;
+  min-width: 100vw;
+  margin: -25px 0 0 0;
   background: #131C2B;
   display: flex;
   justify-content: space-around;
   align-items: normal;
+  position: fixed;
+  left: 0;
+  top: 10px;
+  z-index: 100;
 }
 
 nav {
@@ -67,9 +72,14 @@ nav ul li {
   padding: 30px;
 }
 
+.mic:hover {
+  background: #d1d1d1;
+  box-shadow: 2px 2px 20px rgba(49, 49, 49, 0.152);
+}
+
 #search-form {
   width: 267px;
-  height: 30px;
+  height: 35px;
   border-radius: 80px;
   background-color: white;
 }
@@ -210,7 +220,8 @@ p {
 .map {
   margin-top: 20px;
   width: 100%;
-  align-items: center;
+  align-items: flex-start;
+  height: auto; 
 }
 
 .col-4 {
@@ -337,12 +348,14 @@ button .submit {
 }
 
 .toggle-mode {
-  position: absolute;
-  top: 30px;
-  right: 40px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
   width: 35px;
   height: 35px;
   cursor: pointer;
+  z-index: 100;
+
   /* border: 1px solid red; */
   /* cursor: pointer; */
 }
@@ -626,50 +639,64 @@ button .submit {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column; 
   margin-top: 30px;
   padding-top: 20px;
 }
 
 .container .contactinfo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   width: 50%;
+  justify-content: center;
+  margin-left: 80px;
 }
 
 .container .contactinfo .box {
-  position: relative;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 20px 0;
+  gap: 20px;
+  width: 100%;
 }
 
 .container .contactinfo .box .icon {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background: #ff523b;
   border-radius: 50%;
   min-width: 60px;
   height: 60px;
   font-size: 22px;
+  margin-top: 10px;
 }
-.container .contactinfo .box .map{
+.container  .map{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
   width: 100%;
 }
 
 .container .contactinfo .box .text {
+
+  text-align: center;
+  margin-top: 40px; 
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+  margin-left: 40px;
+  margin-right: 40px;  
+  padding-right: 40px;
   font-size: 16px;
   font-weight: 300;
   color: black;
+  justify-content: center;
+  align-items: center;
 }
 
 .container .contactinfo .box .text h1 a {
@@ -682,10 +709,13 @@ button .submit {
 }
 
 .contactform {
-  width: 60%;
+  width: 50%;
   padding: 40px;
   background-color: #fff;
+  flex-direction: column;
   border-radius: 5px;
+  margin-bottom: 30px; 
+  align-items: flex-start;
 }
 
 .contactform h2 {
@@ -875,3 +905,5 @@ button .submit {
     font-size: 16px;
   }
 }
+
+
