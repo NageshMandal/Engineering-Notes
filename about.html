@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https//stackpath.bootsstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-YGn1AWgZmE6haQrDmc9hp2F/KD+utPj1r6wyLNoKNN2EGP4cBdEkg8TxKZ31IR6Sotg5wxr7pJUE5ydfZCA3Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="about.css" />
@@ -30,11 +31,13 @@
                 <li><a class="nav-link" href="./event.html">Events</a></li>
                   
                 <li>
-                    <form id="search-form" action="#" method="GET">
-                        <input id="search-input" type="text" placeholder="Search...">
-                        <button id="search-button" type="submit"><a id= "mike-button" href="#"><i class="mic fa-solid fa-microphone"></i></a>
+                    <form id="search-form">
+                        <input type="text" id="search-input" placeholder="Search..." />
+                        <button id="search-button" type="submit">
+                          <i class="fas fa-microphone"></i>
                         </button>
-                    </form>
+                      </form>
+                      
                 </li>
             </ul>
         </nav>
@@ -65,8 +68,8 @@
     </section>
 
     <footer>
-        <div class="row">
-            <div class="col col1" id="pic" >
+        <div class="row-footer">
+            <div class="col col1" id="pic">
                 <img src="images/nagesh.png" alt="Nagesh Mandal" width="80px">
                 <div class="myname">
                     <h5>Nagesh Mandal</h5>
@@ -74,7 +77,8 @@
                 <p class="dev">Full Stack Web Developer</p>
                 <div class="contact">
                     <a href="https://www.instagram.com/nagesh_mandal7_5_/"><h4>Contact</h4></a>
-                </div>
+                  </div>
+                  
             </div>
             <div class="col col2">
                 <h3>Chaibasa Engineering College</h3>
@@ -85,13 +89,20 @@
                    </span>
                 </a>
                 </p>
-                <p class="email-id"><i class="far fa-envelope"></i>
+                <p class="email-id" style="
+                           width: 260px"><i class="far fa-envelope" style="color: #fff;"></i>
                     cordinatortigjh@gmail.com
                 </p>
-                <h4>
+                <!-- <h4 class="phone">
                     <i class="fa-solid fa-phone" style="color: #fff;"></i>
                      +91 - 9062941530
-                </h4>
+                </h4> -->
+                <h4>
+                    <i class="fas fa-phone-alt"></i>
+                    +91 - 9062941530
+                  </h4>
+               
+                  
             </div>
             <div class="col col3" id="link">
                 <h3>Links</h3>
@@ -111,25 +122,32 @@
                     <button type="submit"><i class="fas fa-arrow-right"></i></button>
                 </form>
                 <div class="social-icons social-media">
-                   <a href="https://twitter.com/NageshMandal75"> <i class="tweet fa-brands fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/nagesh_mandal7_5_/"><i class="insta fa-brands fa-instagram"></i></a>
-                   <a href="https://github.com/NageshMandal"> <i class="git fa-brands fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/nagesh-mandal-134b70237/"> <i class="in fa-brands fa-linkedin"></i></a>
-                   <a href="https://www.youtube.com/@nageshmandal9461/featured"> <i class="youtube fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/NageshMandal75"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/nagesh_mandal7_5_/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/NageshMandal"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/nagesh-mandal-134b70237/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/@nageshmandal9461/featured"><i class="fab fa-youtube"></i></a>
+                  
+
                 </div>
+                <div class="return-to-top" id="returnToTop">
+                    <i class="fas fa-arrow-up fa-2x fa-bounce"></i>
+                  </div>
             </div>
         </div>
+    
         <!--Voice Assistent-->
         <div class="containers">
             <div class="texts">
             </div>
         </div>
+    
         <!--Voice assistent end-->
         <div class="toggle-mode">
-            <img class="moon" data-set="sun" src="images/moon.png" alt="dark-mode">
-            <img class="sun"  data-set="moon" src="images/sun.png"  alt="light-mode">
+            <img class="sun"  data-set="moon" src="images/Moontoggle.png"  alt="light-mode">
+            <img class="moon" data-set="sun" src="images/sun.png" alt="dark-mode">
         </div>
-
+    
     </footer>
 
   </body>

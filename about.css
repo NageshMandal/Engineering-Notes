@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"); */
 
 * {
   margin: 0;
@@ -6,7 +6,9 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+body{
+  overflow-x: hidden;
+}
 .navbar {
   height: 88px;
   min-width: 100vw;
@@ -20,18 +22,49 @@
   top: 10;
   z-index: 100;
 }
+ nav {
+    flex: 1;
+    text-align: center;
+  }
+
 nav ul {
-  display: flex;
+  display: inline-block;
   list-style-type: none;
 }
-nav ul li {
-  margin-right: 20px;
-  font-size: 17px;
-  padding: 0 10px;
-}
+  nav ul li {
+    color: white;
+    display: inline-block;
+    margin: 6px 16px 0 0;
+    font-size: 17px;
+    padding: 30px;
+  }
+  
+  .mic {
+    display: block;
+    margin-left: 230px;
+  }
+  .mic {
+    color: black;
+    text-align: right;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 50px;
+    margin-right: 10px;
+    font-size: 20px;
+    background-color:transparent
+  }
 
+  /* .mic:hover {
+    background: #d1d1d1;
+    box-shadow: 2px 2px 20px rgba(49, 49, 49, 0.152);
+  } */
+
+  
 nav ul li a {
-  color: rgb(87, 81, 81);
+  color: white;
+  
   text-decoration: none;
 }
 
@@ -64,7 +97,47 @@ nav ul li a:hover {
     text-decoration: none;
     color: #ff523b;
 }
+#search-form {
 
+  display: flex;
+  align-items: center; /* Center the icon vertically */
+  justify-content: space-between;
+  width: 267px;
+  height: 35px;
+  border-radius: 80px;
+  background-color: white;
+  padding: 5px 10px; /* Add some padding around the icon */
+}
+
+
+#search-input {
+  
+  font-weight: 500;
+  color: #474747;
+  flex: 1; 
+  padding: 8px;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+}
+#search-button{  
+  background: transparent;
+  border: none;
+  cursor: pointer;
+} 
+
+#search-button i {
+  font-size: 20px; 
+  color: #474747; 
+}
+
+#search-button:hover {
+  background: #f1f1f1; /* Add a background color on hover if needed */
+}
+.fa-microphone {
+  margin-top: 5px;
+  margin-left: -50px;
+}
 
 .container {
   width: 100%;
@@ -73,30 +146,6 @@ nav ul li a:hover {
   justify-content: center;
   flex-direction: column;
 }
-
-
-
-/* navbar */
-
-.navbar {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-  }
-  nav {
-    flex: 1;
-    text-align: right;
-  }
-  nav ul {
-    display: inline-block;
-    list-style-type: none;
-  }
-  nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-    font-size: 17px;
-    padding: 10px;
-  }
 
 .center{
     text-align: center;
@@ -136,6 +185,10 @@ footer {
     padding: 10px;
     margin: 30px;
   }
+  .col p {
+    font-size: 16px;
+  
+  }
   
   .col1 h5{
     color: #ff523b;
@@ -147,12 +200,9 @@ footer {
     font-size: 16px;
     font-weight: bold;
   }
-  .col h3 {
-    width: fit-content;
-    margin-bottom: 40px;
-    position: relative;
-    line-height: 2rem;
-  }
+  /* 
+  
+  */
   .email-id {
     width: fit-content;
     margin: 20px 0;
@@ -175,22 +225,18 @@ footer {
     color: white;
     transition-duration: 0.7s;
   }
-  .col p{
-    font-size: 16px;
-    
-  }
+  
   .col2{
     width: 40%;
     /* margin-left: -80px; */
     min-width: 240px;
   }
-  .col h3{
-    color: #ff523b;
-    font-size: 20px;
-    font-weight: 900;
-    text-align: justify center;
-    margin-bottom: 20px;
-  }
+   .col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+    line-height: 2rem;
+  } */
   .col3{
     min-width: 12rem;
   }
@@ -249,14 +295,17 @@ footer {
     padding: 8px;
     border-radius: 10px;
   }
+  p {
+    color: black;
+}
   
   form input {
     background: transparent;
-    color: #ccc;
-    width: 200px;
+    width:200px;
     padding: 8px;
     border: 0;
     outline: none;
+    font-size: 18px;
   }
   
   .form-news{
@@ -268,36 +317,45 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
   }
-  .social-media i{
-    border: 1px solid gray;
-    width: 45px;
-    height: 38px;
-    padding-top: 7px;
-    margin-right: 5px;
-    text-align: center;
-    display: inline-block;
-    font-size: 1.5em;
-    text-decoration: none;
-    color: #d3d3d3;
-    border-radius: 5px;
-    transition: all 0.3s;
-  }
-  
+ 
+
+.social-media i {
+  border: 1px solid gray;
+  width: 45px;
+  height: 38px;
+  padding-top: 7px;
+  margin-right: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #d3d3d3;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+
+
   .toggle-mode {
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 20px;
     width: 35px;
     height: 35px;
+     z-index: 100;
     cursor: pointer;
-    /* border: 1px solid red; */
-    /* cursor: pointer; */
+    
   }
   
   .toggle-mode > img {
     width: 35px;
     height: 35px;
   }
+  .toggle-mode .fa-moon {
+  width: 10px;
+  color: white;
+}
+
   
   .sun {
     display: none;
@@ -364,34 +422,56 @@ footer {
     border-radius: 4px;
     margin-right: 5px;
   }
+  .youtube{
+    margin-top: 5px;
+  }
   .fa-brands{
     font-size: 25px;
     padding-right: 8px;
     padding-left: 8px;
   }
-  .tweet:hover{
-    color: #00B6F1;;
-  }
-  .insta:hover{
-    color:  rgb(255, 0, 43);
-  }
-  .git:hover{
-    color: #040204;
-  }
-  .in:hover{
-   color: #04669A;
-  }
-  .tele:hover{
-    color:  #0088cc;
-  
-  }
-  .youtube:hover{
-    color:rgb(255, 0, 0);
-  }
+ 
+
+.social-media i.fa-twitter:hover {
+  /* styles for Twitter icon */
+  color: white;
+  background: rgb(0, 140, 255);
+}
+
+.social-media i.fa-instagram:hover {
+  /* styles for Instagram icon */
+  color: white;
+   /* background-color:  rgb(255, 0, 43); */
+   background-color: #E1306C;
+}
+
+.social-media i.fa-github:hover {
+  /* styles for GitHub icon */
+  color: white;
+  background-color: black;
+}
+
+.social-media i.fa-linkedin:hover {
+  /* styles for LinkedIn icon */
+  color: #04669A;
+  background: white;
+}
+
+.social-media i.fa-youtube:hover {
+  /* styles for YouTube icon */
+  color: red;
+  background: white;
+}
+
+/* ... Your other CSS styles ... */
+
   /*? dark mode */
   
   .dark-mode {
     background: #2c3333;
+    color: white;
+  }
+  .dark-mode #search-button{
     color: white;
   }
   
@@ -404,4 +484,25 @@ footer {
     background: #1c2020;
     color: #bf7474;
   }
-  
+  .row-header,
+.row-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.row,
+.row-footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.dev{
+  color: white;
+}
+h4 i {
+  margin-right: 5px; /* Add some spacing between icon and text */
+  color: white; /* Set the color of the icon to white */
+}
