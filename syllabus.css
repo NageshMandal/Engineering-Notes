@@ -108,7 +108,8 @@ h1  {
     transform: translate(-50%, -50%);
     border-radius: 4rem;
     padding: 10px;
-
+    border: 2px solid black;
+   
 }
   
 .search__box {
@@ -120,11 +121,12 @@ h1  {
     font-size: 1rem;
     border-radius: 1.5rem;
     outline: none;
-    border: none;
+    border: 2px #ec380b;
     position: relative;
     opacity: 1;
     transition: all .75s ease-in;
     cursor: pointer;
+ 
 }
   
 .search__box:focus, .search__box:hover {
@@ -187,6 +189,7 @@ h1  {
         width: 150px;
     }
 }
+
 
 /* ------------------------------------------------------------------------- */
 
