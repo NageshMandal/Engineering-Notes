@@ -44,6 +44,9 @@ h1  {
 
 .row-header {
     animation: first 2s linear;
+    display: flex;
+    justify-content: start;
+    padding-left: 40px;
     /* padding: 5%; */
 }
 
