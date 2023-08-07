@@ -42,11 +42,16 @@ body::-webkit-scrollbar-thumb {
 
 .navbar {
   height: 88px;
-  width: 100vw;
+  min-width: 100vw;
+  margin: -25px 0 0 0;
   background: #131C2B;
   display: flex;
   justify-content: space-around;
   align-items: normal;
+  position: fixed;
+  left: 0;
+  top: 10px;
+  z-index: 100;
 }
 
 nav {
@@ -343,12 +348,14 @@ button .submit {
 }
 
 .toggle-mode {
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   width: 35px;
   height: 35px;
   cursor: pointer;
+  z-index: 100;
+
   /* border: 1px solid red; */
   /* cursor: pointer; */
 }
