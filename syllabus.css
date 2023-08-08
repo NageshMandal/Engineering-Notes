@@ -1,10 +1,11 @@
 h1  {
-    color: #ec380b;
+    color:black;
     font-family: "Poppins", sans-serif;
     line-height: 1.5;
     font-size: 3.5rem;
     margin-bottom: 30px;
     font-weight: bolder;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
 }
 
 .para p {
@@ -28,12 +29,12 @@ h1  {
     box-shadow: 2px 2px 20px rgba(49, 49, 49, 0.152);
   }
   
-  #search-form {
+#search-form {
     width: 267px;
     height: 35px;
     border-radius: 80px;
     background-color: white;
-  }
+}
 .small-container{
     padding-top: 0;
     display: flex;
@@ -173,15 +174,17 @@ h1  {
     width: 85%;
     border: 1px solid red;
 }
-  
+ 
+.top-container {
+    width: 100vw;
+}
   /* ------------------------------------------------------------------------------ */
   
 @media screen and (max-width: 1000px){
 
     
     .top-container {
-        overflow: hidden;
-        object-fit: cover;
+        width: 100vw;
     }
     .col-2 h1{
         font-size: 2rem;
