@@ -60,16 +60,19 @@ body::-webkit-scrollbar-thumb {
 
 .navbar .logo img {
   margin-top: 25px;
-  margin-left: 30px;
+  margin-left: 15px;
 }
 
 .navbar {
   height: 88px;
+
+  margin: -30px 0 0 0px;
+  padding: 0 ;
   min-width: 100vw;
   margin: -25px 0 0 0;
+
   background: #131C2B;
   display: flex;
-  justify-content: space-around;
   align-items: normal;
   position: fixed;
   left: 0;
@@ -77,13 +80,10 @@ body::-webkit-scrollbar-thumb {
   z-index: 100;
 }
 
-nav {
-  flex: 1;
-  text-align: center;
-}
 
 nav ul {
-  display: inline-block;
+  display: flex;
+  margin: auto;
   list-style-type: none;
 }
 
@@ -161,6 +161,8 @@ p {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+.row-header {
+  padding-top: 100px;
 .row-header{
   padding-top: 60px;
 }
