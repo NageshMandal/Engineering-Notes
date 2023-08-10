@@ -124,6 +124,23 @@ nav ul li {
   margin-left: -50px;
 }
 
+.swiper{
+  width:80%;
+  height:fit-content;
+
+}
+.swiper-slide img{
+  width:100%;
+
+
+}
+.swiper .swiper-button-prev,.swiper .swiper-button-next{
+  color:white;
+
+}
+.swiper .swiper-pagination-bullet-active{
+  background:white;
+}
 
 .col-2 p {
   text-align: justify;

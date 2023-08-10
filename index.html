@@ -18,6 +18,7 @@
     <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
     <script src="https://kit.fontawesome.com/739255457e.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
 </head>
 <body>
@@ -67,7 +68,23 @@
                     </div>
                 </div>
                 <div class="col-2">
-                    <img class="students" src="images/college1.png">
+                         <img class="students" >
+                    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img src="images/3d-business-young-woman-with-laptop-studying-online.png"> </div>
+      <div class="swiper-slide"><img src="images/3d-business-young-women-students-smiling.png"></div>
+      <div class="swiper-slide"><img src="images/college1.png"> </div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </div>
@@ -354,5 +371,23 @@
     }); 
 </script> 
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> 
+<script>
+  const swiper = new Swiper('.swiper', {
+autoplay:{
+delay:3000,
+disableOnInteraction:false,
+},
+loop: true,
+pagination: {
+el: '.swiper-pagination',
+clickable:true,
+},
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+});  
+</script>
 </body>
 </html>
