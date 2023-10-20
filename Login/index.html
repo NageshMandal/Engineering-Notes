@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <title>Document</title>
+  </head>
+  <header>
+    <nav>
+      <a href="#Home">Home</a>
+      <a href="#GetGithub">Github</a>
+      <a href="#GetGitlab">Gitlab</a>
+      <a href="#GetGodaddy">GoDaddy</a>
+    </nav>
+  </header>
+  <body>
+    <button onclick="logout()">Logout</button>
+    <div id="ehh"></div>
+    <script src="./app.js" type="module"></script>
+    <script>
+      // Parse query string to see if page request is coming from OAuth 2.0 server.
+    var params = {};
+    var regex = /([^&=]+)=([^&]*)/g, m;
+    while (m = regex.exec(location.href)) {
+        params[decodeURIComponent(m[1])] = decodeURIComponent(m[2]);
+    }
+    if (Object.keys(params).length > 0) {
+        localStorage.setItem('authInfo', JSON.stringify(params));
+    }
+    window.history.pushState({}, document.title, "/" + "profile.html");
+    let info = JSON.parse(localStorage.getItem('authInfo'))
+    console.log(info['access_token'])
+    console.log(info['expires_in'])
+
+    function logout() {
+        fetch("https://oauth2.googleapis.com/revoke?token=" + info['access_token'],
+            {
+                method: 'POST',
+                headers: {
+                    "Content-type": "application/x-www-form-urlencoded"
+                }
+            })
+            .then((data) => {
+                location.href = "http://localhost:5500/index.html"
+            })
+    }
+    fetch("https://www.googleapis.com/oauth2/v3/userinfo", {
+        headers: {
+            "Authorization": `Bearer ${info['access_token']}`
+        }
+    })
+        .then(data => data.json())
+        .then((info) => {
+            console.log(info)
+            document.getElementById('name').innerHTML += info.name
+            document.getElementById('image').setAttribute('src',info.picture)
+        })
+    </script>
+  </body>
+</html>
