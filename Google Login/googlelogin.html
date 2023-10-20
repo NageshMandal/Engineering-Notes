@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to Profile Page</h1>
+    <h2 id="name">Your Full Name is:</h2>
+    <img id="image"/>
+    <button onclick="signIn()">Sign In With Google</button>
+    <button onclick="logout()">Logout</button>
+    <button onclick="sendEmail()">Send Email</button>
+
+    <form id="form">
+        <input type="file" multiple name="file" id="files">
+        <input type="submit" value="Upload File">
+    </form>
+</body>
+<script>
+
+
+function signIn(){
+    // Google's OAuth 2.0 endpoint for requesting an access token
+    var oauth2Endpoint = 'https://accounts.google.com/o/oauth2/v2/auth';
+
+  // Create <form> element to submit parameters to OAuth 2.0 endpoint.
+  var form = document.createElement('form');
+  form.setAttribute('method', 'GET'); // Send as a GET request.
+  form.setAttribute('action', oauth2Endpoint);
+
+  // Parameters to pass to OAuth 2.0 endpoint.
+  var params = {'client_id': ' ',
+                'redirect_uri': 'http://127.0.0.1:5500/profile.html',
+                'response_type': 'token',
+                'scope': 'https://www.googleapis.com/auth/drive.file',
+                'include_granted_scopes': 'true',
+                'state': 'pass-through value'};
+
+  // Add form parameters as hidden input values.
+  for (var p in params) {
+    var input = document.createElement('input');
+    input.setAttribute('type', 'hidden');
+    input.setAttribute('name', p);
+    input.setAttribute('value', params[p]);
+    form.appendChild(input);
+  }
+
+  // Add form to page and submit it to open the OAuth 2.0 endpoint.
+  document.body.appendChild(form);
+  form.submit();
+}
+
+    
+
+    // Parse query string to see if page request is coming from OAuth 2.0 server.
+    var params = {};
+    var regex = /([^&=]+)=([^&]*)/g, m;
+    while (m = regex.exec(location.href)) {
+        params[decodeURIComponent(m[1])] = decodeURIComponent(m[2]);
+    }
+    if (Object.keys(params).length > 0) {
+        localStorage.setItem('googleauthInfo', JSON.stringify(params));
+    }
+    window.history.pushState({}, document.title, "/" + "profile.html");
+    let info = JSON.parse(localStorage.getItem('googleauthInfo'))
+    console.log(info['access_token'])
+    console.log(info['expires_in'])
+
+    function logout() {
+        fetch("https://oauth2.googleapis.com/revoke?token=" + info['access_token'],
+            {
+                method: 'POST',
+                headers: {
+                    "Content-type": "application/x-www-form-urlencoded"
+                }
+            })
+            .then((data) => {
+                location.href = "http://localhost:5500/profile.html"
+            })
+    }
+    fetch("https://www.googleapis.com/oauth2/v3/userinfo", {
+        headers: {
+            "Authorization": `Bearer ${info['access_token']}`
+        }
+    })
+        .then(data => data.json())
+        .then((info) => {
+            console.log(info)
+            document.getElementById('name').innerHTML += info.name
+            document.getElementById('image').setAttribute('src',info.picture)
+        })
+
+
+    let file = document.getElementById("files");
+    let form = document.getElementById("form");
+    form.onsubmit = uploadFile
+
+    function uploadFile(e) {
+    e.preventDefault();
+    console.log(file.files[0])
+  
+    var metadata = {
+      name: Date.now() + file.files[0].name, // Filename at Google Drive
+      mimeType:file.files[0].type, // mimeType at Google Drive
+      //parents: ["##googldrivefolderid##"], // Folder ID at Google Drive
+    };
+  
+    var form = new FormData();
+    form.append(
+      "metadata",
+      new Blob([JSON.stringify(metadata)], { type: "application/json" })
+    );
+    form.append("userpic", file.files[0]);
+  
+    fetch(
+      "https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart&fields=id",
+      {
+        method: "POST",
+        headers: new Headers({ Authorization: "Bearer " + info['access_token'] }),
+        body: form,
+      }
+    )
+      .then((res) => {
+        return res.json();
+      })
+      .then(function (val) {
+        console.log(val);
+        file.value = "";
+        alert("file Uploaded")
+      });
+  }
+  function sendEmail() {
+  var accessToken = info['access_token'];
+  var url = 'https://www.googleapis.com/gmail/v1/users/me/messages/send';
+
+  // Construct the message
+  var message = "To: recipient@example.com\r\n" +
+                "Subject: Test Subject\r\n\r\n" +
+                "Test body text.";
+
+  // Encode the message
+  var encodedMessage = btoa(message);
+
+  // Construct the request body
+  var requestBody = JSON.stringify({
+    raw: encodedMessage
+  });
+
+  // Send the request
+  fetch(url, {
+    method: 'POST',
+    headers: {
+      'Authorization': 'Bearer ' + accessToken,
+      'Content-Type': 'application/json'
+    },
+    body: requestBody
+  })
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error sending email:', error));
+}
+
+
+</script>
+</html>
