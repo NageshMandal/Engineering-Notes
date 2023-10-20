@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body>
+    <h1>Welcome to Github</h1>
+    <button id="logout-button" onclick="logout()">Logout</button>
+    <script>
+        const clientID = "9b422344fa31d0dfaa43";
+        const clientSecret = "96cb462ea558914a876859a7a959bd8f76c5fe5b";
+
+        async function exchangeCodeForToken(code) {
+        const response = await fetch("https://github.com/login/oauth/access_token", {
+            method: "POST",
+            headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+            },
+            body: JSON.stringify({
+            client_id: clientID,
+            client_secret: clientSecret,
+            code: code
+            })
+        });
+
+        const { access_token } = await response.json();
+        return access_token;
+        }
+        
+        async function getUserInfo(accessToken) {
+            const response = await fetch("https://api.github.com/user", {
+                headers: {
+                Authorization: `Bearer ${accessToken}`
+                }
+            });
+
+            return response.json();
+        }
+
+                // async function displayUserInfo() {
+                // const accessToken = sessionStorage.getItem("access_token");
+                // if (!accessToken) {
+                //     // Redirect to the login page if accessToken is not available
+                //     window.location.href = "GithubLogin.html";
+                //     return;
+                // }
+
+                // const userInfo = await getUserInfo(accessToken);
+
+                // // Get the user name from the userInfo object
+                // const userName = userInfo.name;
+
+                // // Add the user name to the link
+                // const link = document.getElementById("user-link");
+                // link.textContent = userName;
+                // link.href = userInfo.html_url;
+
+                // console.log("Successfully logged in with GitHub:", userInfo);
+                // }
+
+        
+            function logout() {
+            
+            // Clear session data
+            sessionStorage.clear();
+
+            console.log("Successfully logged out.");
+
+            // Redirect to the login page
+            window.location.href = "GithubLogin.html";
+            }
+    </script>
+</body>
+</html>
