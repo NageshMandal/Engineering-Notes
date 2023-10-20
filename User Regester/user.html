@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IndexedDB Example</title>
+  </head>
+  <body>
+    <h1>IndexedDB Example</h1>
+    <form>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+      </div>
+      <div>
+        <button type="button" id="create-account-button">Create Account</button>
+        <button type="button" id="login-button">Login</button>
+      </div>
+    </form>
+    <script>
+      // Initialize the database
+      var db;
+      var request = window.indexedDB.open("MyDatabase", 1);
+  
+      request.onerror = function(event) {
+        console.log("Error opening IndexedDB database");
+      };
+  
+      request.onsuccess = function(event) {
+        db = event.target.result;
+        console.log("IndexedDB database opened successfully");
+      };
+  
+      // Create the database object store for storing user accounts
+      request.onupgradeneeded = function(event) {
+        db = event.target.result;
+        var objectStore = db.createObjectStore("users", { keyPath: "email" });
+        objectStore.createIndex("password", "password", { unique: false });
+      };
+  
+      // Function to create a new account
+      function createAccount(email, password) {
+        var request = db.transaction(["users"], "readwrite")
+          .objectStore("users")
+          .add({ email: email, password: password });
+  
+        request.onsuccess = function(event) {
+          console.log("New account created successfully");
+        };
+  
+        request.onerror = function(event) {
+          console.log("Error creating new account");
+        };
+      }
+  
+      // Function to log in an existing account
+      function login(email, password) {
+        var transaction = db.transaction(["users"]);
+        var objectStore = transaction.objectStore("users");
+        var request = objectStore.get(email);
+  
+        request.onsuccess = function(event) {
+          var user = event.target.result;
+          if (user && user.password === password) {
+            console.log("Login successful");
+          } else {
+            console.log("Login failed: Incorrect email or password");
+          }
+        };
+  
+        request.onerror = function(event) {
+          console.log("Login failed: Error accessing IndexedDB");
+        };
+      }
+  
+      // Add event listeners for the create account and login buttons
+      document.getElementById("create-account-button").addEventListener("click", function() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        createAccount(email, password);
+      });
+  
+      document.getElementById("login-button").addEventListener("click", function() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        login(email, password);
+      });
+    </script>
+  </body>
+</html>
