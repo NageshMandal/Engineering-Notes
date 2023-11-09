@@ -477,10 +477,10 @@ form input {
 }
 
 .social-media {
-  display: flex;
+  /* display: flex; */
   text-align: center;
   justify-content: center;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .social-media i {
@@ -489,7 +489,7 @@ form input {
   height: 38px;
   padding-top: 7px;
   margin-right: 5px;
-  text-align: center;
+  text-align: center; 
   display: inline-block;
   font-size: 1.5em;
   text-decoration: none;
