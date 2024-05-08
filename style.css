@@ -34,6 +34,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+
+.branchimg{
+  transition: all 0.3s;
+}
+
+.branchimg:hover{
+  transform: scale(1.09);
+}
+
 /*Gradient scroll bar  */
 body::-webkit-scrollbar {
   width: 11px;
