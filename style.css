@@ -6,6 +6,15 @@
 body{
   overflow-x: hidden;
 }
+.form-box{
+  margin: auto;
+  height: 353px;
+  width: 623px;
+  border: 2px solid black;
+  padding: 13px;
+  position: relative;
+  top: -33px;
+} 
 
 .return-to-top {
   position: fixed;
