@@ -131,3 +131,6 @@ Let's work together to create an amazing platform for students to access free en
 Terms and conditions for use, reproduction and distribution are under the [MIT License](https://opensource.org/license/mit/).
 
 Feel free to contribute to this repo.
+
+## my contribution
+"Added doubt section where students allow to submit their doubts ,including question image"
