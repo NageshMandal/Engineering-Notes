@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -67,7 +67,7 @@ body::-webkit-scrollbar-thumb {
   height: 88px;
   min-width: 100vw;
   margin: -25px 0 0 0;
-  background: #131C2B;
+  background: #131c2b;
   display: flex;
   justify-content: space-around;
   align-items: normal;
@@ -124,7 +124,6 @@ nav ul li {
   margin-left: -50px;
 }
 
-
 .col-2 p {
   text-align: justify;
   line-height: 1.7;
@@ -134,7 +133,6 @@ nav ul li {
 .para {
   max-width: 500px;
   font-family: "Poppins", sans-serif;
-
 }
 
 a {
@@ -161,22 +159,21 @@ p {
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.row-header{
+.row-header {
   padding-top: 60px;
 }
 
-.train-placement{
+.train-placement {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
 
-#placement-para{
-  padding:10px 150px;
+#placement-para {
+  padding: 10px 150px;
   font-size: 1.1rem;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 
 .col-2 {
   flex-basis: 50%;
@@ -351,7 +348,7 @@ footer {
   transition-duration: 0.7s;
 }
 
-.phone:hover{
+.phone:hover {
   cursor: pointer;
 }
 
@@ -370,7 +367,6 @@ footer {
 
 .col p {
   font-size: 16px;
-
 }
 
 .col2 {
@@ -445,7 +441,7 @@ form .far {
   margin-bottom: 0;
 }
 
-.col ul>li {
+.col ul > li {
   width: 120px;
 }
 
@@ -453,20 +449,20 @@ button .submit {
   border-radius: 15px;
 }
 
-form button>i {
+form button > i {
   padding: 8px;
   border-radius: 10px;
 }
 
 form input {
   background: transparent;
-  width:200px;
+  width: 200px;
   padding: 8px;
   border: 0;
   outline: none;
   font-size: 18px;
 }
-#search-button{
+#search-button {
   background: transparent;
   border: hidden;
   cursor: pointer;
@@ -504,15 +500,16 @@ form input {
   width: 35px;
   height: 35px;
   z-index: 100;
-  top:10px;
+  top: 10px;
   cursor: pointer;
   /* border: 1px solid red; */
   /* cursor: pointer; */
 }
 
-.toggle-mode>img {
+.toggle-mode > img {
   width: 35px;
   height: 35px;
+  margin-top: 10px;
 }
 
 .toggle-mode .fa-moon {
@@ -530,15 +527,14 @@ form input {
   text-align: center;
   font-size: 13px;
   padding: 1rem 1rem;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-color: #a6b6bb;
   opacity: 0;
   overflow: hidden;
-  ;
 }
 
 .col-3:hover .dis {
-  opacity: 1;
+  opacity: 2;
 }
 
 #pic {
@@ -551,7 +547,7 @@ form input {
   margin-right: 1rem;
 }
 
-#pic>.dev {
+#pic > .dev {
   padding: 10px 0;
 }
 
@@ -575,7 +571,7 @@ form input {
 
 .contact a h4:hover {
   font-size: 18px;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 
 .branchimg {
@@ -608,14 +604,13 @@ form input {
   padding-left: 8px;
 }
 
-.youtube{
+.youtube {
   margin-top: 5px;
 }
 
 .tweet:hover {
   color: white;
   background: rgb(0, 140, 255);
-
 }
 
 .insta:hover {
@@ -629,13 +624,12 @@ form input {
 }
 
 .in:hover {
-  color: #04669A;
+  color: #04669a;
   background: white;
 }
 
 .tele:hover {
   color: #0088cc;
-
 }
 
 .youtube:hover {
@@ -649,20 +643,19 @@ form input {
   background: #2c3333;
   color: white;
 }
-.dark-mode #search-button{
+.dark-mode #search-button {
   color: white;
 }
-.dark-mode #search-input{
+.dark-mode #search-input {
   color: white;
 }
 
 .dark-mode .title {
   background: #2c3333;
-  color: #bf7474
+  color: #bf7474;
 }
 
 .header-dark-mode {
-
   background: #1c2020;
   color: #bf7474;
 }
@@ -789,7 +782,6 @@ form input {
 
 .myname {
   width: 180px;
-
 }
 
 .containers {
@@ -800,13 +792,13 @@ form input {
   color: black;
   text-align: right;
   padding-right: 8px;
-  padding-left: 8px;
+  padding-left: 50px;
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 50px;
   margin-right: 10px;
   font-size: 20px;
-  background-color: white
+  background-color: white;
 }
 
 .google {
@@ -843,7 +835,7 @@ form input {
   font-size: 0.95rem;
   border-radius: 0.25rem;
   outline-style: solid;
-  outline-width: 1px
+  outline-width: 1px;
 }
 
 .project-form label {
@@ -910,7 +902,7 @@ body.dark-mode .project-card {
 .project-card-link a {
   display: inline-block;
   align-items: left;
-  color: #087cba
+  color: #087cba;
 }
 
 .project-card-link i {
@@ -992,52 +984,51 @@ h3 {
 
 /* faqs */
 
-.containerf { 
-  font-family: Arial, sans-serif; 
-  max-width: 1000px; 
-  margin: 0 auto; 
-  padding: 20px; 
-margin-top: 100px;
-} 
+.containerf {
+  font-family: Arial, sans-serif;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 100px;
+}
 
-h1 { 
-  font-size: 36px; 
-  margin-bottom: 20px; 
-} 
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
 
-.question { 
-  font-weight: bold; 
+.question {
+  font-weight: bold;
   font-size: 20px;
-  margin-top: 40px; 
-  margin-bottom: 30px; 
-  cursor: pointer; 
-
-} 
+  margin-top: 40px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
 .question:after {
-content: '\02795';
-/* Unicode character for "plus" sign (+) */
-font-size: 20px;
-color: #777;
-float: right;
-margin-left: 5px;
-margin-bottom: 20px;
-}
-hr{
-margin-top: 50px;
-background-color: white;
-}
-
-.answer { 
-  margin-bottom: 20px; 
-  display: none; 
+  content: "\02795";
+  /* Unicode character for "plus" sign (+) */
   font-size: 20px;
-} 
+  color: #777;
+  float: right;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+hr {
+  margin-top: 50px;
+  background-color: white;
+}
 
-.answer p { 
-  margin: 0; 
-  line-height: 1.5; 
-} 
+.answer {
+  margin-bottom: 20px;
+  display: none;
+  font-size: 20px;
+}
 
-.answer.active { 
-  display: block; 
-} 
+.answer p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.answer.active {
+  display: block;
+}
