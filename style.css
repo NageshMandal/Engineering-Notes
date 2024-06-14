@@ -534,7 +534,7 @@ form input {
 }
 
 .col-3:hover .dis {
-  opacity: 1;
+  opacity: 2;
 }
 
 #pic {
@@ -792,7 +792,7 @@ form input {
   color: black;
   text-align: right;
   padding-right: 8px;
-  padding-left: 8px;
+  padding-left: 50px;
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 50px;
