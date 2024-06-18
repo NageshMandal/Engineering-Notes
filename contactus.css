@@ -7,12 +7,12 @@
   font-family: "Poppins", sans-serif;
 }
 
-#check{
+#check {
   display: none;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "poppins", sans-serif;
 }
 
 /*Gradient scroll bar  */
@@ -44,7 +44,7 @@ body::-webkit-scrollbar-thumb {
   height: 88px;
   min-width: 100vw;
   margin: -25px 0 0 0;
-  background: #131C2B;
+  background: #131c2b;
   display: flex;
   justify-content: space-around;
   align-items: normal;
@@ -101,7 +101,7 @@ nav ul li {
   margin-left: -50px;
 }
 
-.contact{
+.contact {
   margin-left: -8px;
   min-width: 99.3vw;
 }
@@ -114,7 +114,6 @@ nav ul li {
 .para {
   max-width: 500px;
   font-family: "Poppins", sans-serif;
-
 }
 
 a {
@@ -141,7 +140,7 @@ p {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.row-header{
+.row-header {
   padding-top: 100px;
 }
 
@@ -221,7 +220,7 @@ p {
   margin-top: 20px;
   width: 100%;
   align-items: flex-start;
-  height: auto; 
+  height: auto;
 }
 
 .col-4 {
@@ -299,7 +298,7 @@ ul li a:hover {
   margin-bottom: 0;
 }
 
-.col ul>li {
+.col ul > li {
   width: 120px;
 }
 
@@ -307,7 +306,7 @@ button .submit {
   border-radius: 15px;
 }
 
-.form1 button>i {
+.form1 button > i {
   padding: 8px;
   border-radius: 10px;
 }
@@ -360,7 +359,7 @@ button .submit {
   /* cursor: pointer; */
 }
 
-.toggle-mode>img {
+.toggle-mode > img {
   width: 35px;
   height: 35px;
 }
@@ -380,11 +379,10 @@ button .submit {
   text-align: center;
   font-size: 13px;
   padding: 1rem 1rem;
-  transition: .5s ease;
+  transition: 0.5s ease;
   background-color: #a6b6bb;
   opacity: 0;
   overflow: hidden;
-  ;
 }
 
 .col-3:hover .dis {
@@ -401,7 +399,7 @@ button .submit {
   margin-right: 1rem;
 }
 
-#pic>.dev {
+#pic > .dev {
   padding: 10px 0;
 }
 
@@ -433,7 +431,6 @@ button .submit {
 .tweet:hover {
   color: white;
   background: rgb(0, 140, 255);
-
 }
 
 .insta:hover {
@@ -447,13 +444,12 @@ button .submit {
 }
 
 .in:hover {
-  color: #04669A;
+  color: #04669a;
   background: white;
 }
 
 .tele:hover {
   color: #0088cc;
-
 }
 
 .youtube:hover {
@@ -470,11 +466,10 @@ button .submit {
 
 .dark-mode .title {
   background: #2c3333;
-  color: #bf7474
+  color: #bf7474;
 }
 
 .header-dark-mode {
-
   background: #1c2020;
   color: #bf7474;
 }
@@ -565,12 +560,10 @@ button .submit {
     display: block;
     margin-left: 230px;
   }
-
 }
 
 .myname {
   width: 180px;
-
 }
 
 .containers {
@@ -587,7 +580,7 @@ button .submit {
   border-radius: 50px;
   margin-right: 10px;
   font-size: 20px;
-  background-color: white
+  background-color: white;
 }
 
 .mic:hover {
@@ -600,7 +593,7 @@ button .submit {
   width: 45px;
 }
 
-.contentHead{
+.contentHead {
   top: 50%;
 }
 
@@ -639,7 +632,7 @@ button .submit {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column; 
+  flex-direction: column;
   margin-top: 30px;
   padding-top: 20px;
 }
@@ -673,7 +666,7 @@ button .submit {
   font-size: 22px;
   margin-top: 10px;
 }
-.container  .map{
+.container .map {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -684,13 +677,12 @@ button .submit {
 }
 
 .container .contactinfo .box .text {
-
   text-align: center;
-  margin-top: 40px; 
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   margin-left: 40px;
-  margin-right: 40px;  
+  margin-right: 40px;
   padding-right: 40px;
   font-size: 16px;
   font-weight: 300;
@@ -714,7 +706,7 @@ button .submit {
   background-color: #fff;
   flex-direction: column;
   border-radius: 5px;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
   align-items: flex-start;
 }
 
@@ -761,17 +753,17 @@ button .submit {
 .contactform .inputBox textarea:valid ~ span {
   color: #f06553;
   font-size: 12px;
-  transform: translateY(-20px)translateX(5px);
+  transform: translateY(-20px) translateX(5px);
 }
 
 .contactform .inputBox input:valid ~ span,
 .contactform .inputBox textarea:valid ~ span {
   color: black;
   font-size: 12px;
-  transform: translateY(-20px)translateX(5px);
+  transform: translateY(-20px) translateX(5px);
 }
 
-.contactform .inputBox input[type="submit"]{
+.contactform .inputBox input[type="submit"] {
   width: 100%;
   background: #ff523b;
   color: #fff;
@@ -784,15 +776,14 @@ button .submit {
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
 }
 
-.contactform .inputBox input[type="submit"]:hover{
+.contactform .inputBox input[type="submit"]:hover {
   background: #f9634f;
   transform: translateY(-4px);
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-#check:checked ~ ul{
-    left: 0;
-    
+#check:checked ~ ul {
+  left: 0;
 }
 
 @media (max-width: 1183px) {
@@ -803,12 +794,12 @@ button .submit {
     z-index: 2;
     display: flex;
     flex-direction: row;
-    justify-content: center;  
-    margin-left: 10px; 
+    justify-content: center;
+    margin-left: 10px;
     left: 0%;
   }
-  
-  nav ul li{
+
+  nav ul li {
     margin-top: 10px;
     margin-bottom: 10px;
     position: relative;
@@ -817,7 +808,7 @@ button .submit {
     padding: 0px;
     /* display: block; */
   }
-  .menu-icon{
+  .menu-icon {
     display: block;
   }
 
@@ -841,7 +832,7 @@ button .submit {
   .container .contactform {
     width: 100%;
   }
-  .container .contactinfo .box .map{
+  .container .contactinfo .box .map {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -866,7 +857,7 @@ button .submit {
     display: flex;
     flex-direction: column;
     align-items: center; /* Align items to the left */
-    padding-left: 2px; 
+    padding-left: 2px;
     font-size: 15px;
   }
 
@@ -905,5 +896,3 @@ button .submit {
     font-size: 16px;
   }
 }
-
-
