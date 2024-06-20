@@ -1,0 +1,116 @@
+/*------------------------ Playlist section begins-------------------- */
+
+:root {
+    --contentHeight: 30vh;
+    --sectionWidth: 700px;
+  }
+  
+  * {
+    outline: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgb(255, 191, 191);
+  }
+  
+  section {
+    max-width: var(--sectionWidth);
+    margin: 40px auto;
+    width: 100%;
+    color:rgb(95, 79, 216);
+  }
+  
+  summary {
+    display: block;
+    cursor: pointer;
+    padding: 8px;
+    font-family: "Space Mono", monospace;
+    font-size: 22px;
+    transition: .3s;
+    border-bottom: 2px solid;
+    user-select: none;
+    
+  }
+  
+  details > div {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    height: 100%;
+    user-select: none;
+    padding: 0 20px;
+    font-family: "Karla", sans-serif;
+    line-height: 2;
+    
+  }
+  
+  
+  details > div > p {
+    display: block;
+    
+  }
+  
+  details[open] > summary {
+     color:rgb(249, 249, 249);
+  }
+  
+  @media (min-width: 768px) {
+    details[open] > div > p {
+      opacity: 0;
+      animation-name: showContent;
+      animation-duration: 0.6s;
+      animation-delay: 0.2s;
+      animation-fill-mode: forwards;
+      margin: 0;
+      padding-left: 40px;
+      
+    }
+  
+    details[open] > div {
+      animation-name: slideDown;
+      animation-duration: 0.3s;
+      animation-fill-mode: forwards;
+      flex-direction: column;
+      
+    }
+    }
+
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      height: 0;
+      padding: 0;
+    }
+  
+    to {
+      opacity: 1;
+      height: var(--contentHeight);
+      padding: 20px;
+    }
+  }
+  
+  @keyframes showImage {
+    from {
+      opacity: 0;
+      clip-path: inset(50% 0 50% 0);
+      transform: scale(0.4);
+    }
+  
+    to {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+    }
+  }
+  
+  @keyframes showContent {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+ /*------------------------ Playlist section ends-------------------- */
+ 

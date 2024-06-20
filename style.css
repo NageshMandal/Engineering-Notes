@@ -960,6 +960,7 @@ body.dark-mode .project-card {
   padding-top: 20px;
 }
 
+<<<<<<< Updated upstream
 .container {
   /* text-align: center; */
   padding: 15px;
@@ -1041,3 +1042,5 @@ background-color: white;
 .answer.active { 
   display: block; 
 } 
+=======
+>>>>>>> Stashed changes
