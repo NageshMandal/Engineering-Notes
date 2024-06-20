@@ -785,6 +785,37 @@ form input {
   .col-2 {
     padding: 0 20px;
   }
+ 
+  
+  .explore{
+    margin-left: 0;
+   }
+   .explore .btn{
+     text-align: center;
+   }
+   .col h3{
+     width: 100%;
+   }
+   .col2{
+    left: 30%;
+   }
+   #link ul{
+     display: inline-block;
+     text-align: center;
+   }
+   .row{
+     display: block;
+     text-align: center;
+   }
+   .col2,.col3{
+    margin: auto;
+
+   }
+   .form-news{
+     display: inline-block;
+     margin-bottom: 30px;
+   }
+ 
 }
 
 .myname {
