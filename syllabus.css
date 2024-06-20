@@ -194,3 +194,42 @@ h1  {
 /* ------------------------------------------------------------------------- */
 
 
+/* Navigation bar */
+.navbar .logo img {
+    margin-top: 25px;
+    margin-left: 30px;
+  }
+  
+  .navbar {
+    height: 88px;
+    min-width: 100vw;
+    margin: -25px 0 0 0;
+    background: #131C2B;
+    display: flex;
+    justify-content: space-around;
+    align-items: normal;
+    position: absolute;
+    left: 0;
+  }
+  
+  nav {
+    flex: 1;
+    text-align: center;
+  }
+  
+  nav ul {
+    display: inline-block;
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    color: white;
+    display: inline-block;
+    margin: 6px 16px 0 0;
+    font-size: 17px;
+    padding: 30px;
+  }
+  
+  
+  
+  
