@@ -106,7 +106,7 @@ nav ul li {
 }
 
 #search-form {
-  width: 267px;
+  width: 230px;
   height: 35px;
   border-radius: 80px;
   background-color: white;
@@ -117,7 +117,6 @@ nav ul li {
   color: #474747;
   margin-top: 13px;
 }
-
 #search-button {
   cursor: pointer;
   background-color: white;
