@@ -45,7 +45,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgb(0, 35, 211) 70%);
+  background:salmon;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -215,7 +215,8 @@ p {
 }
 
 .btn:hover {
-  background: #29a423;
+  background: rgba(255, 255, 255, 0.496);
+  color: #ff523b;
   transform: scaleX(2);
   transform: scaley(1.1);
   box-shadow: 2px 2px 20px rgb(49, 49, 49);
@@ -410,7 +411,7 @@ footer {
 
 .col4 h3 {
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -480,7 +481,6 @@ form input {
   display: flex;
   text-align: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .social-media i {
@@ -608,9 +608,6 @@ form input {
   padding-left: 8px;
 }
 
-.youtube{
-  margin-top: 5px;
-}
 
 .tweet:hover {
   color: white;
