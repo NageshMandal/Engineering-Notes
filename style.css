@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 1s;
+}
+img:hover {
+  transform: scale(1.1);
 }
 body{
   overflow-x: hidden;
