@@ -600,6 +600,7 @@ form input {
   border: 2px solid rgb(255, 255, 255);
   border-radius: 4px;
   margin-right: 5px;
+  color: white;
 }
 
 .fa-brands {
