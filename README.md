@@ -82,7 +82,7 @@ We welcome contributions from everyone. Here are some guidelines to get started:
 2. Fork the repository 🍴
 3. Clone your forked copy of the project🌀
 
-   `Git clone https://github.com/your_username/Engineering-Notes-Website.git`
+   `Git clone https://github.com/<your_username>/Engineering-Notes-Website.git`
 
 4. Navigate to the project directory.
     
