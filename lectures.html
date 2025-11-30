@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chaibasa engineering college</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./syllabus.css">
+  <link rel="stylesheet" href="./lectures.css">
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https//stackpath.bootsstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all"
+    crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+  <script src="https://kit.fontawesome.com/739255457e.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+</head>
+<style>
+  .info {
+    display: none;
+  }
+
+  .show-info {
+    display: block;
+  }
+</style>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="https://code-engineering.netlify.app/"><img src="images/logo1.png" alt="Chaibasa Engineering College"
+              width="200px" /></a>
+        </div>
+        <nav>
+          <ul>
+            <li><a class="nav-link" href=""></a></li>
+            <li>
+              <a class="nav-link" href="./Gallary-section/index.html">Gallery</a>
+            </li>
+            <li><a class="nav-link" href="./projects.html">Projects</a></li>
+            <li><a class="nav-link" href="./library.html">Library</a></li>
+            <li>
+              <a class="nav-link" href="./placement.html">Placements</a>
+            </li>
+            <li><a class="nav-link" href="./contactus.html">Contact</a></li>
+            <li><a class="nav-link" href="./syllabus.html">Syllabus</a></li>
+            <li><a class="nav-link" href="./lectures.html">Lectures</a></li>
+            <li>
+              <form id="search-form" action="#" method="GET">
+                <input id="search-input" type="text" placeholder="Search" />
+                <button id="search-button" type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+              </form>
+            </li>
+            <a id="mike-button" href="#"><i class="mic fa-solid fa-microphone"></i></a>
+            <img src="./images/GS20.gif" alt="google" class="google" />
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="lec-section">
+    <div class="small-container lecHeadContainer">
+      <h2 class="project-section-title title t-syllabus">Lectures</h2>
+      <p class="s-para">Explore Leactures for different syllabus of various colleges</p>
+      <input type="text" id="lec-input" class="s-input search-syllabus" placeholder="Search Subject/Lecture Name...">
+      <div class="project-card-container main-view">
+        <div class="project-card lec-card">
+          <h2 class="project-card-title s-title">MAIT </h2>
+          <h3 class="project-card-author s-subject"><strong>Subject: </strong>Applied Maths</h3>
+          <h3 class="project-card-author s-subject"><strong>Semester: </strong>1st</h3>
+          <div class="link-syllabuses">
+            <div class="project-card-link " onclick="showInfo(1)">
+              <a> Click here to see lectures <i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card lec-card">
+          <h2 class="project-card-title">IIIT Bhopal</h2>
+          <h3 class="project-card-author"><strong>Subject: </strong>Full Syllabus</h3>
+          <h3 class="project-card-author s-subject"><strong>Semester: </strong>1st and 2nd</h3>
+          <div class="link-syllabuses">
+            <div class="project-card-link " onclick="showInfo(2)">
+              <a> Click here to see lectures<i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="info-view ">
+      <div class="info lecture-container" id="info1">
+        <h2 class="project-card-title">Playlist</h2>
+        <p class="project-card-description">Study buddy - Applied Mathematics-1</p>
+        <a href="https://youtube.com/playlist?list=PL5fCG6TOVhr4jafvBSrmouZt0aqNjPlhd" class="project-card-link"> Click here to see lectures<i class="fab fa-youtube"></i></a>
+        <h2 class="project-card-title">Lectures</h2>
+        <p class="project-card-description"></p>
+        <a href="#" class="project-card-link">No Lectures added yet</a>
+        <button class="contact" onclick="showMainView()">Back</button>
+        <a class="project-card-link-2" href="#lecture-form">Add new lectures!!</a>
+      </div>
+      <div class="info lecture-container" id="info2">
+        <h2 class="project-card-title">Playlist</h2>
+        <p class="project-card-description"></p>
+        <a href="" class="project-card-link">No lectures added yet</a>
+        <h2 class="project-card-title">Lectures</h2>
+        <p class="project-card-description"></p>
+        <a href="#" class="project-card-link">No Lectures added yet</a>
+        <button class="contact" onclick="showMainView()">Back</button>
+        <a class="project-card-link-2" href="#lecture-form">Add new lectures!!</a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+<!-------------- Lectures forms section  ----->
+<div id="lecture-form" class="project-container small-container">
+  <h2 class="title">Share Your Lectures/Playlist</h2>
+  <div class="project-form-container">
+      <form class="project-form" action="mailto:evergreennageshmandal@gmail.com">
+          <div class="form-input-group">
+              <label for="project-name">Subject Name: </label>
+              <p class="s-para">(Type <strong> All Subjects</strong> if it is full syllabus)*</p>
+              <input class="form-input" type="text" id="subject-name" name="subject-name" placeholder="Subject Name" required>
+          </div>
+          <div class="form-input-group">
+              <label for="college-name">College Name: </label>
+              <br>
+              <input class="form-input" type="text" id="college-name" name="college-name" placeholder="College Name" required>
+          </div>
+          <div class="form-input-group">
+              <label for="semester">Semester: </label>
+              <br>
+              <input class="form-input" type="text" id="semester" name="semester" placeholder="Semester" required>
+          </div>
+          <div class="form-input-group">
+              <label for="lecture-link">Lecture/Playlist Link:</label>
+              <br>
+              <input class="form-input" type="text" id="lecture-link" name="lecture-link" placeholder="Lectures/Playlist Link" required>
+          </div>
+          <div class="form-input-group">
+              <label for="syllabus-link">Syllabus Link (Original)<i class="fa-solid fa-book-open"></i> :</label>
+              <br>
+              <input class="form-input" type="text" id="syllabus-link" name="syllabus-link" placeholder="Syllabus Link" required>
+          </div>
+          <div class="form-input-group">
+              <button class="btn" type="submit">Submit Lecture/Playlist</button>
+          </div>
+      </form>
+  </div>
+</div>
+
+  <!-- Footer Section    -->
+  <footer>
+    <div class="row">
+      <div class="col col1" id="pic">
+        <img src="images/nagesh.png" width="80px">
+        <div class="myname">
+          <h5>Nagesh Mandal</h5>
+        </div>
+        <p class="dev">Full Stack Web Developer</p>
+        <div class="contact">
+          <a href="https://www.instagram.com/nagesh_mandal7_5_/">
+            <h4>Contact</h4>
+          </a>
+        </div>
+      </div>
+      <div class="col col2">
+        <h3>Chaibasa Engineering College</h3>
+        <p>Jamshedpur Keonjhar Highway</p>
+        <p>Chaibasa Jharkhand PIN 833215, India</p>
+        <p class="email-id">cordinatortigjh@gmail.com</p>
+        <h4>+91 - 9062941530</h4>
+      </div>
+      <div class="col col3" id="link">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">About us</a></li>
+          <li><a href="">Features</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col col4">
+        <h3>News<span>letter</span></h3>
+        <form class="form-news">
+          <i class="far fa-envelope"></i>
+          <input class="emailid" type="email" placeholder="Enter your email" required>
+          <button type="submit"><i class="fas fa-arrow-right"></i></button>
+        </form>
+        <div class="social-icons social-media">
+          <a href="https://twitter.com/NageshMandal75"> <i class="tweet fa-brands fa-twitter"></i></a>
+          <a href="https://www.instagram.com/nagesh_mandal7_5_/"><i class="insta fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/NageshMandal"> <i class="git fa-brands fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/nagesh-mandal-134b70237/"> <i class="in fa-brands fa-linkedin"></i></a>
+          <a href="https://www.youtube.com/@nageshmandal9461/featured"> <i class="fa fa-youtube-play"
+              aria-hidden="true"></i></a>
+        </div>
+        <div class="return-to-top" id="returnToTop">
+          <i class="fas fa-arrow-up fa-2x fa-bounce"></i>
+        </div>
+      </div>
+    </div>
+    <!--Voice Assistent-->
+    <div class="containers">
+      <div class="texts">
+      </div>
+    </div>
+    <!--Voice assistent end-->
+    <div class="toggle-mode">
+      <img class="moon" data-set="sun" src="images/moon.png" alt="dark-mode">
+      <img class="sun" data-set="moon" src="images/sun.png" alt="light-mode">
+    </div>
+
+  </footer>
+  <script src="script.js"></script>
+  <script src="app.js"></script>
+  
+    <!-- Important don't remove -->
+    <div class="info-view">
+    <!-- Important don't remove -->
+    
+
+  <script>
+    function showInfo(divNumber) {
+      // Hide the main view and show the info view for the selected div
+      document.querySelector('.main-view').style.display = 'none';
+      document.querySelector('.info-view').style.display = 'block';
+      document.getElementById(`info${divNumber}`).style.display = 'flex';
+    }
+
+    function showMainView() {
+      // Hide the info view and show the main view again
+      document.querySelector('.main-view').style.display = 'block';
+      document.querySelector('.info-view').style.display = 'none';
+
+      // Hide all info divs
+      const infoDivs = document.querySelectorAll('.info');
+      infoDivs.forEach(div => div.style.display = 'none');
+    }
+  </script>
+</body>
+
+</html>
