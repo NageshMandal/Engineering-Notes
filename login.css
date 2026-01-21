@@ -1,0 +1,16 @@
+body {
+	background: #fafafa;
+}
+#myForm {
+	min-height: 100vh;
+	padding-top: 8%;
+	padding-bottom: 8%;
+}
+.my-tab-content {
+	background: #fff;
+}
+.my-nav-item {
+	font-weight: 500;
+	text-align: center;
+	width: 50%;
+}
